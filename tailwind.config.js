@@ -33,6 +33,7 @@ module.exports = {
         bgWhite: "#fff",
         black: "#000",
         grey: "#253D4E",
+        lightGrey: "#7E7E7E",
         white: "#EFEDE8",
         darkAccent: "#teal-800",
         accent: "#3BB77E",

@@ -1,9 +1,11 @@
-import Home from "@/sections/Home/";
+import Hero from "@/sections/Hero";
+import Categories from "@/sections/Categories";
 
 export default function HomePage() {
   return (
-    <div className="container text-center p-7">
-      <Home />
-    </div>
+    <>
+      <Hero />
+      <Categories />
+    </>
   );
 }
