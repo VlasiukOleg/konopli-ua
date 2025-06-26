@@ -1,0 +1,24 @@
+{
+  "title": "Категорії",
+  "button": "Перейти",
+  "list": [
+    {
+      "id": 1,
+      "title": "Питні гелі Алое Вера",
+      "width": 180,
+      "height": 180,
+      "src": "/images/categories/aloevera-gel.png",
+      "alt": "Бутилочка питного гелю AloeVera",
+      "bgColor": "blue-300"
+    },
+    {
+      "id": 2,
+      "title": "Коктейлі та супи",
+      "width": 180,
+      "height": 180,
+      "src": "/images/categories/body-shake.png",
+      "alt": "Банка коктейлю BodyShake",
+      "bgColor": "red-300"
+    }
+  ]
+}

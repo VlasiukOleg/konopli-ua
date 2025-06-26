@@ -1,19 +1,22 @@
 "use client";
 
-import { Link } from "@heroui/react";
+import categoriesData from "@/data/categoryList.json";
+
+import CategoryCard from "@/components/ui/CategoryCard/";
 
 const Hero: React.FC = ({}) => {
   return (
     <section className="py-5">
       <div className="container">
-        <h1 className="text-2xl text-grey">Категорії</h1>
-        <div className="flex flex-col">
-          <Link href="#">Алое вера питні гелі</Link>
-          <Link href="#">Основа для гарного самопочуття</Link>
-          <Link href="#">Коктейлі. Протеїн</Link>
-          <Link href="#">Супи</Link>
-          <Link href="#">Жіноче здоров'я</Link>
-          <Link href="#">Імунітет. Захист організму</Link>
+        <h1 className="text-2xl text-grey mb-2">{categoriesData.title}</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          {categoriesData.list.map((category) => {
+            return (
+              <div key={category.id}>
+                <CategoryCard category={category} />
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
