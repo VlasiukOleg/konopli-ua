@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import { Button } from "@heroui/react";
@@ -17,11 +19,19 @@ export interface IHeroProps {
   };
 }
 
+const colorMap: Record<string, string> = {
+  blue: "bg-blue-300",
+  red: "bg-red-300",
+  yellow: "bg-yellow-300",
+  grey: "bg-grey-300",
+};
+
 const CategoryCard: React.FC<IHeroProps> = ({ category }) => {
+  const bgColorClass = colorMap[category.bgColor] || "grey-300";
   return (
     <>
       <div
-        className={`relative p-4 text-lg font-semibold rounded-lg min-h-[120px] overflow-hidden mb-2 bg-${category.bgColor}`}
+        className={`relative p-4 text-lg font-semibold rounded-lg min-h-[120px] overflow-hidden mb-2 ${bgColorClass}`}
       >
         <div className="relative z-10">
           <p className="mb-3">{category.title}</p>

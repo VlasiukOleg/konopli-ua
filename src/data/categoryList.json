@@ -9,7 +9,7 @@
       "height": 180,
       "src": "/images/categories/aloevera-gel.png",
       "alt": "Бутилочка питного гелю AloeVera",
-      "bgColor": "blue-300"
+      "bgColor": "blue"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "height": 180,
       "src": "/images/categories/body-shake.png",
       "alt": "Банка коктейлю BodyShake",
-      "bgColor": "red-300"
+      "bgColor": "red"
     }
   ]
 }

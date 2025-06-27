@@ -1,8 +1,7 @@
-"use client";
-
 import categoriesData from "@/data/categoryList.json";
 
 import CategoryCard from "@/components/ui/CategoryCard/";
+import ProductCard from "@/components/ui/ProductCard";
 
 const Hero: React.FC = ({}) => {
   return (
@@ -11,13 +10,10 @@ const Hero: React.FC = ({}) => {
         <h1 className="text-2xl text-grey mb-2">{categoriesData.title}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {categoriesData.list.map((category) => {
-            return (
-              <div key={category.id}>
-                <CategoryCard category={category} />
-              </div>
-            );
+            return <CategoryCard category={category} key={category.id} />;
           })}
         </div>
+        <ProductCard />
       </div>
     </section>
   );

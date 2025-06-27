@@ -5,6 +5,7 @@
 body {
   color: #253d4e;
   background: #fff;
+  line-height: 1.4;
 }
 
 @layer utilities {
