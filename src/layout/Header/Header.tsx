@@ -3,7 +3,7 @@
 import { Button, Badge } from "@heroui/react";
 
 import { SlMenu } from "react-icons/sl";
-import { PiFlowerLotusLight } from "react-icons/pi";
+import { GiVanillaFlower } from "react-icons/gi";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 
@@ -13,8 +13,8 @@ const Header: React.FC = () => {
       <div className="container py-4 flex items-center justify-between">
         <SlMenu className="w-6 h-5" />
         <div className="text-accent flex items-center justify-center gap-1">
-          <PiFlowerLotusLight className="size-8" />
-          <div className="font-semibold text-xl">AloeStyle</div>
+          <GiVanillaFlower className="size-6" />
+          <div className="font-semibold text-xl">KONOPLI-UA</div>
         </div>
         <div className="flex items-center justify-center gap-3">
           <Button isIconOnly aria-label="Like" variant="light">

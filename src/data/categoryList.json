@@ -4,20 +4,29 @@
   "list": [
     {
       "id": 1,
-      "title": "Питні гелі Алое Вера",
+      "title": "Постіль конопляна",
       "width": 180,
       "height": 180,
-      "src": "/images/categories/aloevera-gel.png",
-      "alt": "Бутилочка питного гелю AloeVera",
+      "src": "/images/categories/konoplyana-postil.png",
+      "alt": "Фото конопляної постілі на ліжку",
       "bgColor": "blue"
     },
     {
       "id": 2,
-      "title": "Коктейлі та супи",
+      "title": "Гіпоаллергенні подушки",
       "width": 180,
       "height": 180,
-      "src": "/images/categories/body-shake.png",
-      "alt": "Банка коктейлю BodyShake",
+      "src": "/images/categories/podushka.png",
+      "alt": "Фото подушки на природі",
+      "bgColor": "red"
+    },
+    {
+      "id": 2,
+      "title": "Ковдри та пледи",
+      "width": 180,
+      "height": 180,
+      "src": "/images/categories/kovdra.jpeg",
+      "alt": "Фото ковдри на природі",
       "bgColor": "red"
     }
   ]

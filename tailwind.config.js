@@ -31,12 +31,12 @@ module.exports = {
 
       colors: {
         bgWhite: "#fff",
-        black: "#000",
-        grey: "#253D4E",
+        black: "#333333",
+        grey: "#666666",
         lightGrey: "#7E7E7E",
         white: "#EFEDE8",
         darkAccent: "#teal-800",
-        accent: "#3BB77E",
+        accent: "#658C4A",
         lightAccent: "#80cbc4",
         extraLightAccent: "##e0f2f1",
       },

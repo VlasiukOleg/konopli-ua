@@ -13,7 +13,9 @@ const Hero: React.FC = ({}) => {
             return <CategoryCard category={category} key={category.id} />;
           })}
         </div>
-        <ProductCard />
+        <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <ProductCard />
+        </div>
       </div>
     </section>
   );

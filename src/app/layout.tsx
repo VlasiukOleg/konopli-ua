@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AloeStyle",
+  title: "KONOPLI-UA",
   description: "живи на повну з Алое",
 };
 
