@@ -20,7 +20,7 @@ const CategoryCard: React.FC<IHeroProps> = ({ category }) => {
     <>
       <Link
         href=""
-        className="group block h-[240px] w-full relative overflow-hidden"
+        className="group block h-[200px] w-full relative overflow-hidden"
       >
         <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110">
           <Image

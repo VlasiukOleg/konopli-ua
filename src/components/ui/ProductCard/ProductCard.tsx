@@ -9,7 +9,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 
-export const animals = [
+export const sizes = [
   { key: "1", label: "40x40" },
   { key: "2", label: "40x60" },
   { key: "3", label: "40x60" },
@@ -55,8 +55,8 @@ const ProductCard: React.FC = () => {
               radius="none"
               labelPlacement="outside"
             >
-              {animals.map((animal) => (
-                <SelectItem key={animal.key}>{animal.label}</SelectItem>
+              {sizes.map((size) => (
+                <SelectItem key={size.key}>{size.label}</SelectItem>
               ))}
             </Select>
             <div className="flex justify-center items-center gap-2 mb-2">
@@ -128,8 +128,8 @@ const ProductCard: React.FC = () => {
               radius="none"
               labelPlacement="outside"
             >
-              {animals.map((animal) => (
-                <SelectItem key={animal.key}>{animal.label}</SelectItem>
+              {sizes.map((size) => (
+                <SelectItem key={size.key}>{size.label}</SelectItem>
               ))}
             </Select>
             <div className="flex justify-center items-center gap-2 mb-2">
