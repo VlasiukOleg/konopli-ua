@@ -8,7 +8,7 @@ const Hero: React.FC = ({}) => {
     <section className="py-5">
       <div className="container">
         <h1 className="text-2xl text-grey mb-2">{categoriesData.title}</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {categoriesData.list.map((category) => {
             return <CategoryCard category={category} key={category.id} />;
           })}
@@ -16,7 +16,6 @@ const Hero: React.FC = ({}) => {
         <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
           <ProductCard />
         </div>
-        <ProductCard />
       </div>
     </section>
   );

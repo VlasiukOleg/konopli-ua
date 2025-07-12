@@ -9,7 +9,7 @@
   background-size: auto 356px, cover; /* Размеры для градиента и изображения */
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .bgHero {
     background-image: url("/images/bg/hero/bg_ellipse_t@1x.webp"),
       url("/images/bg/hero/bg_yellow_t@1x.webp");
@@ -53,4 +53,4 @@
         url("/images/bg/hero/bg_yellow_d@2x.webp");
     }
   }
-}
+} */
