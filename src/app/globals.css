@@ -21,3 +21,15 @@ body {
     margin: 0;
   }
 }
+
+.swiper-button-next::after {
+  color: #658c4a;
+}
+
+.swiper-button-prev::after {
+  color: #658c4a;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #658c4a;
+}

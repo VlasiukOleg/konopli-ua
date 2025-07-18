@@ -8,7 +8,7 @@ import { RiMentalHealthFill } from "react-icons/ri";
 import { FaShieldAlt } from "react-icons/fa";
 import { MdDryCleaning } from "react-icons/md";
 
-import advantagesData from "@/data/advantages.json"; // Путь к вашему JSON
+import advantagesData from "@/data/advantages.json";
 
 const Advantages: React.FC = () => {
   const iconComponents: Record<string, React.ElementType> = {
