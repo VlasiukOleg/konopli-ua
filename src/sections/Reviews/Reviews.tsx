@@ -12,13 +12,13 @@ import "swiper/css/effect-cube";
 import styles from "./Reviews.module.css";
 
 const reviews = [
-  { id: 1, image: "/images/rewiews/rewiew-1.png" },
-  { id: 2, image: "/images/rewiews/rewiew-2.png" },
-  { id: 3, image: "/images/rewiews/rewiew-3.png" },
-  { id: 4, image: "/images/rewiews/rewiew-4.png" },
-  { id: 5, image: "/images/rewiews/rewiew-5.png" },
-  { id: 6, image: "/images/rewiews/rewiew-6.png" },
-  { id: 7, image: "/images/rewiews/rewiew-7.png" },
+  { id: 1, image: "/images/rewiews/rewiew-1.jpeg" },
+  { id: 2, image: "/images/rewiews/rewiew-2.jpeg" },
+  { id: 3, image: "/images/rewiews/rewiew-3.jpeg" },
+  { id: 4, image: "/images/rewiews/rewiew-4.jpeg" },
+  { id: 5, image: "/images/rewiews/rewiew-5.jpeg" },
+  { id: 6, image: "/images/rewiews/rewiew-6.jpeg" },
+  { id: 7, image: "/images/rewiews/rewiew-7.jpeg" },
 ];
 
 const Reviews: React.FC = () => {
