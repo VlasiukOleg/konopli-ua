@@ -7,7 +7,6 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerBody,
-  DrawerFooter,
   useDisclosure,
 } from "@heroui/react";
 
@@ -59,31 +58,29 @@ const Header: React.FC = () => {
         radius="none"
       >
         <DrawerContent>
-          {(onClose) => (
-            <>
-              <DrawerHeader className="flex flex-col gap-1">Меню</DrawerHeader>
-              <DrawerBody>
-                <div className="flex justify-around mb-4 font-semibold">
-                  <div>
-                    <p className="text-accent mb-2">Покупцям</p>
-                    <ul className="text-black text-xs flex flex-col gap-2">
-                      <li>Про нас</li>
-                      <li>Контакти</li>
-                      <li>FAQs</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="text-accent mb-2">Каталог</p>
-                    <ul className="text-black text-xs flex flex-col gap-2">
-                      <li>Постіль конопляна</li>
-                      <li>Подушки</li>
-                      <li>Ковдри та пледи</li>
-                    </ul>
-                  </div>
+          <>
+            <DrawerHeader className="flex flex-col gap-1">Меню</DrawerHeader>
+            <DrawerBody>
+              <div className="flex justify-around mb-4 font-semibold">
+                <div>
+                  <p className="text-accent mb-2">Покупцям</p>
+                  <ul className="text-black text-xs flex flex-col gap-2">
+                    <li>Про нас</li>
+                    <li>Контакти</li>
+                    <li>FAQs</li>
+                  </ul>
                 </div>
-              </DrawerBody>
-            </>
-          )}
+                <div>
+                  <p className="text-accent mb-2">Каталог</p>
+                  <ul className="text-black text-xs flex flex-col gap-2">
+                    <li>Постіль конопляна</li>
+                    <li>Подушки</li>
+                    <li>Ковдри та пледи</li>
+                  </ul>
+                </div>
+              </div>
+            </DrawerBody>
+          </>
         </DrawerContent>
       </Drawer>
     </header>
