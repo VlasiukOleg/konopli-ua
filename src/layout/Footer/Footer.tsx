@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex justify-between mb-4 font-semibold">
           <div>
-            <p className="text-accent mb-2">Konopli-Ua</p>
+            <p className="text-accent mb-2">Покупцям</p>
             <ul className="text-black text-xs flex flex-col gap-2">
               <li>Про нас</li>
               <li>Контакти</li>
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="text-center text-black mb-4 text-xs">
-          Графік роботи інтернет магазину 11.00 до 19.00 Субота та неділя
+          Графік роботи інтернет магазину 10.00 до 19.00 Субота та неділя
           вихідні дні.
         </div>
         <div className="h-[1px] bg-black mb-4"></div>
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
           </Button>
         </div>
         <div className="text-center text-xs mb-1">
-          © 2025 Konopli-Ua. All Rights Reserved.
+          © 2025 Konopli-Ua. Всі права захищено.
         </div>
         <div className="text-center">
           <Link as={Link} className="text-accent cursor-pointer text-xs">
