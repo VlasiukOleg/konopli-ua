@@ -1,0 +1,12 @@
+{
+  "title": "Реальні відгуки наших покупців:",
+  "images": [
+    { "id": 1, "image": "/images/reviews/review-1.jpeg" },
+    { "id": 2, "image": "/images/reviews/review-2.jpeg" },
+    { "id": 3, "image": "/images/reviews/review-3.jpeg" },
+    { "id": 4, "image": "/images/reviews/review-4.jpeg" },
+    { "id": 5, "image": "/images/reviews/review-5.jpeg" },
+    { "id": 6, "image": "/images/reviews/review-6.jpeg" },
+    { "id": 7, "image": "/images/reviews/review-7.jpeg" }
+  ]
+}
