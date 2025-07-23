@@ -1,8 +1,8 @@
 import categoriesData from "@/data/categoryList.json";
 
 import CategoryCard from "@/components/ui/CategoryCard/";
-import ProductCard from "@/components/ui/ProductCard";
-import ProductDescription from "@/components/ui/ProductDescription";
+// import ProductCard from "@/components/ui/ProductCard";
+// import ProductDescription from "@/components/ui/ProductDescription";
 
 const Hero: React.FC = ({}) => {
   return (
@@ -14,12 +14,12 @@ const Hero: React.FC = ({}) => {
             return <CategoryCard category={category} key={category.id} />;
           })}
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
+        {/* <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
           <ProductCard />
         </div>
         <div className="mt-4">
           <ProductDescription />
-        </div>
+        </div> */}
       </div>
     </section>
   );

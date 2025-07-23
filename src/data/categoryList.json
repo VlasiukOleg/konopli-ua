@@ -9,7 +9,8 @@
       "height": 180,
       "src": "/images/categories/konoplyana-postil.png",
       "alt": "Фото конопляної постілі на ліжку",
-      "bgColor": "blue"
+      "bgColor": "blue",
+      "href": "gipoallergenni-podushki"
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "height": 180,
       "src": "/images/categories/podushka.png",
       "alt": "Фото подушки на природі",
-      "bgColor": "red"
+      "bgColor": "red",
+      "href": "gipoallergenni-podushki"
     },
     {
       "id": 3,
@@ -27,7 +29,8 @@
       "height": 180,
       "src": "/images/categories/kovdra.jpeg",
       "alt": "Фото ковдри на природі",
-      "bgColor": "red"
+      "bgColor": "red",
+      "href": "gipoallergenni-podushki"
     }
   ]
 }

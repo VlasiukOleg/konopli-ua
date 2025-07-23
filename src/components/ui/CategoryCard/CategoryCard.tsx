@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { Pages } from "@/@types";
+
 export interface IHeroProps {
   category: {
     id: number;
@@ -12,6 +14,7 @@ export interface IHeroProps {
     src: string;
     alt: string;
     bgColor: string;
+    href: string;
   };
 }
 
@@ -19,10 +22,9 @@ const CategoryCard: React.FC<IHeroProps> = ({ category }) => {
   return (
     <>
       <Link
-        href=""
+        href={`${Pages.CATALOG}/${category.href}`}
         className="group block h-[200px] w-full relative overflow-hidden rounded-lg"
       >
-        {/* Контейнер изображения */}
         <div className="absolute inset-0 transition-all duration-700 group-hover:scale-110">
           <Image
             src={category.src}
@@ -33,7 +35,6 @@ const CategoryCard: React.FC<IHeroProps> = ({ category }) => {
           />
         </div>
 
-        {/* Подпись с размытым фоном */}
         <div className="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-50 backdrop-blur-sm">
           <div className="font-semibold text-white text-sm md:text-base text-center">
             {category.title}

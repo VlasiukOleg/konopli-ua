@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "category": ["gipoallergenni-podushki", "discount"],
+    "title": "Гіпоаллергенна подушка",
+    "subTitle": "сатинове покриття",
+    "image": "/images/podushka/podushka-satin.png",
+    "tags": ["Хіт продаж"],
+    "sizes": [
+      {
+        "key": "1",
+        "label": "40x40",
+        "price": "545",
+        "salePrice": "595"
+      },
+      {
+        "key": "2",
+        "label": "40x60",
+        "price": "645",
+        "salePrice": "695"
+      },
+      {
+        "key": "3",
+        "label": "50x50",
+        "price": "745",
+        "salePrice": "795"
+      },
+      {
+        "key": "4",
+        "label": "70x70",
+        "price": "845",
+        "salePrice": "895"
+      }
+    ],
+    "defaultSize": "1"
+  },
+  {
+    "id": "2",
+    "category": ["gipoallergenni-podushki", "discount"],
+    "title": "Гіпоаллергенна подушка2",
+    "subTitle": "сатинове покриття",
+    "image": "/images/podushka/podushka-satin.png",
+    "tags": ["Хіт продаж"],
+    "sizes": [
+      {
+        "key": "1",
+        "label": "40x40",
+        "price": "545",
+        "salePrice": "595"
+      },
+      {
+        "key": "2",
+        "label": "40x60",
+        "price": "645",
+        "salePrice": "695"
+      },
+      {
+        "key": "3",
+        "label": "50x50",
+        "price": "745",
+        "salePrice": "795"
+      },
+      {
+        "key": "4",
+        "label": "70x70",
+        "price": "845",
+        "salePrice": "895"
+      }
+    ],
+    "defaultSize": "1"
+  }
+]

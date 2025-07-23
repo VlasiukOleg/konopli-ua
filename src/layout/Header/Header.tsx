@@ -9,11 +9,13 @@ import {
   DrawerBody,
   useDisclosure,
 } from "@heroui/react";
+import Link from "next/link";
 
 import { SlMenu } from "react-icons/sl";
 import { GiVanillaFlower } from "react-icons/gi";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
+import { Pages } from "@/@types";
 
 const Header: React.FC = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -33,10 +35,13 @@ const Header: React.FC = () => {
           <SlMenu className="w-6 h-5" />
         </Button>
 
-        <div className="text-accent flex items-center justify-center gap-1">
+        <Link
+          href={Pages.MAIN}
+          className="text-accent flex items-center justify-center gap-1"
+        >
           <GiVanillaFlower className="size-6" />
           <div className="font-semibold text-xl">KONOPLI-UA</div>
-        </div>
+        </Link>
         <div className="flex items-center justify-center gap-3">
           <Button isIconOnly aria-label="Like" variant="light">
             <Badge className="bg-accent text-white" content="2">
