@@ -3,8 +3,8 @@ import ProductList from "@/components/ui/ProductList/ProductList";
 import data from "@/data/common.json";
 import { Pages } from "@/@types";
 
-export interface IPageProps {
-  params: { product: Pages };
+interface PageProps {
+  params: Promise<{ product: Pages }>;
 }
 
 export const dynamicParams = false;
@@ -17,12 +17,9 @@ export function generateStaticParams() {
   });
 }
 
-const Product: React.FC<IPageProps> = ({ params: { product } }) => {
-  return (
-    <>
-      <ProductList product={product} />
-    </>
-  );
+const Product: React.FC<PageProps> = async ({ params }) => {
+  const { product } = await params;
+  return <ProductList product={product} />;
 };
 
 export default Product;
