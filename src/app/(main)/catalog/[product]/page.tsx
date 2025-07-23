@@ -1,10 +1,10 @@
 import ProductList from "@/components/ui/ProductList/ProductList";
 
 import data from "@/data/common.json";
+import { Pages } from "@/@types";
 
-export interface PageProps {
-  params: { product: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+export interface IPageProps {
+  params: { product: Pages };
 }
 
 export const dynamicParams = false;
@@ -17,12 +17,12 @@ export function generateStaticParams() {
   });
 }
 
-async function Product({ params: { product } }: PageProps) {
+const Product: React.FC<IPageProps> = ({ params: { product } }) => {
   return (
     <>
       <ProductList product={product} />
     </>
   );
-}
+};
 
 export default Product;
