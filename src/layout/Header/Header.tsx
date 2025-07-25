@@ -11,6 +11,10 @@ import {
 } from "@heroui/react";
 import Link from "next/link";
 
+import CartDrawer from "@/components/ui/CartDrawer";
+
+import { useCart } from "@/store/cart";
+
 import { SlMenu } from "react-icons/sl";
 import { GiVanillaFlower } from "react-icons/gi";
 import { FaRegHeart } from "react-icons/fa";
@@ -19,6 +23,13 @@ import { Pages } from "@/@types";
 
 const Header: React.FC = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { products } = useCart();
+
+  const {
+    isOpen: isCartOpen,
+    onOpen: onCartOpen,
+    onOpenChange: onCartOpenChange,
+  } = useDisclosure();
 
   const handleOpen = () => {
     onOpen();
@@ -31,6 +42,7 @@ const Header: React.FC = () => {
           aria-label="Like"
           variant="light"
           onPress={handleOpen}
+          radius="none"
         >
           <SlMenu className="w-6 h-5" />
         </Button>
@@ -43,14 +55,24 @@ const Header: React.FC = () => {
           <div className="font-semibold text-xl">KONOPLI-UA</div>
         </Link>
         <div className="flex items-center justify-center gap-3">
-          <Button isIconOnly aria-label="Like" variant="light">
+          <Button isIconOnly aria-label="Like" variant="light" radius="none">
             <Badge className="bg-accent text-white" content="2">
               <FaRegHeart className="size-6 text-grey" />
             </Badge>
           </Button>
 
-          <Button isIconOnly aria-label="Like" variant="light">
-            <Badge className="bg-accent text-white" content="2">
+          <Button
+            isIconOnly
+            aria-label="Like"
+            variant="light"
+            onPress={onCartOpen}
+            radius="none"
+          >
+            <Badge
+              className="bg-accent text-white"
+              content={products.length}
+              isInvisible={products.length === 0}
+            >
               <FiShoppingCart className="size-6 text-grey" />
             </Badge>
           </Button>
@@ -88,6 +110,7 @@ const Header: React.FC = () => {
           </>
         </DrawerContent>
       </Drawer>
+      <CartDrawer isOpen={isCartOpen} onOpenChange={onCartOpenChange} />
     </header>
   );
 };

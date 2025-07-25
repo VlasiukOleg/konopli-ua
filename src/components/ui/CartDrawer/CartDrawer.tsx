@@ -43,7 +43,7 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
           </DrawerHeader>
           <DrawerBody className="flex-1 overflow-hidden flex flex-col">
             {products.length === 0 ? (
-              <p>Ваш кошик порожній</p>
+              <p className="text-center">Ваш кошик порожній</p>
             ) : (
               <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
                 <div className="flex-1 overflow-y-auto">
@@ -71,13 +71,13 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
                               isIconOnly
                               variant="light"
                               color="danger"
-                              className="p-1 h-[20px] text-xs"
+                              className="p-1 h-[20px]"
                               radius="none"
                               onPress={() =>
                                 removeProduct(product.id, product.size)
                               }
                             >
-                              <RiDeleteBin2Fill className="w-6 h-5" />
+                              <RiDeleteBin2Fill className="size-5" />
                             </Button>
                           </div>
                         </div>
@@ -147,34 +147,37 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
             )}
           </DrawerBody>
           <DrawerFooter className="justify-center flex-col">
-            <div className="border p-2 h-fit">
-              <div className="flex justify-between mb-2 text-sm">
-                <span>Кільксть товарів:</span>
-                <span>
-                  {products.reduce((sum, i) => sum + i.quantity, 0)} шт.
-                </span>
+            {products.length > 0 && (
+              <div className="border p-2 h-fit">
+                <div className="flex justify-between mb-2 text-sm">
+                  <span>Кільксть товарів:</span>
+                  <span>
+                    {products.reduce((sum, i) => sum + i.quantity, 0)} шт.
+                  </span>
+                </div>
+                <div className="flex justify-between mb-2 text-sm">
+                  <span>Вартість товарів:</span>
+                  <span>{total} грн.</span>
+                </div>
+                <div className="flex justify-between mb-2 text-sm">
+                  <span>Знижка:</span>
+                  <span>5%</span>
+                </div>
+                <div className="flex justify-between font-bold text-lg mb-4">
+                  <span>До сплати:</span>
+                  <span>{(total / 1.05).toFixed(0)} грн.</span>
+                </div>
+                <Button
+                  size="md"
+                  radius="none"
+                  variant="bordered"
+                  className="font-semibold text-accent border-accent w-full"
+                >
+                  Оформити замовлення
+                </Button>
               </div>
-              <div className="flex justify-between mb-2 text-sm">
-                <span>Вартість товарів:</span>
-                <span>{total} грн.</span>
-              </div>
-              <div className="flex justify-between mb-2 text-sm">
-                <span>Знижка:</span>
-                <span>5%</span>
-              </div>
-              <div className="flex justify-between font-bold text-lg mb-4">
-                <span>До сплати:</span>
-                <span>{(total / 1.05).toFixed(0)} грн.</span>
-              </div>
-              <Button
-                size="md"
-                radius="none"
-                variant="bordered"
-                className="font-semibold text-accent border-accent w-full"
-              >
-                Оформити замовлення
-              </Button>
-            </div>
+            )}
+
             <Button
               size="sm"
               radius="none"

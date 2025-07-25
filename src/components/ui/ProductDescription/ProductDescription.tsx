@@ -8,9 +8,14 @@ import {
   SelectItem,
   Button,
   Input,
+  useDisclosure,
 } from "@heroui/react";
 import { Accordion, AccordionItem } from "@heroui/accordion";
 import ImageGallery from "react-image-gallery";
+
+import CartDrawer from "@/components/ui/CartDrawer";
+
+import { useCart } from "@/store/cart";
 
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
@@ -25,11 +30,12 @@ interface ProductDescriptionProps {
 }
 
 const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { addItem, updateQuantity } = useCart();
+
   const [liked, setLiked] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState(product.defaultSize);
-
-  console.log(product);
 
   const currentSize =
     product.sizes.find((size) => size.key === selectedSize) || product.sizes[0];
@@ -43,6 +49,20 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
 
   const handleIncrease = () => {
     setQuantity(quantity + 1);
+  };
+
+  const handleCartDrawerOpen = () => {
+    onOpen();
+
+    addItem({
+      id: product.id,
+      title: product.title,
+      price: Number(currentSize.price),
+      image: product.image,
+      size: currentSize.label,
+    });
+
+    updateQuantity(product.id, currentSize.label, quantity);
   };
 
   return (
@@ -155,6 +175,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
             radius="none"
             variant="bordered"
             className="font-semibold w-full text-accent border-accent mb-4"
+            onPress={handleCartDrawerOpen}
           >
             <FiShoppingCart className="size-6" />
             Замовити
@@ -177,6 +198,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
             </AccordionItem>
           </Accordion>
         </div>
+        <CartDrawer isOpen={isOpen} onOpenChange={onOpenChange} />
       </section>
     </>
   );
