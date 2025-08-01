@@ -73,7 +73,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
         <div className="container">
           <Card className="border-none rounded-none  bg-background/60 dark:bg-default-100/50 max-w-[610px] p-0 mb-5">
             <CardBody className="p-0">
-              <div className="flex items-center justify-center mb-4">
+              <div className="p-2">
                 {product?.images && (
                   <ImageGallery
                     items={product.images.map((img) => ({
@@ -113,11 +113,13 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
           </div>
           <div className="flex items-center gap-2 flex-wrap mb-4">
             <p className=" text-black  font-semibold text-xl">
-              {currentSize.salePrice} грн.
-            </p>
-            <p className="text-lg  text-lightGrey line-through font-semibold">
               {currentSize.price} грн.
             </p>
+            {currentSize.salePrice && (
+              <p className="text-lg  text-lightGrey line-through font-semibold">
+                {currentSize.salePrice} грн.
+              </p>
+            )}
           </div>
           <div className="flex items-center gap-4 mb-4">
             <div className="flex items-center">

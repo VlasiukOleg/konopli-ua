@@ -60,17 +60,17 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
         className="cursor-pointer"
       >
         <Card
-          className="border-none rounded-none border bg-background/60 dark:bg-default-100/50 max-w-[610px] p-1 relative mt-5"
+          className="border-none rounded-none border bg-background/60 dark:bg-default-100/50 max-w-[610px] p-1 relative"
           classNames={{
             base: "border-r-0",
           }}
         >
-          <CardBody className="p-1">
+          <CardBody className="p-1 rounded-none">
             <div className="flex items-center justify-center mb-1">
               <Image
                 alt="Album cover"
                 as={NextImage}
-                className="text-center"
+                className="text-center rounded-none"
                 width={150}
                 height={150}
                 src={product.image}
@@ -104,9 +104,11 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
                 <p className="text-lg text-black font-bold">
                   {currentSize.price} грн.
                 </p>
-                <p className="text-sm text-lightGrey line-through font-semibold">
-                  {currentSize.salePrice} грн.
-                </p>
+                {currentSize.salePrice && (
+                  <p className="text-sm text-lightGrey line-through font-semibold">
+                    {currentSize.salePrice} грн.
+                  </p>
+                )}
               </div>
             </div>
 

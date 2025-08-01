@@ -160,8 +160,6 @@ const Checkout: React.FC = ({}) => {
     fetchWarehouses(cityRef);
   };
 
-  console.log(selectedCity);
-
   const onSubmit = async (data: IFormState) => {
     setSendError(false);
 
@@ -181,8 +179,6 @@ const Checkout: React.FC = ({}) => {
       warehouse: selectedWarehouseData?.label || "",
       products,
     };
-
-    console.log(sanitizedData);
 
     try {
       setIsSending(true);
