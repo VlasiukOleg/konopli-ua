@@ -11,7 +11,7 @@ import styles from "@/layout/Footer/Footer.module.css";
 
 const Footer: React.FC = () => {
   return (
-    <footer className={`pb-5 pt-9 ${styles.bgFooter}`}>
+    <footer className={`pb-5 pt-9 ${styles.bgFooter} border-accent border-t-1`}>
       <div className="container">
         <div className="text-accent flex items-center justify-center gap-1 mb-4">
           <GiVanillaFlower className="size-6" />

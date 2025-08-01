@@ -9,11 +9,14 @@ import {
   DrawerFooter,
 } from "@heroui/react";
 import NextImage from "next/image";
+import { useRouter } from "next/navigation";
 
 import { useCart } from "@/store/cart";
 
 import { FaMinus, FaPlus } from "react-icons/fa6";
 import { RiDeleteBin2Fill } from "react-icons/ri";
+
+import { Pages } from "@/@types";
 
 interface ICartDrawer {
   isOpen: boolean;
@@ -21,6 +24,7 @@ interface ICartDrawer {
 }
 
 const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
+  const router = useRouter();
   const { products, removeProduct, updateQuantity } = useCart();
 
   const total = products.reduce(
@@ -63,10 +67,18 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
                         />
 
                         <div className="text-sm">
-                          <h3 className="font-medium ">{product.title}</h3>
-                          <p>Розмір: {product.size}</p>
+                          <p className="font-semibold">{product.title}</p>
+                          <p className="font-semibold">({product.subTitle})</p>
+                          <p className="text-xs text-grey">
+                            Розмір: {product.size}
+                          </p>
                           <div className="flex items-center justify-between">
-                            <p>{product.price} грн.</p>
+                            <p>
+                              {product.price} грн.{" "}
+                              <span className="text-lightGrey line-through text-xs">
+                                {product.salePrice} грн.
+                              </span>
+                            </p>
                             <Button
                               isIconOnly
                               variant="light"
@@ -172,6 +184,10 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
                   radius="none"
                   variant="bordered"
                   className="font-semibold text-accent border-accent w-full"
+                  onPress={() => {
+                    onOpenChange(false);
+                    router.push(`/${Pages.CHECKOUT}`);
+                  }}
                 >
                   Оформити замовлення
                 </Button>
@@ -179,7 +195,7 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
             )}
 
             <Button
-              size="sm"
+              size="md"
               radius="none"
               className="bg-accent font-semibold text-white text-center"
               onPress={() => onOpenChange(false)}

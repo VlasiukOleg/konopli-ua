@@ -4,7 +4,9 @@ import { persist } from "zustand/middleware";
 interface CartItem {
   id: string;
   title: string;
+  subTitle: string;
   price: number;
+  salePrice: number;
   image: string;
   size: string;
   quantity: number;
@@ -15,8 +17,7 @@ interface CartStore {
   addItem: (item: Omit<CartItem, "quantity">) => void;
   removeProduct: (id: string, size: string) => void;
   updateQuantity: (id: string, size: string, quantity: number) => void;
-
-  //   clearCart: () => void;
+  clearCart: () => void;
 }
 
 export const useCart = create<CartStore>()(
@@ -52,6 +53,7 @@ export const useCart = create<CartStore>()(
               : product
           ),
         })),
+      clearCart: () => set({ products: [] }),
     }),
     { name: "cart-storage" }
   )

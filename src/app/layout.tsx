@@ -25,10 +25,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx(inter.className)}>
         <Providers>
-          <AnnouncementBar />
-          <Header />
-          <main>{children}</main>
-          <Footer />
+          <div className="min-h-screen flex flex-col">
+            <AnnouncementBar />
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

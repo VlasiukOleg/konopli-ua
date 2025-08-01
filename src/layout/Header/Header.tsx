@@ -35,7 +35,7 @@ const Header: React.FC = () => {
     onOpen();
   };
   return (
-    <header className="border-b-1 shadow-[inset_0_-2px_4px_0_rgba(0,0,0,0.1)]">
+    <header className="border-b-1 border-accent shadow-[inset_0_-2px_4px_0_rgba(0,0,0,0.1)]">
       <div className="container py-4 flex items-center justify-between">
         <Button
           isIconOnly

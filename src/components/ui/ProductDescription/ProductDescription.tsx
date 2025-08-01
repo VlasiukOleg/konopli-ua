@@ -57,7 +57,9 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
     addItem({
       id: product.id,
       title: product.title,
+      subTitle: product.subTitle,
       price: Number(currentSize.price),
+      salePrice: Number(currentSize.salePrice),
       image: product.image,
       size: currentSize.label,
     });
@@ -111,10 +113,10 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
           </div>
           <div className="flex items-center gap-2 flex-wrap mb-4">
             <p className=" text-black  font-semibold text-xl">
-              {currentSize.salePrice}
+              {currentSize.salePrice} грн.
             </p>
             <p className="text-lg  text-lightGrey line-through font-semibold">
-              {currentSize.price}
+              {currentSize.price} грн.
             </p>
           </div>
           <div className="flex items-center gap-4 mb-4">

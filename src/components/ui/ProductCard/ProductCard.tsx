@@ -43,7 +43,9 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
     addItem({
       id: product.id,
       title: product.title,
+      subTitle: product.subTitle,
       price: Number(currentSize.price),
+      salePrice: Number(currentSize.salePrice),
       image: product.image,
       size: currentSize.label,
     });

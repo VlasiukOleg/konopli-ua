@@ -2,6 +2,7 @@ export enum Pages {
   MAIN = "/",
   CATALOG = "catalog",
   PODUSHKI = "gipoallergenni-podushki",
+  CHECKOUT = "checkout",
 }
 
 export interface IProductCard {
