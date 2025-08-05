@@ -10,9 +10,11 @@ export interface IProductCard {
   category: string[];
   title: string;
   subTitle: string;
+  cover: string;
+  filling: string;
   image: string;
   images?: string[];
-  description?: string;
+  description?: string[];
   advantages?: string[];
   care?: string;
   tags: string[];

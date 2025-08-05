@@ -90,6 +90,16 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
           <p className="text-black font-semibold text-xl leading-7 mb-2">
             {product.title} ({product.subTitle})
           </p>
+          {product.cover && (
+            <p className="text-grey text-sm">
+              Чохол: <span className="text-black">{product.cover}</span>
+            </p>
+          )}
+          {product.filling && (
+            <p className="text-grey text-sm mb-4">
+              Наповнювач: <span className="text-black">{product.filling}</span>
+            </p>
+          )}
 
           <div className="flex mb-4">
             <Select
@@ -186,7 +196,13 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
           </Button>
           <Accordion className="text-sm">
             <AccordionItem key="1" aria-label="Accordion 1" title="Опис">
-              {product.description}
+              {product?.description && (
+                <ul className="space-y-2">
+                  {product.description.map((advantage, index) => (
+                    <li key={index}>{advantage}</li>
+                  ))}
+                </ul>
+              )}
             </AccordionItem>
             <AccordionItem key="2" aria-label="Accordion 2" title="Переваги">
               {product?.advantages && (
