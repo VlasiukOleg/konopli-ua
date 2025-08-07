@@ -23,6 +23,7 @@ export interface IProductCard {
     label: string;
     price: string;
     salePrice: string;
+    package?: string[];
   }[];
   defaultSize: string;
 }

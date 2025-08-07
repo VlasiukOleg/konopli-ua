@@ -88,7 +88,8 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
             </CardBody>
           </Card>
           <p className="text-black font-semibold text-xl leading-7 mb-2">
-            {product.title} ({product.subTitle})
+            {product.title}{" "}
+            {product.subTitle && <span> ({product.subTitle})</span>}
           </p>
           {product.cover && (
             <p className="text-grey text-sm">
@@ -194,6 +195,16 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
             <FiShoppingCart className="size-6" />
             Замовити
           </Button>
+          {currentSize.package && (
+            <>
+              <p className="text-sm font-semibold mb-2">Комплектація</p>
+              <ul className="space-y-2 text-sm">
+                {currentSize.package.map((packageItem, index) => (
+                  <li key={index}>{packageItem}</li>
+                ))}
+              </ul>
+            </>
+          )}
           <Accordion className="text-sm">
             <AccordionItem key="1" aria-label="Accordion 1" title="Опис">
               {product?.description && (

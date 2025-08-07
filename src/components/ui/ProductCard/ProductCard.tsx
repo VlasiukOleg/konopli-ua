@@ -76,12 +76,17 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
                 src={product.image}
               />
             </div>
-            <p className="text-black text-center font-bold text-sm leading-4">
-              {product.title}
-            </p>
-            <p className="text-black text-center font-bold text-xs leading-5 mb-2">
-              ({product.subTitle})
-            </p>
+            <div className="mb-2">
+              <p className="text-black flex items-center justify-center text-center font-bold text-sm leading-4 min-h-[32px]">
+                {product.title}
+              </p>
+              {product.subTitle && (
+                <p className="text-black text-center font-bold text-xs leading-5 ">
+                  ({product.subTitle})
+                </p>
+              )}
+            </div>
+
             <div className="flex flex-col justify-between items-baseline mb-2">
               <Select
                 className="max-w-[200px] mb-2"
