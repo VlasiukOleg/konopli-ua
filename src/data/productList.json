@@ -33,31 +33,35 @@
         "label": "40x40",
         "price": "595",
         "salePrice": "",
-        "package": ""
+        "package": null
       },
       {
         "key": "2",
         "label": "40x60",
         "price": "690",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "3",
         "label": "50x50",
         "price": "690",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "4",
         "label": "50x70",
         "price": "800",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "5",
         "label": "70x70",
         "price": "1030",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       }
     ],
     "defaultSize": "1"
@@ -96,25 +100,29 @@
         "key": "1",
         "label": "40x40",
         "price": "680",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "2",
         "label": "40x60",
         "price": "800",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "3",
         "label": "50x50",
         "price": "800",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "4",
         "label": "50x70",
         "price": "940",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       }
     ],
     "defaultSize": "1"
@@ -154,31 +162,36 @@
         "key": "1",
         "label": "40x40",
         "price": "525",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "2",
         "label": "40x60",
         "price": "615",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "3",
         "label": "50x50",
         "price": "615",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "4",
         "label": "50x70",
         "price": "730",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "5",
         "label": "70x70",
         "price": "940",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       }
     ],
     "defaultSize": "1"
@@ -217,31 +230,36 @@
         "key": "1",
         "label": "40x40",
         "price": "755",
-        "salePrice": "790"
+        "salePrice": "790",
+        "package": null
       },
       {
         "key": "2",
         "label": "40x60",
         "price": "840",
-        "salePrice": "890"
+        "salePrice": "890",
+        "package": null
       },
       {
         "key": "3",
         "label": "50x50",
         "price": "840",
-        "salePrice": "890"
+        "salePrice": "890",
+        "package": null
       },
       {
         "key": "4",
         "label": "50x70",
         "price": "950",
-        "salePrice": "1000"
+        "salePrice": "1000",
+        "package": null
       },
       {
         "key": "5",
         "label": "70x70",
         "price": "1250",
-        "salePrice": "1400"
+        "salePrice": "1400",
+        "package": null
       }
     ],
     "defaultSize": "1"
@@ -281,31 +299,36 @@
         "key": "1",
         "label": "40x40",
         "price": "755",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "2",
         "label": "40x60",
         "price": "840",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "3",
         "label": "50x50",
         "price": "840",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "4",
         "label": "50x70",
         "price": "950",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       },
       {
         "key": "5",
         "label": "70x70",
         "price": "1250",
-        "salePrice": ""
+        "salePrice": "",
+        "package": null
       }
     ],
     "defaultSize": "1"
@@ -657,6 +680,110 @@
         "key": "8",
         "label": "240x260 см",
         "price": "6050",
+        "salePrice": "",
+        "package": null
+      }
+    ],
+    "defaultSize": "1"
+  },
+  {
+    "id": "10",
+    "category": ["postil-konoplyana"],
+    "title": "Конопляне простирадло на резинці",
+    "subTitle": "",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Відкрийте для себе новий рівень комфорту і стилю з нашим простирадлом з конопляної тканини на резинці. Це ідеальне поєднання природної краси, екологічної відповідальності та неперевершеного комфорту. Наше простирадло з конопляної тканини створене для тих, хто цінує натуральні матеріали та прагне до збереження довкілля, не жертвуючи при цьому якістю та стилем.",
+      "Простирадло з конопляної тканини на резинці – це не лише стильний та комфортний елемент вашого ліжка, але й внесок у збереження навколишнього середовища. Відчуйте справжню розкіш натуральних матеріалів, яка дарує комфорт, тепло і затишок вашому дому. Обирайте якість, обирайте екологічність, обирайте конопляну тканину!"
+    ],
+    "image": "/images/postil/postil-prostiradlo-na-rezintsi.webp",
+    "images": [
+      "/images/postil/postil-prostiradlo-na-rezintsi.webp",
+      "/images/postil/postil-prostiradlo-na-rezintsi-1.webp",
+      "/images/postil/postil-prostiradlo-na-rezintsi-2.webp",
+      "/images/postil/postil-prostiradlo-na-rezintsi-3.webp"
+    ],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Простирадло з конопляної тканини легке у догляді. Його можна прати у пральній машині при низьких температурах, що допомагає зберегти структуру тканини та продовжити термін служби виробу. Відсутність необхідності у високих температурах прання також сприяє економії енергії. Прання конопляного простирадла при 30 градусах (делікатне прання)",
+    "sizes": [
+      {
+        "key": "1",
+        "label": "140x200x30 см",
+        "price": "2130",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "2",
+        "label": "150x210x30 см",
+        "price": "2300",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "3",
+        "label": "160x200x30 см",
+        "price": "2300",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "4",
+        "label": "172x205x30 см",
+        "price": "2505",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "5",
+        "label": "180x200x30 см",
+        "price": "2550",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "6",
+        "label": "190x210x30 см",
+        "price": "2900",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "7",
+        "label": "200x200x30 см",
+        "price": "2900",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "8",
+        "label": "200x220x30 см",
+        "price": "3150",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "9",
+        "label": "220x240x30 см",
+        "price": "3400",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "10",
+        "label": "240x260x30 см",
+        "price": "3900",
         "salePrice": "",
         "package": null
       }

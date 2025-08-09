@@ -38,7 +38,7 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
       onOpenChange={onOpenChange}
       placement="right"
       radius="none"
-      size="xs"
+      size="sm"
     >
       <DrawerContent className="h-[100dvh] max-h-[100dvh] flex flex-col">
         <>
