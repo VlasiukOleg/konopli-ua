@@ -17,11 +17,11 @@ const Hero: React.FC = ({}) => {
     <section className="py-5">
       <div className="container">
         {pathName !== Pages.MAIN && (
-          <Breadcrumbs variant="bordered" radius="none">
-            <BreadcrumbItem href="/">
-              <IoHomeOutline />
+          <Breadcrumbs radius="none" className="mb-3">
+            <BreadcrumbItem href={Pages.MAIN}>
+              <IoHomeOutline className="size-4" />
             </BreadcrumbItem>
-            <BreadcrumbItem href="/catalog">Каталог</BreadcrumbItem>
+            <BreadcrumbItem>Каталог</BreadcrumbItem>
           </Breadcrumbs>
         )}
 

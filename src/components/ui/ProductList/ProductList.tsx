@@ -22,15 +22,18 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
   return (
     <section className="py-5">
       <div className="container">
-        <Breadcrumbs variant="bordered" radius="none" className="mb-3">
+        <Breadcrumbs radius="none" className="mb-3">
           <BreadcrumbItem href={Pages.MAIN}>
-            <IoHomeOutline />
+            <IoHomeOutline className="size-4" />
           </BreadcrumbItem>
           <BreadcrumbItem href={`/${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
-          <BreadcrumbItem href="/catalog">
+          <BreadcrumbItem>
             {BREADCRUMBS_LABEL[product as keyof typeof BREADCRUMBS_LABEL]}
           </BreadcrumbItem>
         </Breadcrumbs>
+        <h2 className="text-2xl text-grey mb-2">
+          {BREADCRUMBS_LABEL[product as keyof typeof BREADCRUMBS_LABEL]}
+        </h2>
         <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {filteredProductsByCategory.map((filteredProduct) => (
             <ProductCard key={filteredProduct.id} product={filteredProduct} />
