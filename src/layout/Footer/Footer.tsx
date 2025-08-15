@@ -7,11 +7,9 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaPhoneVolume } from "react-icons/fa6";
 
-import styles from "@/layout/Footer/Footer.module.css";
-
 const Footer: React.FC = () => {
   return (
-    <footer className={`pb-5 pt-9 ${styles.bgFooter} border-accent border-t-1`}>
+    <footer className={`pb-5 pt-9 bg-sectionBg border-accent border-t-1`}>
       <div className="container">
         <div className="text-accent flex items-center justify-center gap-1 mb-4">
           <GiVanillaFlower className="size-6" />

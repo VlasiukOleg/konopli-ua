@@ -11,11 +11,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-cube";
 
-import styles from "./Reviews.module.css";
-
 const Reviews: React.FC = () => {
   return (
-    <section className={`py-5 ${styles.bgReviews}`}>
+    <section className="py-5">
       <div className="container">
         <h2 className="text-xl text-grey mb-6">{reviewsData.title}</h2>
         <div className="max-w-4xl mx-auto">

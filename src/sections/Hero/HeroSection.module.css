@@ -5,8 +5,8 @@
     ),
     /* Белый градиент с прозрачностью 30% */ url("/images/hero/bg-hero.jpg");
   background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: auto 356px, cover; /* Размеры для градиента и изображения */
+  background-position: center;
+  background-size: cover; /* Размеры для градиента и изображения */
 }
 
 /* @media screen and (min-width: 768px) {
