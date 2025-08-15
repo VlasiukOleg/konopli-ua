@@ -22,12 +22,15 @@ import { FiShoppingCart } from "react-icons/fi";
 
 import { IProductCard } from "@/@types";
 
+import styles from "@/components/ui/ProductDescription/productDescription.module.css";
+
 interface IProductCardProps {
   product: IProductCard;
 }
 
 const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
   const router = useRouter();
+
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const { addItem } = useCart();
 
@@ -77,7 +80,7 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
               />
             </div>
             <div className="mb-2">
-              <p className="text-black flex items-center justify-center text-center font-bold text-sm leading-4 min-h-[32px]">
+              <p className="text-black flex items-center justify-center text-center font-bold text-sm leading-4 min-h-[64px]">
                 {product.title}
               </p>
               {product.subTitle && (
@@ -91,7 +94,7 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
               <Select
                 className="max-w-[200px] mb-2"
                 label="Виберіть розмір"
-                placeholder="Select an animal"
+                placeholder="Виберіть розмір"
                 size="sm"
                 selectedKeys={[selectedSize]}
                 onSelectionChange={(keys) =>
@@ -100,13 +103,24 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
                 variant="bordered"
                 radius="none"
                 labelPlacement="outside"
+                classNames={{
+                  value: "text-xs",
+                }}
+                listboxProps={{
+                  classNames: {
+                    base: styles.listbox,
+                  },
+                  itemClasses: {
+                    title: "whitespace-normal text-xs",
+                  },
+                }}
               >
                 {product.sizes.map((size) => (
                   <SelectItem key={size.key}>{size.label}</SelectItem>
                 ))}
               </Select>
               <div className="flex justify-center items-center gap-2 mb-2">
-                <p className="text-lg text-black font-bold">
+                <p className="text-base text-black font-bold">
                   {currentSize.price} грн.
                 </p>
                 {currentSize.salePrice && (

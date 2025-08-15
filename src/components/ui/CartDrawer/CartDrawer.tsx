@@ -56,28 +56,35 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
                       className="border-b py-2"
                       key={`${product.id}-${product.size}`}
                     >
-                      <div className=" flex gap-2 items-center mb-2">
+                      <div className="flex gap-2 items-center mb-2">
                         <Image
                           alt={product.title}
                           as={NextImage}
-                          className="text-center"
+                          className="text-center min-w-[70px]"
                           width={70}
                           height={70}
                           src={product.image}
+                          radius="none"
                         />
-
                         <div className="text-sm">
                           <p className="font-semibold">{product.title}</p>
-                          <p className="font-semibold">({product.subTitle})</p>
+                          {product.subTitle && (
+                            <p className="font-semibold">
+                              ({product.subTitle})
+                            </p>
+                          )}
+
                           <p className="text-xs text-grey">
                             Розмір: {product.size}
                           </p>
                           <div className="flex items-center justify-between">
                             <p>
                               {product.price} грн.{" "}
-                              <span className="text-lightGrey line-through text-xs">
-                                {product.salePrice} грн.
-                              </span>
+                              {product.salePrice > 0 && (
+                                <span className="text-lightGrey line-through text-xs">
+                                  {product.salePrice} грн.
+                                </span>
+                              )}
                             </p>
                             <Button
                               isIconOnly

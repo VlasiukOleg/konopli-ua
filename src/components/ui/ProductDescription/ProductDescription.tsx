@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import {
   Card,
   CardBody,
@@ -10,6 +11,7 @@ import {
   Input,
   useDisclosure,
 } from "@heroui/react";
+import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
 import { Accordion, AccordionItem } from "@heroui/accordion";
 import ImageGallery from "react-image-gallery";
 
@@ -20,10 +22,12 @@ import { useCart } from "@/store/cart";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaMinus, FaPlus } from "react-icons/fa6";
+import { IoHomeOutline } from "react-icons/io5";
 
-import { IProductCard } from "@/@types";
+import { IProductCard, Pages, BREADCRUMBS_LABEL } from "@/@types";
 
 import "react-image-gallery/styles/css/image-gallery.css";
+import styles from "@/components/ui/ProductDescription/productDescription.module.css";
 
 interface ProductDescriptionProps {
   product: IProductCard;
@@ -32,6 +36,9 @@ interface ProductDescriptionProps {
 const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const { addItem, updateQuantity } = useCart();
+  const pathName = usePathname();
+
+  const partsPathName = pathName.split("/");
 
   const [liked, setLiked] = useState(false);
   const [quantity, setQuantity] = useState(1);
@@ -71,6 +78,26 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
     <>
       <section className="py-5">
         <div className="container">
+          <Breadcrumbs
+            radius="none"
+            className="mb-3"
+            itemClasses={{
+              item: "whitespace-normal",
+            }}
+          >
+            <BreadcrumbItem href={Pages.MAIN}>
+              <IoHomeOutline className="size-4" />
+            </BreadcrumbItem>
+            <BreadcrumbItem href={`/${Pages.CATALOG}`}>Каталог</BreadcrumbItem>
+            <BreadcrumbItem href={`/${Pages.CATALOG}/${partsPathName[2]}`}>
+              {
+                BREADCRUMBS_LABEL[
+                  partsPathName[2] as keyof typeof BREADCRUMBS_LABEL
+                ]
+              }
+            </BreadcrumbItem>
+            <BreadcrumbItem>{product.title}</BreadcrumbItem>
+          </Breadcrumbs>
           <Card className="border-none rounded-none  bg-background/60 dark:bg-default-100/50 max-w-[610px] p-0 mb-5">
             <CardBody className="p-0">
               <div className="p-2">
@@ -106,7 +133,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
             <Select
               className="max-w-full"
               label="Виберіть розмір"
-              placeholder="Select an animal"
+              placeholder="Виберіть розмір"
               size="md"
               defaultSelectedKeys={["1"]}
               variant="bordered"
@@ -116,6 +143,14 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
               onSelectionChange={(keys) =>
                 setSelectedSize(Array.from(keys)[0] as string)
               }
+              listboxProps={{
+                classNames: {
+                  base: styles.listbox,
+                },
+                itemClasses: {
+                  title: "whitespace-normal",
+                },
+              }}
             >
               {product.sizes.map((size) => (
                 <SelectItem key={size.key}>{size.label}</SelectItem>
