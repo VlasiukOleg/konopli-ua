@@ -7,6 +7,8 @@ import { FaShieldVirus } from "react-icons/fa";
 import { RiMentalHealthFill } from "react-icons/ri";
 import { FaShieldAlt } from "react-icons/fa";
 import { MdDryCleaning } from "react-icons/md";
+import { PiLineVerticalBold } from "react-icons/pi";
+import { FaPlus } from "react-icons/fa6";
 
 import advantagesData from "@/data/advantages.json";
 
@@ -35,6 +37,13 @@ const Advantages: React.FC = () => {
                 startContent={
                   IconComponent && (
                     <IconComponent className="size-6 text-accent mr-2" />
+                  )
+                }
+                indicator={({ isOpen }) =>
+                  isOpen ? (
+                    <PiLineVerticalBold className="text-accent" />
+                  ) : (
+                    <FaPlus className="text-accent" />
                   )
                 }
               >

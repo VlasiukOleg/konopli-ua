@@ -16,10 +16,14 @@ import CartDrawer from "@/components/ui/CartDrawer";
 import { useCart } from "@/store/cart";
 
 import { SlMenu } from "react-icons/sl";
-import { GiVanillaFlower } from "react-icons/gi";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
+
 import { Pages } from "@/@types";
+
+
+import Logo from '@images/logo.png';
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -51,8 +55,8 @@ const Header: React.FC = () => {
           href={Pages.MAIN}
           className="text-accent flex items-center justify-center gap-1"
         >
-          <GiVanillaFlower className="size-6" />
-          <div className="font-semibold text-xl">KONOPLI-UA</div>
+          
+          <div className="font-semibold font-montserrat text-lg flex">KONOPLI<Image src={Logo} alt="logo" className="size-6"/>UA</div>
         </Link>
         <div className="flex items-center justify-center gap-3">
           <Button isIconOnly aria-label="Like" variant="light" radius="none">

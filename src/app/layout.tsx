@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
 import clsx from "clsx";
-import { Inter } from "next/font/google";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 
 import { Providers } from "./providers";
 
 import Header from "@/layout/Header";
 import Footer from "@/layout/Footer";
-import AnnouncementBar from "@/components/ui/AnnouncementBar";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"], // выбирайте нужные веса
+  variable: "--font-montserrat", // добавляем CSS переменную
+});
 
 export const metadata: Metadata = {
   title: "KONOPLI-UA",
@@ -23,10 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(inter.className)}>
+      <body className={clsx(inter.className, montserrat.variable)}>
         <Providers>
           <div className="min-h-screen flex flex-col">
-            <AnnouncementBar />
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />

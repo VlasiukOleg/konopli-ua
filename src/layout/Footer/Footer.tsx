@@ -1,27 +1,38 @@
 "use client";
 
-import { Button, Link } from "@heroui/react";
+import { Button } from "@heroui/react";
+import Image from "next/image";
+import Link from "next/link";
 
-import { GiVanillaFlower } from "react-icons/gi";
 import { FaTelegramPlane } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaPhoneVolume } from "react-icons/fa6";
+
+import { Pages } from "@/@types";
+
+import Logo from "@images/logo.png";
 
 const Footer: React.FC = () => {
   return (
     <footer className={`pb-5 pt-9 bg-sectionBg border-accent border-t-1`}>
       <div className="container">
-        <div className="text-accent flex items-center justify-center gap-1 mb-4">
-          <GiVanillaFlower className="size-6" />
-          <div className="font-semibold text-xl">KONOPLI-UA</div>
-        </div>
+        <Link
+          href={Pages.MAIN}
+          className="text-accent flex items-center justify-center gap-1 mb-4"
+        >
+          <div className="font-semibold font-montserrat text-lg flex">
+            KONOPLI
+            <Image src={Logo} alt="logo" className="size-6" />
+            UA
+          </div>
+        </Link>
         <div className="flex justify-between mb-4 font-semibold">
           <div>
             <p className="text-accent mb-2">Покупцям</p>
             <ul className="text-black text-xs flex flex-col gap-2">
               <li>Про нас</li>
               <li>Контакти</li>
-              <li>FAQs</li>
+              <li>Доставка та оплата</li>
             </ul>
           </div>
           <div>
@@ -72,7 +83,10 @@ const Footer: React.FC = () => {
           © 2025 Konopli-Ua. Всі права захищено.
         </div>
         <div className="text-center">
-          <Link as={Link} className="text-accent cursor-pointer text-xs">
+          <Link
+            href={Pages.MAIN}
+            className="text-accent cursor-pointer text-xs"
+          >
             Політика конфіденційності
           </Link>
         </div>

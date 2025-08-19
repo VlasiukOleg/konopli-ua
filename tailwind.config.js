@@ -28,7 +28,9 @@ module.exports = {
           xl: "2rem",
         },
       },
-
+      fontFamily: {
+        'montserrat': ['var(--font-montserrat)', 'serif'],
+      },
       colors: {
         bgWhite: "#fff",
         black: "#333333",

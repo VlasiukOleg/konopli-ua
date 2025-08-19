@@ -1,5 +1,5 @@
 import Hero from "@/sections/Hero";
-import Categories from "@/sections/Categories";
+import PopularCategories from "@/sections/PopularCategories";
 import Advantages from "@/sections/Advantages";
 import Reviews from "@/sections/Reviews";
 
@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Categories />
+      <PopularCategories />
       <Advantages />
       <Reviews />
     </>

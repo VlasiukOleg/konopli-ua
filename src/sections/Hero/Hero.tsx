@@ -11,7 +11,7 @@ const Hero: React.FC = ({}) => {
   return (
     <section className={`py-5 ${styles.bgHero}`}>
       <div className="container">
-        <p className="text-center text-black font-bold text-[36px] mb-5">
+        <p className="font-montserrat font-semibold text-center text-black text-[30px] mb-5">
           {heroSectionData.title}
         </p>
         <p className="text-grey text-center text-sm font-semibold mb-5">

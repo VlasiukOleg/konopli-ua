@@ -22,6 +22,10 @@ body {
   }
 }
 
+.swiper {
+  width: 80%;
+}
+
 .swiper-button-next::after {
   color: #658c4a;
 }
