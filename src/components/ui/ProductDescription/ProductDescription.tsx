@@ -23,6 +23,7 @@ import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 import { IoHomeOutline } from "react-icons/io5";
+import { PiLineVerticalBold } from "react-icons/pi";
 
 import { IProductCard, Pages, BREADCRUMBS_LABEL } from "@/@types";
 
@@ -241,7 +242,18 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
             </>
           )}
           <Accordion className="text-sm">
-            <AccordionItem key="1" aria-label="Accordion 1" title="Опис">
+            <AccordionItem
+              key="1"
+              aria-label="Accordion 1"
+              title="Опис"
+              indicator={({ isOpen }) =>
+                isOpen ? (
+                  <PiLineVerticalBold className="text-accent" />
+                ) : (
+                  <FaPlus className="text-accent" />
+                )
+              }
+            >
               {product?.description && (
                 <ul className="space-y-2">
                   {product.description.map((advantage, index) => (
@@ -250,7 +262,18 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                 </ul>
               )}
             </AccordionItem>
-            <AccordionItem key="2" aria-label="Accordion 2" title="Переваги">
+            <AccordionItem
+              key="2"
+              aria-label="Accordion 2"
+              title="Переваги"
+              indicator={({ isOpen }) =>
+                isOpen ? (
+                  <PiLineVerticalBold className="text-accent" />
+                ) : (
+                  <FaPlus className="text-accent" />
+                )
+              }
+            >
               {product?.advantages && (
                 <ul className="list-disc pl-5 space-y-1 marker:text-accent">
                   {product.advantages.map((advantage, index) => (
@@ -259,7 +282,18 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                 </ul>
               )}
             </AccordionItem>
-            <AccordionItem key="3" aria-label="Accordion 3" title="Догляд">
+            <AccordionItem
+              key="3"
+              aria-label="Accordion 3"
+              title="Догляд"
+              indicator={({ isOpen }) =>
+                isOpen ? (
+                  <PiLineVerticalBold className="text-accent" />
+                ) : (
+                  <FaPlus className="text-accent" />
+                )
+              }
+            >
               {product.care}
             </AccordionItem>
           </Accordion>
