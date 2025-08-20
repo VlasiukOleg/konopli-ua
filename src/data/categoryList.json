@@ -32,6 +32,16 @@
       "alt": "Фото ковдри на природі",
       "bgColor": "red",
       "href": "kovdri-i-pledi"
+    },
+    {
+      "id": 4,
+      "title": "Шкарпетки та устілки",
+      "width": 180,
+      "height": 180,
+      "src": "/images/categories/shkarpetki.webp",
+      "alt": "Фото ковдри на природі",
+      "bgColor": "red",
+      "href": "shkarpetki-i-ustilki"
     }
   ]
 }
