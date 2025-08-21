@@ -5,6 +5,7 @@ export enum Pages {
   POSTIL = "postil-konoplyana",
   KOVDRI = "kovdri-i-pledi",
   SHKARPETKI = "shkarpetki-i-ustilki",
+  VANNA = "dlya-vannoi",
   CHECKOUT = "checkout",
 }
 
@@ -15,6 +16,7 @@ export const BREADCRUMBS_LABEL = {
   [Pages.POSTIL]: "Постіль конопляна",
   [Pages.KOVDRI]: "Ковдри та пледи",
   [Pages.SHKARPETKI]: "Шкарпетки та устілки",
+  [Pages.VANNA]: "Для ванної",
 };
 
 export interface IProductCard {
@@ -22,6 +24,8 @@ export interface IProductCard {
   category: string[];
   title: string;
   subTitle: string;
+  price: string;
+  salePrice: string;
   cover: string;
   filling: string;
   image: string;

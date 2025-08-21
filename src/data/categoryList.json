@@ -42,6 +42,16 @@
       "alt": "Фото ковдри на природі",
       "bgColor": "red",
       "href": "shkarpetki-i-ustilki"
+    },
+    {
+      "id": 5,
+      "title": "Для ванної",
+      "width": 180,
+      "height": 180,
+      "src": "/images/dlya-vannoi/mochalka-rukavitsya.webp",
+      "alt": "Фото ковдри на природі",
+      "bgColor": "red",
+      "href": "dlya-vannoi"
     }
   ]
 }

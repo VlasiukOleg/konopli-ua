@@ -47,10 +47,10 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
       id: product.id,
       title: product.title,
       subTitle: product.subTitle,
-      price: Number(currentSize.price),
-      salePrice: Number(currentSize.salePrice),
+      price: Number(currentSize?.price) || Number(product.price),
+      salePrice: Number(currentSize?.salePrice) || Number(product.salePrice),
       image: product.image,
-      size: currentSize.label,
+      size: currentSize?.label || "",
     });
   };
 
@@ -91,7 +91,7 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
             </div>
 
             <div className="flex flex-col justify-between items-baseline mb-2">
-              <Select
+              { product.sizes.length > 0 && <Select
                 className="max-w-[200px] mb-2"
                 label="Виберіть розмір"
                 placeholder="Виберіть розмір"
@@ -118,14 +118,15 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
                 {product.sizes.map((size) => (
                   <SelectItem key={size.key}>{size.label}</SelectItem>
                 ))}
-              </Select>
+              </Select>}
+              
               <div className="flex justify-center items-center gap-2 mb-2">
                 <p className="text-base text-black font-bold">
-                  {currentSize.price} грн.
+                  {currentSize?.price || product.price} грн.
                 </p>
-                {currentSize.salePrice && (
+                {currentSize?.salePrice || product.salePrice && (
                   <p className="text-sm text-lightGrey line-through font-semibold">
-                    {currentSize.salePrice} грн.
+                    {currentSize?.salePrice || product.salePrice} грн.
                   </p>
                 )}
               </div>

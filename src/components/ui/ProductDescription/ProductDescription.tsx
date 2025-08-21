@@ -131,42 +131,45 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
           )}
 
           <div className="flex mb-4">
-            <Select
-              className="max-w-full"
-              label="Виберіть розмір"
-              placeholder="Виберіть розмір"
-              size="md"
-              defaultSelectedKeys={["1"]}
-              variant="bordered"
-              radius="none"
-              labelPlacement="outside"
-              selectedKeys={[selectedSize]}
-              onSelectionChange={(keys) =>
-                setSelectedSize(Array.from(keys)[0] as string)
-              }
-              listboxProps={{
-                classNames: {
-                  base: styles.listbox,
-                },
-                itemClasses: {
-                  title: "whitespace-normal",
-                },
-              }}
-            >
-              {product.sizes.map((size) => (
-                <SelectItem key={size.key}>{size.label}</SelectItem>
-              ))}
-            </Select>
+            {product.sizes.length > 0 && (
+              <Select
+                className="max-w-full"
+                label="Виберіть розмір"
+                placeholder="Виберіть розмір"
+                size="md"
+                defaultSelectedKeys={["1"]}
+                variant="bordered"
+                radius="none"
+                labelPlacement="outside"
+                selectedKeys={[selectedSize]}
+                onSelectionChange={(keys) =>
+                  setSelectedSize(Array.from(keys)[0] as string)
+                }
+                listboxProps={{
+                  classNames: {
+                    base: styles.listbox,
+                  },
+                  itemClasses: {
+                    title: "whitespace-normal",
+                  },
+                }}
+              >
+                {product.sizes.map((size) => (
+                  <SelectItem key={size.key}>{size.label}</SelectItem>
+                ))}
+              </Select>
+            )}
           </div>
           <div className="flex items-center gap-2 flex-wrap mb-4">
             <p className=" text-black  font-semibold text-xl">
-              {currentSize.price} грн.
+              {currentSize?.price || product.price} грн.
             </p>
-            {currentSize.salePrice && (
-              <p className="text-lg  text-lightGrey line-through font-semibold">
-                {currentSize.salePrice} грн.
-              </p>
-            )}
+            {currentSize?.salePrice ||
+              (product.salePrice && (
+                <p className="text-lg  text-lightGrey line-through font-semibold">
+                  {currentSize?.salePrice || product.price} грн.
+                </p>
+              ))}
           </div>
           <div className="flex items-center gap-4 mb-4">
             <div className="flex items-center">
@@ -231,7 +234,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
             <FiShoppingCart className="size-6" />
             Замовити
           </Button>
-          {currentSize.package && (
+          {currentSize?.package && (
             <>
               <p className="text-sm font-semibold mb-2">Комплектація</p>
               <ul className="space-y-2 text-sm">
