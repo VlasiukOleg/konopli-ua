@@ -48,10 +48,30 @@
       "title": "Для ванної",
       "width": 180,
       "height": 180,
-      "src": "/images/dlya-vannoi/mochalka-rukavitsya.webp",
+      "src": "/images/categories/dlya-vannoi.webp",
       "alt": "Фото ковдри на природі",
       "bgColor": "red",
       "href": "dlya-vannoi"
+    },
+    {
+      "id": 6,
+      "title": "Доглядальна косметика",
+      "width": 180,
+      "height": 180,
+      "src": "/images/categories/kosmetika.webp",
+      "alt": "Фото ковдри на природі",
+      "bgColor": "red",
+      "href": "kosmetika"
+    },
+    {
+      "id": 7,
+      "title": "Спідня білизна",
+      "width": 180,
+      "height": 180,
+      "src": "/images/categories/spidnya-bilyzna.webp",
+      "alt": "Фото ковдри на природі",
+      "bgColor": "red",
+      "href": "spidnya-bilyzna"
     }
   ]
 }

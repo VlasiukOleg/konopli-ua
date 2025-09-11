@@ -91,44 +91,51 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
             </div>
 
             <div className="flex flex-col justify-between items-baseline mb-2">
-              { product.sizes.length > 0 && <Select
-                className="max-w-[200px] mb-2"
-                label="Виберіть розмір"
-                placeholder="Виберіть розмір"
-                size="sm"
-                selectedKeys={[selectedSize]}
-                onSelectionChange={(keys) =>
-                  setSelectedSize(Array.from(keys)[0] as string)
-                }
-                variant="bordered"
-                radius="none"
-                labelPlacement="outside"
-                classNames={{
-                  value: "text-xs",
-                }}
-                listboxProps={{
-                  classNames: {
-                    base: styles.listbox,
-                  },
-                  itemClasses: {
-                    title: "whitespace-normal text-xs",
-                  },
-                }}
-              >
-                {product.sizes.map((size) => (
-                  <SelectItem key={size.key}>{size.label}</SelectItem>
-                ))}
-              </Select>}
-              
+              {product.sizes.length > 0 && (
+                <Select
+                  className="max-w-[200px] mb-2"
+                  label="Виберіть розмір"
+                  placeholder="Виберіть розмір"
+                  size="sm"
+                  selectedKeys={[selectedSize]}
+                  onSelectionChange={(keys) =>
+                    setSelectedSize(Array.from(keys)[0] as string)
+                  }
+                  variant="bordered"
+                  radius="none"
+                  labelPlacement="outside"
+                  classNames={{
+                    value: "text-xs",
+                  }}
+                  listboxProps={{
+                    classNames: {
+                      base: styles.listbox,
+                    },
+                    itemClasses: {
+                      title: "whitespace-normal text-xs",
+                    },
+                  }}
+                >
+                  {product.sizes.map((size) => (
+                    <SelectItem key={size.key}>{size.label}</SelectItem>
+                  ))}
+                </Select>
+              )}
+
               <div className="flex justify-center items-center gap-2 mb-2">
                 <p className="text-base text-black font-bold">
                   {currentSize?.price || product.price} грн.
                 </p>
-                {currentSize?.salePrice || product.salePrice && (
+                {(currentSize?.salePrice && (
                   <p className="text-sm text-lightGrey line-through font-semibold">
-                    {currentSize?.salePrice || product.salePrice} грн.
+                    {currentSize.salePrice} грн.
                   </p>
-                )}
+                )) ||
+                  (product.salePrice && (
+                    <p className="text-sm text-lightGrey line-through font-semibold">
+                      {product.salePrice} грн.
+                    </p>
+                  ))}
               </div>
             </div>
 

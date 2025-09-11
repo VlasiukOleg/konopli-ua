@@ -1889,7 +1889,7 @@
   },
   {
     "id": "21",
-    "category": ["shkarpetki-i-ustilki"],
+    "category": ["shkarpetki-i-ustilki", "spidnya-bilyzna"],
     "title": "Шкарпетки чоловічі конопляні 'Короткі'",
     "subTitle": "",
     "salePrice": "",
@@ -1931,7 +1931,7 @@
   },
   {
     "id": "22",
-    "category": ["shkarpetki-i-ustilki"],
+    "category": ["shkarpetki-i-ustilki", "spidnya-bilyzna"],
     "title": "Шкарпетки чоловічі конопляні 'Сірі'",
     "subTitle": "",
     "salePrice": "",
@@ -1991,7 +1991,7 @@
   },
   {
     "id": "23",
-    "category": ["shkarpetki-i-ustilki"],
+    "category": ["shkarpetki-i-ustilki", "spidnya-bilyzna"],
     "title": "Шкарпетки-слідки з конопель – дихаючі та міцні",
     "subTitle": "",
     "salePrice": "",
@@ -2048,7 +2048,7 @@
   },
   {
     "id": "24",
-    "category": ["shkarpetki-i-ustilki"],
+    "category": ["shkarpetki-i-ustilki", "spidnya-bilyzna"],
     "title": "Шкарпетки конопляні жіночі 'Сірі'",
     "subTitle": "",
     "salePrice": "",
@@ -2446,6 +2446,637 @@
     ],
     "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
     "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "33",
+    "category": ["dlya-vannoi"],
+    "title": "Піна для інтимної гігієни (200МЛ)",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "195",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Конопляна олія має заспокійливі, протизапальні і антибактеріальними властивостями.",
+      "Спосіб застосування: видавити невелику кількість піни на долоню нанести на інтимні ділянки тіла, змити водою. Не збовтувати!",
+      "Склад: Aqua, Cocamidopropyl Betaine, Coco Glucoside, Disodium Lauryl Sulfosuccinate, Glycerin, Glyceryl Oleate, Polysorbate 80, Lactic Acid, Xanthan Gum, Allantoin, Beta Carotene, Chlorophyllin, Cannabis Sativa (Hemp) Seed Oil, Hemp milk, Hydrolyzed Cannabis Sativa Protein, Cannabis Sativa Seed Extract, Hydrolyzed Milk Protein, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Juniperus Communis Essential Oil, Abies Alba Assential Oil."
+    ],
+    "image": "/images/dlya-vannoi/pina-dlya-intimnoi-gigieni-200ml.webp",
+    "images": ["/images/dlya-vannoi/pina-dlya-intimnoi-gigieni-200ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "34",
+    "category": ["dlya-vannoi"],
+    "title": "Конопляний бальзам 250 мл",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "155",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Бальзам створений на основі конопляної олії , в якійвелика кількість жирних кислот (олеїнова, стеаринова, лінолева, пальмітинова, ліноленова), вітамін Е, амінокислоти, дубильні речовини і ефіри. Такий комплекс відновлює мікропошкодження — посічені кінчики, зміцнює коріння, зупиняючи випадання і перешкоджаючи йому в подальшому.",
+      "Після використання бальзаму волосся набуває блиску, стає більш гладеньким і слухняним, легше розчісується і не електризується.",
+      "Спосіб застосування: Рівномірно розподілити бальзам на вологе волосся, потримати 1-2 хв. і змити теплою водою. Рекомендується використовувати після кожного миття волосся.",
+      "Склад: Aqua, Сetrimonium Chloride, Cetearyl Alcohol,  Cannabis Sativa (Hemp) Seed Oil, Myristyl Lactate, Betaine, Behentrimonium Chloride, Cetearyl Glucoside,  Sorbitan Olivate, Triticum Vulgare (Wheat) Protein,  Allantoin, Polyquaternium 10, Hemp milk, Hydrolyzed Cannabis Sativa Protein, Cannabis Sativa Seed Extract, Chlorophyllin, Beta Carotene, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Juniperus Communis Essential Oil, Abies Alba Assential Oil."
+    ],
+    "image": "/images/dlya-vannoi/konoplyaniy-balzam-250-ml.webp",
+    "images": ["/images/dlya-vannoi/konoplyaniy-balzam-250-ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "35",
+    "category": ["dlya-vannoi"],
+    "title": "Фіто мило (Антибактиріальне) 275мл",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "125",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Конопляна олія піклується про ваші руки та має антибактиріальний ефект завдяки вмісту ефірних олій. Засіб тонізує, зміцнює та захищає вашу шкіру, відновлює її еластичність. Завдяки конопляній олій мило відновлює барєрну функцію шкіри. Ефірна олія чайного дерева має антибактиріальну дію. Ефірна олія лаванди позбавляє шкіру від почервоніння та багатьох подразнень. Ефірна олія ялиці чудовий природний антисептик, який заспокоює, тонізує, покращує кровопостачання, має проти запальні властивості. Ефірна олія полину таврійської ідеально підходить для профілактики шкірних захворювань.",
+      "Спосіб застосування: Істотно підвищує пружність та еластичність шкіри. Нанести невелику кількість засобу на зволожену шкіру, спінити, помасажувати протягом кількох хвилин, ретельно змити.",
+      "Склад: Aqua, Cocamidopropyl Betaine, Disodium Laureth Sulfosuccinate, PEG-200 Hydrogenated Glyceryl Palmate, PEG-7 Glyceryl Cocoate , Polyquaternium-7, Citric Acid, Allantoin, Glycerin, Melaleuca alternifolia Essential Oil, Hemp (Cannabis sativa) Seed Oil, Artemisia Taurica Willd Essential Oil, Lavender (Lavandula angustifolia) Essential Oil, Juniperus Communis Essential Oil, Abies Alba Assential Oil, Sorbitan Caprylate, Propanediol, Benzoic Acid."
+    ],
+    "image": "/images/dlya-vannoi/fito-milo-antibaktirialne-275ml.webp",
+    "images": ["/images/dlya-vannoi/fito-milo-antibaktirialne-275ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "36",
+    "category": ["dlya-vannoi"],
+    "title": "Гель для вмивання діамантовий «Конопляна Олія» 200мл",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "315",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Бережний та делікатний гель для вмивання  з легким шимером  – це справжня насолода при застосуванні та догляду  для всіх типів шкіри. Він очищує шкірний покрив ретельно і дбайливо, роблячи його гладеньким, свіжим та пружним. Завдяки оптимально підібраним інгредієнтам, гель не подразнює шкіру, забезпечує еластичність і м’якість шкіри та її тривале зволоження. Не містить  SLES, SLS.",
+      "Спосіб застосування: Нанести гель на долоню, злегка розбавити водою та кінчиками пальців промасажувати шкіру обличчя. Змити теплою водою. Підходить для щоденного використання.",
+      "Склад: Aqua, Sodium PEG-7 Olive Oil Carboxylate, Cocamidopropyl Betaine, Acrylates/Palmeth-25 Acrylate Copolymer, Glycerin, Sodium Hyaluronate, Hydrolyzed Cannabis Sativa Protein, Betaine, Milk Cannabis Sativa, Hemp (Cannabis Sativa) Seed Oil, Palmitoyl Tripeptide-38, Allantoin, ТЕА, Calcium Titanium Borosilicate, Iron Oxides, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Palmarosa Essential Oil, Geranium Essential Oil, Benzaldehyde, Coumarin, Geraniol, Linalool, Citronellol, Hexylcinnamaldehyd, Limonene, Eugenol."
+    ],
+    "image": "/images/dlya-vannoi/gel-dlya-vmivannya-diamantoviy-konoplyana-oliya-200m.webp",
+    "images": [
+      "/images/dlya-vannoi/gel-dlya-vmivannya-diamantoviy-konoplyana-oliya-200m.webp"
+    ],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "37",
+    "category": ["kosmetika"],
+    "title": "Крем живильний для ніг (100мл)",
+    "subTitle": "",
+    "salePrice": "165",
+    "price": "200",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Насичений крем з олією творить справжні дива - пом'якшує, відновлює і зволожує суху, потріскану шкіру ступень, а також зміцнює нігті.Олія кокоса має чудові живильні, пом’якшувальні, захисні та зволожуючі властивості.Олія ялиці – чудовий антисептик, який заспокоює, тонізує, покращує кровопостачання, має сильні протизапальні властивості. Істотно підвищує пружність та еластичність шкіри.",
+      "Спосіб застосування: Легкими масажуючими рухами нанесiть крем на чисту суху шкіру від кінчиків пальців до ікор. Рекомендуємо використовувати щоденно. ",
+      "Склад: Aqua, Olea Europaea (Olive) Fruit Oil, Coconut (Cocos Nucifera) Oil, Сetearyl Glucoside, Cetearyl Alcohol, Glycerin, Quercus Robur Extract,  Сhaulmoogra Оil Тree (Hydnocarpus Laurifolia) Seed Oil, Limnanthes Alba (Meadowfoam) Seed Oil, Cannabis Sativa Concentrate, Carbomer, TEA, Аllantoin, Timolol, Beta-cyclodextrine, Farnesol, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Juniperus Communis Essential Oil, Abies Alba Assential Oil, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid"
+    ],
+    "image": "/images/kosmetika/krem-zhivilniy-dlya-nig-100ml.webp",
+    "images": ["/images/kosmetika/krem-zhivilniy-dlya-nig-100ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "371",
+    "category": ["kosmetika"],
+    "title": "Крем живильний для ніг (150мл)",
+    "subTitle": "",
+    "salePrice": "210",
+    "price": "230",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Насичений крем з олією творить справжні дива - пом'якшує, відновлює і зволожує суху, потріскану шкіру ступень, а також зміцнює нігті.Олія кокоса має чудові живильні, пом’якшувальні, захисні та зволожуючі властивості.Олія ялиці – чудовий антисептик, який заспокоює, тонізує, покращує кровопостачання, має сильні протизапальні властивості. Істотно підвищує пружність та еластичність шкіри.",
+      "Спосіб застосування: Легкими масажуючими рухами нанесiть крем на чисту суху шкіру від кінчиків пальців до ікор. Рекомендуємо використовувати щоденно. ",
+      "Склад: Aqua, Olea Europaea (Olive) Fruit Oil, Coconut (Cocos Nucifera) Oil, Сetearyl Glucoside, Cetearyl Alcohol, Glycerin, Quercus Robur Extract,  Сhaulmoogra Оil Тree (Hydnocarpus Laurifolia) Seed Oil, Limnanthes Alba (Meadowfoam) Seed Oil, Cannabis Sativa Concentrate, Carbomer, TEA, Аllantoin, Timolol, Beta-cyclodextrine, Farnesol, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Juniperus Communis Essential Oil, Abies Alba Assential Oil, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid"
+    ],
+    "image": "/images/kosmetika/krem-zhivilniy-dlya-nig-100ml.webp",
+    "images": ["/images/kosmetika/krem-zhivilniy-dlya-nig-100ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "38",
+    "category": ["kosmetika"],
+    "title": "Крем для обличчя нічний (50мл)",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "310",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Крем для сухої і збезводненої шкіри обличчя. Миттєво зволожує і пом’якшує шкіру. Чудовий склад крему забезпечує насичення шкіри вітамінами А, В1, В2, В6, Е. Гідролізат протеїнів конопель має високі проникаючі здібності і концентрацію незамінних жирних кислот,відновлює природний баланс шкіри, повертаючи їй гладкість і пружність. Олія ши глибоко зволожує і живить шкіру.Олія андиробы має загоювальні і пом’якшувальні властивості, бореться з акне. Протеїни молочної сироватки борються зі зморшками, проблемами сухості шкіри й нерівним кольором обличчя. Сприяють глибокому зволоженню і відновленню шкіри, відбілюють ластовиння та пігментні плями.",
+      "Спосіб застосування: Наносьте щодня ввечері на попередньо очищену шкіру обличчя і шиї легкими рухами кінчиків пальців по масажних лініях. Легкі масажні рухи мають бути спрямовані від низу до верху і від центру в сторони. Тобто від початку брів до лінії зростання волосся, від кінчика носа до області між очима, від крил носа до вилиць і від підборіддя до щік. При нанесенні крему на лоб, слід здійснювати акуратні горизонтальні погладжування від центру лоба до скроневої області. У зимовий період крем можна наносити вранці за 1 год. до виходу на вулицю. ",
+      "Склад: Aqua, Cannabis Sativa (Hemp) Seed Oil, Olea Europaea (Olive) Fruit Oil, Сetearyl Glucoside, Cetearyl Alcohol, Hydrolyzed Cannabis Sativa Protein, Butyrospermum Parkii Oil, Hydrolyzed Whey Protein, Сarapa Guaianensis Seed oil,Сhaulmoogra Оil Тree (Hydnocarpus Laurifolia) Seed Oil, Glycerin, Carbomer, TEA, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Palmarosa Essential Oil, Geranium Essential Oil .Aqua, Cannabis Sativa (Hemp) Seed Oil, Olea Europaea (Olive) Fruit Oil, Сetearyl Glucoside, Cetearyl Alcohol, Hydrolyzed Cannabis Sativa Protein, Butyrospermum Parkii Oil, Hydrolyzed Whey Protein, Сarapa Guaianensis Seed oil,Сhaulmoogra Оil Тree (Hydnocarpus Laurifolia) Seed Oil, Glycerin, Carbomer, TEA, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Palmarosa Essential Oil, Geranium Essential Oil ."
+    ],
+    "image": "/images/kosmetika/krem-dlya-oblichchya-nichniy-50ml.webp",
+    "images": ["/images/kosmetika/krem-dlya-oblichchya-nichniy-50ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "39",
+    "category": ["kosmetika"],
+    "title": "Крем для обличчя денний (50мл)",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "310",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Легкий натуральний крем відмінно пом'якшує шкіру і захищає її від негативних зовнішніх чинників, що викликають старіння. Не забиває пори. Завдяки концентрації незамінних жирних кислот гідролізат протеїнів конопель поновлює природний баланс шкіри, повертаючи їй тонус і гладкість. Протеїни молочної сироватки борються зі зморшками, сприяють глибокому зволоженню і відновленню шкіри.Олія андиробы має протизапальні властивості.Олія чаульмугры використовується для вирівнювання тону при нерівномірній пігментації шкіри.Алантоїн – має сильну загоювальну дію, прискорює регенерацію тканин, надає тривалий пом'якшувальний ефект, стимулює відлущування відмерлих клітин шкіри.",
+      "Спосіб застосування: Наносьте щодня вранці на попередньо очищену шкіру обличчя і шиї легкими рухами кінчиків пальців по масажних лініях. Легкі масажні рухи мають бути спрямовані від низу до верху і від центру в сторони. Тобто від початку брів до лінії зростання волосся, від кінчика носа до області між очима, від крил носа до вилиць і від підборіддя до щік. При нанесенні крему на лоб, слід здійснювати акуратні горизонтальні погладжування від центру лоба до скроневої області. ",
+      "Склад: Aqual, Olea Europaea (Olive) Fruit Oil, Hydrolyzed Cannabis Sativa Protein, Сetearyl Glucoside, Cetearyl Alcohol, Сarapa Guaianensis Seed Oil, Сhaulmoogra Оil Тree (Hydnocarpus Laurifolia) Seed Oil, Hydrolyzed Whey Protein, Tilia Cordata Mill CO2 Extract, Hydroxypropy l Cyclodextrin, Palmitoyl Tripeptide-38, Panthenol, Аllantoin, Sodium Hyaluronate, Carbomer, TEA, Beta Glucan, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Palmarosa Essential Oil, Geranium Essential Oil"
+    ],
+    "image": "/images/kosmetika/krem-dlya-oblichchya-denniy-50ml.webp",
+    "images": ["/images/kosmetika/krem-dlya-oblichchya-denniy-50ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "40",
+    "category": ["kosmetika"],
+    "title": "Крем для шкіри навколо очей (30мл)",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "295",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Засіб з легкою текстурою, який живить зону навколо очей, активізує кровообіг, нормалізує структуру та проникність судинної стінки, внаслідок чого зменшується набряклість і синява під очима.",
+      "Щоранку і/або щовечора легкими рухами кінчиків пальців нанести крем на попередньо очищену шкіру навколо очей.",
+      "Склад: Aqua, Olea Europaea (Olive) Fruit Oil, Сetearyl Glucoside, Cetearyl Alcohol, Hydrolyzed  Whey Protein, Сarapa Guaianensis Seed Oil, Сhaulmoogra Оil Тree (Hydnocarpus Laurifolia) Seed Oil, Hydroxypropyl Cyclodextrin, Palmitoyl Tripeptide-38, Sodium Hyaluronate, GlucosylHesperidin, Rutin, Аllantoin, PVP, Carbomer, TEA, Beta Glucan, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula AangustifoliaEssential Oil, Palmarosa Essential Oil, Geranium Essential Oil."
+    ],
+    "image": "/images/kosmetika/krem-dlya-shkiri-navkolo-ochey-30ml.webp",
+    "images": ["/images/kosmetika/krem-dlya-shkiri-navkolo-ochey-30ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "41",
+    "category": ["kosmetika"],
+    "title": "Крем-маска для обличчя (50мл)",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "310",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Чудові інгредієнти забезпечують живлення і оновлення шкіри, завдяки активній формулі, маска сприяє вдосконаленню зовнішнього вигляду шкіри. Гідролізат протеїнів конопель відновлює природний баланс шкіри, повертаючи їй гладкість і пружність. Маска надає антибактеріальний ефект, усуває небажаний блиск і вирівнює тон шкіри.",
+      "Спосіб використання: Маску нанесiть на заздалегідь очищену шкіру обличчя, виключаючи область навколо очей на 10-15 хвилин. Змивати маску рекомендується водою кімнатної температури, вона звузить пори, за допомогою спонжа для умивання, він м’яко прибере суміш, не розтягуючи і не травмуючи шкіру. Застосовувати 1-2 рази в тиждень (15-20 процедур). Через 1,5-2 місяці можна повторити курс.",
+      "Склад: Aqua, Cannabis Sativa (Hemp) Seed Oil, Olea Europaea (Olive) Fruit Oil, Сetearyl Glucoside, Cetearyl Alcohol, Hydrolyzed Cannabis Sativa Protein, Сarapa Guaianensis Seed Oil, Сhaulmoogra Оil Тree (Hydnocarpus Laurifolia) Seed Oil, Hydrolyzed Whey Protein, Cannabis Sativa Concentrate, Carbomer, TEA, Beta-Cyclodextrine, Аllantoin, Panthenol, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid , Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Palmarosa Essential Oil, Geranium Essential Oil."
+    ],
+    "image": "/images/kosmetika/krem-maska-dlya-oblichchya-50ml.webp",
+    "images": ["/images/kosmetika/krem-maska-dlya-oblichchya-50ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "42",
+    "category": ["kosmetika"],
+    "title": "Тонер для обличчя «КОНОПЛЯНА ОЛІЯ» 200мл",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "205",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Для всіх типів шкіри. Гідролізат протеїнів конопель насичує клітини корисними елементами, нормалізує баланс вологи у шкірі, оновлює клітини епідермісу та захищає від впливу вільних радикалів, повертає шкірі молодість та пружність.",
+      "Спосіб використання: Змочіть ватний диск тонером. Протріть попередньо очищену шкіру обличчя, шиї та зони декольте.",
+      "Склад: Aqua, Sodium Hyaluronate, Hydrolyzed Cannabis Sativa Protein, Betaine, Pentylene Glycol, Milk Cannabis Sativa, Konjac Мannane, Palmitoyl Tripeptide-38, Allantoin, PEG-40 Hydrogenated Castor Oil, Citric Acid, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Palmarosa Essential Oil, Geranium Essential Oil, Benzaldehyde, Coumarin, Geraniol, Linalool, Citronellol, Hexylcinnamaldehyd, Limonene, Eugenol."
+    ],
+    "image": "/images/kosmetika/toner-dlya-oblichchya-konoplyana-oliya-200ml.webp",
+    "images": [
+      "/images/kosmetika/toner-dlya-oblichchya-konoplyana-oliya-200ml.webp"
+    ],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "43",
+    "category": ["kosmetika"],
+    "title": "Молочко для обличчя «Конопляна Олія» 200МЛ",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "195",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Завдяки ніжної консистенції делікатно знімає всі сліди макіяжа.Гідролізат протеїнів  відновлює природний баланс вологи в шкірі, живлять шкіру вітамінами, органічними кислотами, мінеральними речовинами, пом'якшуючи і тонізуючи її. Ідеально готує шкіру до подальших косметичних процедур.",
+      "Спосіб використання: Основний щоденний догляд в якості першого етапу (I етап: очищення). Використовуйте 2 рази на день - вранці та ввечері. Невелику кількість молочка нанесіть на ватний диск або серветку й акуратно зніміть макіяж, потім змийте теплою водою.",
+      "Склад: Aqua, Potassium C16-18 Alkyl Phosphate, Сetearyl Alcohol,Olea Europaea (Olive) Fruit Oil, Сarapa Guaianensis Seed Oil, Сhaulmoogra Оil Тree (Hydnocarpus Laurifolia) Seed Oil, Аllantoin, Carbomer, TEA, Panthenol, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Palmarosa Essential Oil, Geranium Essential Oil."
+    ],
+    "image": "/images/kosmetika/molochko-dlya-oblichchya.webp",
+    "images": ["/images/kosmetika/molochko-dlya-oblichchya.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "44",
+    "category": ["kosmetika"],
+    "title": "Міцелярна вода «Конопляна олія» 200мл",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "195",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Міцелярна вода для всіх типів шкіри Заспокійлива міцелярна вода з олією насіння конопель допомагає швидко та ретельно видалити забруднення, залишки декоративної косметики.Запобігає сухості, стягнутості та лущенню вашої шкіри.Протеїни та молочко насіння конопель вирівнюють колір обличчя, освіжають шкіру та борються з тьмяністю.",
+      "Спосіб використання: Змочіть ватний диск міцелярною водою, обережно очистіть шкіру обличчя, змийте водою. Застосовувати зранку та ввечорі. Нанести наступні продукти догляду серії «КОНОПЛЯНА ОЛІЯ».",
+      "Склад: Aqua, Sodium PEG-7 Olive Oil Carboxylate, Glycerin, Sodium Hyaluronate, Hydrolyzed Cannabis Sativa Protein, Milk Cannabis Sativa, Polysorbate-80, Hemp (Cannabis Sativa) Seed Oil, Palmitoyl Tripeptide-38, Allantoin, Citric Acid, Benzyl Alcohol, Benzoic Acid, Dehydroacetic Acid, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Palmarosa Essential Oil, Geranium Essential Oil, Benzaldehyde, Coumarin, Geraniol, Linalool, Citronellol, Hexylcinnamaldehyd, Limonene, Eugenol."
+    ],
+    "image": "/images/kosmetika/mitselyarna-voda-konoplyana-oliya-200grm.webp",
+    "images": [
+      "/images/kosmetika/mitselyarna-voda-konoplyana-oliya-200grm.webp"
+    ],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "45",
+    "category": ["kosmetika"],
+    "title": "Баттер для рук (150мл)",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "199",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Швидка допомога для дуже сухої шкіри рук. Завдяки насиченому складу і густий вершкової структурі масло забезпечує інтенсивне зволоження шкіри протягом дня. Висока проникаюча здатність масла насіння конопель в поєднанні з поживними маслами солодкого мигдалю забезпечує глибоке живлення і відновлення шкіри. Д-пантенол надає регенеруючу, зволожуючу, захисну дія, стимулює утворення нових клітин.Алантоїн – ідеальний засіб для загоєння пошкоджених тканин. Він також пом’якшує і зволожує шкіру."
+    ],
+    "image": "/images/kosmetika/batter-dlya-ruk-150ml.webp",
+    "images": ["/images/kosmetika/batter-dlya-ruk-150ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "46",
+    "category": ["kosmetika"],
+    "title": "Крем захисний для рук (150мл)",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "195",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Насичений крем з особливими натуральними інгредієнтами живить і захищає шкіру рук.Завдяки високій проникаючій здатності і концентрації незамінних жирних кислот, олiя  відновлює природний баланс шкіри, повертаючи їй гладкість і пружність. Д-пантенол надає регенеруючу, зволожуючу, захисну дія, стимулює утворення нових клітин.. Крем пом'якшує і заспокоює навіть дуже суху і обвітрену шкіру. Щоденне використання крему дозволить утримати таку необхідну для шкіри вологу, і зберегти природну красу і ніжність рук",
+      "Спосіб використання: Наносьте крем на руки легкими масажними рухами впродовж дня в міру необхідності.",
+      "Склад: Aqua, Olea Europaea (Olive) Fruit Oil, Coconut (Cocosnucifera) Oil, Сetearyl Glucoside, Cetearyl Alcohol, Glycerin, Hydrolyzed Cannabis Sativa Protein, Glycerin Monostearate, Limnanthes Alba (Meadowfoam) Seed Oil,  Beeswax, Hypericum Perforatum Extract, Beta-cyclodextrine, Panthenol, Аllantoin, Artemisia Taurica Willd Essential Oil, Lavandula Aangustifolia Essential Oil, Juniperus Communis Essential Oil, Abies Alba Assential Oil, Benzyl Alcohol, Benzoic Acid, Dehydroacetic"
+    ],
+    "image": "/images/kosmetika/krem-zahisniy-dlya-ruk-150ml.webp",
+    "images": ["/images/kosmetika/krem-zahisniy-dlya-ruk-150ml.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [],
+    "defaultSize": "1"
+  },
+  {
+    "id": "47",
+    "category": ["spidnya-bilyzna"],
+    "title": "Конопляні чоловічі труси",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Переваги тканини з конопель: Вона є найміцнішою з натуральних тканин, обійшовши за показниками бавовну та льон. Матеріал дихає, має гігроскопічні властивості, що допомагає відводити вологу від тіла, що робить перебування в такому одязі комфортним навіть у спеку. Вона має протимікробні та антибактеріальні властивості, запобігає появі запаху, вбиває патогенну мікрофлору, бактерії та грибки на тілі. Матеріал має вбудований захист від шкідливого впливу ультрафіолетових променів, в ньому можна спокійно перебувати на сонці. Коноплі добре поєднується з іншими тканинами різної щільності, вставками, на ній зазвичай роблять вишивку."
+    ],
+    "image": "/images/trusi/konoplyani-cholovichi-trusi.webp",
+    "images": ["/images/trusi/konoplyani-cholovichi-trusi.webp"],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [
+      {
+        "key": "1",
+        "label": "XXS(42)",
+        "price": "350",
+        "salePrice": "385",
+        "package": null
+      },
+      {
+        "key": "2",
+        "label": "XS(44)",
+        "price": "350",
+        "salePrice": "385",
+        "package": null
+      },
+      {
+        "key": "3",
+        "label": "S(46)",
+        "price": "350",
+        "salePrice": "385",
+        "package": null
+      },
+      {
+        "key": "4",
+        "label": "M(48)",
+        "price": "350",
+        "salePrice": "385",
+        "package": null
+      },
+      {
+        "key": "5",
+        "label": "L(50)",
+        "price": "350",
+        "salePrice": "385",
+        "package": null
+      },
+      {
+        "key": "6",
+        "label": "XL(52)",
+        "price": "350",
+        "salePrice": "385",
+        "package": null
+      },
+      {
+        "key": "7",
+        "label": "XXL(54)",
+        "price": "350",
+        "salePrice": "385",
+        "package": null
+      }
+    ],
+    "defaultSize": "1"
+  },
+  {
+    "id": "48",
+    "category": ["spidnya-bilyzna"],
+    "title": "Конопляні чоловічі труси (Набір з двох одиниць)",
+    "subTitle": "",
+    "salePrice": "",
+    "price": "",
+    "cover": "",
+    "filling": "",
+    "description": [
+      "Переваги тканини з конопель: Вона є найміцнішою з натуральних тканин, обійшовши за показниками бавовну та льон. Матеріал дихає, має гігроскопічні властивості, що допомагає відводити вологу від тіла, що робить перебування в такому одязі комфортним навіть у спеку. Вона має протимікробні та антибактеріальні властивості, запобігає появі запаху, вбиває патогенну мікрофлору, бактерії та грибки на тілі. Матеріал має вбудований захист від шкідливого впливу ультрафіолетових променів, в ньому можна спокійно перебувати на сонці. Коноплі добре поєднується з іншими тканинами різної щільності, вставками, на ній зазвичай роблять вишивку."
+    ],
+    "image": "/images/trusi/konoplyani-cholovichi-trusi.webp",
+    "images": [
+      "/images/trusi/konoplyani-cholovichi-trusi.webp",
+      "/images/trusi/konoplyani-cholovichi-trusi-1.webp"
+    ],
+    "tags": ["Супер ціна"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "sizes": [
+      {
+        "key": "1",
+        "label": "XXS(42)",
+        "price": "650",
+        "salePrice": "770",
+        "package": null
+      },
+      {
+        "key": "2",
+        "label": "XS(44)",
+        "price": "650",
+        "salePrice": "770",
+        "package": null
+      },
+      {
+        "key": "3",
+        "label": "S(46)",
+        "price": "650",
+        "salePrice": "770",
+        "package": null
+      },
+      {
+        "key": "4",
+        "label": "M(48)",
+        "price": "650",
+        "salePrice": "770",
+        "package": null
+      },
+      {
+        "key": "5",
+        "label": "L(50)",
+        "price": "650",
+        "salePrice": "770",
+        "package": null
+      },
+      {
+        "key": "6",
+        "label": "XL(52)",
+        "price": "650",
+        "salePrice": "770",
+        "package": null
+      },
+      {
+        "key": "7",
+        "label": "XXL(54)",
+        "price": "650",
+        "salePrice": "770",
+        "package": null
+      }
+    ],
     "defaultSize": "1"
   }
 ]
