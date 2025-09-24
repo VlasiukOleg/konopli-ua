@@ -12,52 +12,63 @@ import { Pages } from "@/@types";
 
 import Logo from "@images/logo.png";
 
+import categoriesData from "@/data/categoryList.json";
+
 const Footer: React.FC = () => {
   return (
-    <footer className={`pb-5 pt-9 bg-sectionBg border-accent border-t-1`}>
+    <footer className="pb-5 pt-9 bg-sectionBg border-accent border-t-1 xl:bg-bgWhite">
       <div className="container">
         <Link
           href={Pages.MAIN}
           className="text-accent flex items-center justify-center gap-1 mb-4"
         >
-          <div className="font-semibold font-montserrat text-lg flex">
+          <div className="font-semibold font-montserrat text-lg flex md:text-2xl xl:text-3xl">
             KONOPLI
-            <Image src={Logo} alt="logo" className="size-6" />
+            <Image
+              src={Logo}
+              alt="logo"
+              className="size-6 md:size-7 xl:size-8"
+            />
             UA
           </div>
         </Link>
-        <div className="flex justify-between mb-4 font-semibold">
+        <div className="flex justify-between mb-4 md:mb-6 xl:justify-around">
           <div>
-            <p className="text-accent mb-2">Покупцям</p>
-            <ul className="text-black text-xs flex flex-col gap-2">
+            <p className="text-accent font-bold mb-2 md:text-lg">Покупцям</p>
+            <ul className="text-black text-xs font-semibold flex flex-col gap-2 md:text-sm">
               <li>Про нас</li>
               <li>Контакти</li>
               <li>Доставка та оплата</li>
             </ul>
           </div>
           <div>
-            <p className="text-accent mb-2">Каталог</p>
-            <ul className="text-black text-xs flex flex-col gap-2">
-              <li>Постіль конопляна</li>
-              <li>Подушки</li>
-              <li>Ковдри та пледи</li>
+            <p className="text-accent font-bold mb-2 md:text-lg">Каталог</p>
+            <ul className="text-black font-semibold text-xs flex flex-col gap-2 md:text-sm md:grid md:grid-cols-2">
+              {categoriesData.list.map((category) => (
+                <Link
+                  href={`${Pages.CATALOG}/${category.href}`}
+                  key={category.id}
+                >
+                  {category.title}
+                </Link>
+              ))}
             </ul>
           </div>
         </div>
-        <div className="text-center text-black mb-4 text-xs">
+        <div className="text-center text-black mb-4 text-xs md:text-sm">
           Графік роботи інтернет магазину 10.00 до 19.00 Субота та неділя
           вихідні дні.
         </div>
-        <div className="h-[1px] bg-black mb-4"></div>
+        <div className="h-[1px] bg-black mb-4 md:h-[1px]"></div>
         <div className="flex items-center justify-center gap-2 mb-4">
           <Button
             isIconOnly
             aria-label="Like"
             variant="solid"
             radius="full"
-            className="bg-black  transition-colors duration-200"
+            className="bg-black md:size-12"
           >
-            <FaTelegramPlane className="size-4 text-white" />
+            <FaTelegramPlane className="size-4 text-white md:size-6" />
           </Button>
 
           <Button
@@ -65,27 +76,27 @@ const Footer: React.FC = () => {
             aria-label="Like"
             variant="solid"
             radius="full"
-            className="bg-black"
+            className="bg-black md:size-12"
           >
-            <RiInstagramFill className="size-4 text-white" />
+            <RiInstagramFill className="size-4 text-white md:size-6" />
           </Button>
           <Button
             isIconOnly
             aria-label="Like"
             variant="solid"
             radius="full"
-            className="bg-black"
+            className="bg-black md:size-12"
           >
-            <FaPhoneVolume className="size-4 text-white" />
+            <FaPhoneVolume className="size-4 text-white md:size-6" />
           </Button>
         </div>
-        <div className="text-center text-xs mb-1">
+        <div className="text-center text-xs mb-1 md:text-sm">
           © 2025 Konopli-Ua. Всі права захищено.
         </div>
         <div className="text-center">
           <Link
             href={Pages.MAIN}
-            className="text-accent cursor-pointer text-xs"
+            className="text-accent cursor-pointer text-xs md:text-sm"
           >
             Політика конфіденційності
           </Link>

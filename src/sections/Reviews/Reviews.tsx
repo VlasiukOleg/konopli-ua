@@ -13,10 +13,10 @@ import "swiper/css/effect-cube";
 
 const Reviews: React.FC = () => {
   return (
-    <section className="py-5">
+    <section className="section xl:w-[50%] xl:bg-sectionBg">
       <div className="container">
-        <h2 className="text-xl text-grey mb-6">{reviewsData.title}</h2>
-        <div className="max-w-4xl mx-auto">
+        <h2 className="section-title mb-6">{reviewsData.title}</h2>
+        <div className="mx-auto">
           <Swiper
             grabCursor={true}
             effect={"cube"}
@@ -33,6 +33,7 @@ const Reviews: React.FC = () => {
             pagination={{ clickable: true }}
             autoplay={{ delay: 5000 }}
             loop={true}
+            className="w-[80%] md:w-[50%] xl:w-[60%] mx-auto"
           >
             {reviewsData.images.map((review) => (
               <SwiperSlide key={review.id}>

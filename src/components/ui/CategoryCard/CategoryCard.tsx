@@ -36,7 +36,7 @@ const CategoryCard: React.FC<IHeroProps> = ({ category }) => {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 p-3 bg-black bg-opacity-50 backdrop-blur-sm">
-          <div className="font-semibold text-white text-sm md:text-base text-center">
+          <div className="font-semibold text-white text-xs md:text-sm text-center xl:text-base">
             {category.title}
           </div>
         </div>

@@ -8,8 +8,10 @@ export default function HomePage() {
     <>
       <Hero />
       <PopularCategories />
-      <Advantages />
-      <Reviews />
+      <div className="xl:flex">
+        <Advantages />
+        <Reviews />
+      </div>
     </>
   );
 }

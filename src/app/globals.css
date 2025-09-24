@@ -8,6 +8,24 @@ body {
   line-height: 1.4;
 }
 
+@layer components {
+  .section {
+    @apply py-5 md:py-10;
+  }
+
+  .title {
+    @apply text-[40px] font-bold leading-[1] text-white md:text-[64px] xl:text-[98px];
+  }
+
+  .section-title {
+    @apply text-xl text-grey font-bold md:text-2xl xl:text-[28px];
+  }
+
+  .scroll-bar-custom {
+    @apply overflow-y-auto scrollbar-thin scrollbar-track-lightBlue scrollbar-thumb-accentDefaultOrange;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -20,10 +38,6 @@ body {
     -webkit-appearance: none;
     margin: 0;
   }
-}
-
-.swiper {
-  width: 80%;
 }
 
 .swiper-button-next::after {

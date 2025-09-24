@@ -22,9 +22,9 @@ const Advantages: React.FC = () => {
   };
 
   return (
-    <section className="py-5 bg-sectionBg">
+    <section className="section bg-sectionBg border-accent border-r">
       <div className="container">
-        <h2 className="text-xl text-grey mb-4">{advantagesData.title}</h2>
+        <h2 className="section-title">{advantagesData.title}</h2>
         <Accordion variant="light" defaultExpandedKeys={["1"]}>
           {advantagesData.advantagesList.map((advantage) => {
             const IconComponent = iconComponents[advantage.icon];
@@ -36,7 +36,7 @@ const Advantages: React.FC = () => {
                 title={advantage.title}
                 startContent={
                   IconComponent && (
-                    <IconComponent className="size-6 text-accent mr-2" />
+                    <IconComponent className="size-6  text-accent mr-2 md:size-7" />
                   )
                 }
                 indicator={({ isOpen }) =>
@@ -46,10 +46,11 @@ const Advantages: React.FC = () => {
                     <FaPlus className="text-accent" />
                   )
                 }
+                classNames={{title: "md:text-lg"}}
               >
                 <div className="">
                   {advantage.items.map((item, index) => (
-                    <p key={index} className="text-sm text-grey mb-3 last:mb-0">
+                    <p key={index} className="text-sm text-grey mb-3 last:mb-0 md:text-base">
                       <span className="font-semibold block">
                         {item.itemTitle}
                       </span>

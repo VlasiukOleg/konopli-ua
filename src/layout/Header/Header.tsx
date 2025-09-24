@@ -21,8 +21,7 @@ import { FiShoppingCart } from "react-icons/fi";
 
 import { Pages } from "@/@types";
 
-
-import Logo from '@images/logo.png';
+import Logo from "@images/logo.png";
 import Image from "next/image";
 
 const Header: React.FC = () => {
@@ -48,20 +47,33 @@ const Header: React.FC = () => {
           onPress={handleOpen}
           radius="none"
         >
-          <SlMenu className="w-6 h-5" />
+          <SlMenu className="w-6 h-5 md:w-8 md:h-7" />
         </Button>
 
         <Link
           href={Pages.MAIN}
           className="text-accent flex items-center justify-center gap-1"
         >
-          
-          <div className="font-semibold font-montserrat text-lg flex">KONOPLI<Image src={Logo} alt="logo" className="size-6"/>UA</div>
+          <div className="font-semibold font-montserrat text-lg flex md:text-2xl xl:text-3xl">
+            KONOPLI
+            <Image
+              src={Logo}
+              alt="logo"
+              className="size-6 md:size-7 xl:size-8"
+            />
+            UA
+          </div>
         </Link>
         <div className="flex items-center justify-center gap-3">
-          <Button isIconOnly aria-label="Like" variant="light" radius="none">
+          <Button
+            isIconOnly
+            aria-label="Like"
+            variant="light"
+            radius="none"
+            className="size-10 md:size-12"
+          >
             <Badge className="bg-accent text-white" content="2">
-              <FaRegHeart className="size-6 text-grey" />
+              <FaRegHeart className="size-6 text-grey md:size-8" />
             </Badge>
           </Button>
 
@@ -71,13 +83,14 @@ const Header: React.FC = () => {
             variant="light"
             onPress={onCartOpen}
             radius="none"
+            className="size-10 md:size-12"
           >
             <Badge
               className="bg-accent text-white"
               content={products.length}
               isInvisible={products.length === 0}
             >
-              <FiShoppingCart className="size-6 text-grey" />
+              <FiShoppingCart className="size-6 text-grey md:size-8" />
             </Badge>
           </Button>
         </div>
