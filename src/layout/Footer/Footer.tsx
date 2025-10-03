@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
             <ul className="text-black font-semibold text-xs flex flex-col gap-2 md:text-sm md:grid md:grid-cols-2">
               {categoriesData.list.map((category) => (
                 <Link
-                  href={`${Pages.CATALOG}/${category.href}`}
+                  href={`/${Pages.CATALOG}/${category.href}`}
                   key={category.id}
                 >
                   {category.title}

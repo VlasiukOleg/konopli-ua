@@ -9,6 +9,17 @@ import categoriesData from "@/data/categoryList.json";
 import { Pages } from "@/@types";
 
 const Hero: React.FC = ({}) => {
+  const popularMBCategoryList = categoriesData.list.filter(
+    (category) => category.id <= 2
+  );
+
+  const popularMDCategoryList = categoriesData.list.filter(
+    (category) => category.id <= 3
+  );
+
+  const popularXLCategoryList = categoriesData.list.filter(
+    (category) => category.id <= 5
+  );
   return (
     <section className="section">
       <div className="container">
@@ -23,8 +34,18 @@ const Hero: React.FC = ({}) => {
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6">
-          {categoriesData.list.map((category) => {
+        <div className="grid grid-cols-2 md:hidden gap-4">
+          {popularMBCategoryList.map((category) => {
+            return <CategoryCard category={category} key={category.id} />;
+          })}
+        </div>
+        <div className="hidden md:grid md:grid-cols-3 md:gap-6 xl:hidden">
+          {popularMDCategoryList.map((category) => {
+            return <CategoryCard category={category} key={category.id} />;
+          })}
+        </div>
+        <div className="hidden xl:grid xl:grid-cols-5 md:gap-6">
+          {popularXLCategoryList.map((category) => {
             return <CategoryCard category={category} key={category.id} />;
           })}
         </div>

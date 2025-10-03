@@ -22,7 +22,7 @@ const Advantages: React.FC = () => {
   };
 
   return (
-    <section className="section bg-sectionBg border-accent border-r">
+    <section className="section bg-sectionBg border-accent xl:border-r">
       <div className="container">
         <h2 className="section-title">{advantagesData.title}</h2>
         <Accordion variant="light" defaultExpandedKeys={["1"]}>
@@ -46,11 +46,14 @@ const Advantages: React.FC = () => {
                     <FaPlus className="text-accent" />
                   )
                 }
-                classNames={{title: "md:text-lg"}}
+                classNames={{ title: "md:text-lg" }}
               >
                 <div className="">
                   {advantage.items.map((item, index) => (
-                    <p key={index} className="text-sm text-grey mb-3 last:mb-0 md:text-base">
+                    <p
+                      key={index}
+                      className="text-sm text-grey mb-3 last:mb-0 md:text-base"
+                    >
                       <span className="font-semibold block">
                         {item.itemTitle}
                       </span>

@@ -10,6 +10,7 @@ import {
   useDisclosure,
 } from "@heroui/react";
 import Link from "next/link";
+import Image from "next/image";
 
 import CartDrawer from "@/components/ui/CartDrawer";
 
@@ -22,10 +23,11 @@ import { FiShoppingCart } from "react-icons/fi";
 import { Pages } from "@/@types";
 
 import Logo from "@images/logo.png";
-import Image from "next/image";
+
+import categoriesData from "@/data/categoryList.json";
 
 const Header: React.FC = () => {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
   const { products } = useCart();
 
   const {
@@ -105,21 +107,33 @@ const Header: React.FC = () => {
           <>
             <DrawerHeader className="flex flex-col gap-1">Меню</DrawerHeader>
             <DrawerBody>
-              <div className="flex justify-around mb-4 font-semibold">
+              <div className="flex justify-between mb-4 md:mb-6 xl:justify-around">
                 <div>
-                  <p className="text-accent mb-2">Покупцям</p>
-                  <ul className="text-black text-xs flex flex-col gap-2">
+                  <p className="text-accent font-bold mb-2 md:text-lg">
+                    Покупцям
+                  </p>
+                  <ul className="text-black text-xs font-semibold flex flex-col gap-2 md:text-sm">
                     <li>Про нас</li>
                     <li>Контакти</li>
-                    <li>FAQs</li>
+                    <li>Доставка та оплата</li>
                   </ul>
                 </div>
                 <div>
-                  <p className="text-accent mb-2">Каталог</p>
-                  <ul className="text-black text-xs flex flex-col gap-2">
-                    <li>Постіль конопляна</li>
-                    <li>Подушки</li>
-                    <li>Ковдри та пледи</li>
+                  <p className="text-accent font-bold mb-2 md:text-lg">
+                    Каталог
+                  </p>
+                  <ul className="text-black font-semibold text-xs flex flex-col gap-2 md:text-sm md:grid md:grid-cols-2">
+                    {categoriesData.list.map((category) => (
+                      <Link
+                        href={`/${Pages.CATALOG}/${category.href}`}
+                        key={category.id}
+                        onNavigate={() => {
+                          onClose();
+                        }}
+                      >
+                        {category.title}
+                      </Link>
+                    ))}
                   </ul>
                 </div>
               </div>
