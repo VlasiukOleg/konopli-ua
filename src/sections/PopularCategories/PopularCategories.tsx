@@ -44,7 +44,7 @@ const Hero: React.FC = ({}) => {
             return <CategoryCard category={category} key={category.id} />;
           })}
         </div>
-        <div className="hidden xl:grid xl:grid-cols-5 md:gap-6">
+        <div className="hidden xl:grid xl:grid-cols-5 xl:gap-6">
           {popularXLCategoryList.map((category) => {
             return <CategoryCard category={category} key={category.id} />;
           })}

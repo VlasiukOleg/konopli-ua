@@ -3,6 +3,7 @@
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { FaTelegramPlane } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -15,6 +16,8 @@ import Logo from "@images/logo.png";
 import categoriesData from "@/data/categoryList.json";
 
 const Footer: React.FC = () => {
+  const pathName = usePathname();
+
   return (
     <footer className="pb-5 pt-9 bg-sectionBg border-accent border-t-1 xl:bg-bgWhite">
       <div className="container">
@@ -36,8 +39,19 @@ const Footer: React.FC = () => {
           <div>
             <p className="text-accent font-bold mb-2 md:text-lg">Покупцям</p>
             <ul className="text-black text-xs font-semibold flex flex-col gap-2 md:text-sm">
-              <li>Про нас</li>
-              <li>Контакти</li>
+              <li>
+                <Link href={`/${Pages.ABOUT}`} className="text-xs md:text-sm">
+                  Про нас
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${Pages.CONTACTS}`}
+                  className="text-xs md:text-sm"
+                >
+                  Контакти
+                </Link>
+              </li>
               <li>Доставка та оплата</li>
             </ul>
           </div>
@@ -94,12 +108,21 @@ const Footer: React.FC = () => {
           © 2025 Konopli-Ua. Всі права захищено.
         </div>
         <div className="text-center">
-          <Link
-            href={Pages.MAIN}
-            className="text-accent cursor-pointer text-xs md:text-sm"
-          >
-            Політика конфіденційності
-          </Link>
+          {pathName === `/${Pages.POLICY}` ? (
+            <Link
+              href={`/${Pages.MAIN}`}
+              className="text-accent cursor-pointer text-xs md:text-sm"
+            >
+              Головна
+            </Link>
+          ) : (
+            <Link
+              href={`/${Pages.POLICY}`}
+              className="text-accent cursor-pointer text-xs md:text-sm"
+            >
+              Політика конфіденційності
+            </Link>
+          )}
         </div>
       </div>
     </footer>

@@ -9,6 +9,9 @@ export enum Pages {
   KOSMETIKA = "kosmetika",
   BILYZNA = "spidnya-bilyzna",
   CHECKOUT = "checkout",
+  POLICY = "policy",
+  ABOUT = "about",
+  CONTACTS = "contacts",
 }
 
 export const BREADCRUMBS_LABEL = {
@@ -21,6 +24,8 @@ export const BREADCRUMBS_LABEL = {
   [Pages.VANNA]: "Для ванної",
   [Pages.KOSMETIKA]: "Доглядальна косметика",
   [Pages.BILYZNA]: "Спідня білизна",
+  [Pages.POLICY]: "Політика конфіденційності",
+  [Pages.ABOUT]: "Про нас",
 };
 
 export interface IProductCard {

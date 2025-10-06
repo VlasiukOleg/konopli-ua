@@ -14,7 +14,7 @@ const Hero: React.FC = ({}) => {
   const pathName = usePathname();
 
   return (
-    <section className="py-5">
+    <section className="section">
       <div className="container">
         {pathName !== Pages.MAIN && (
           <Breadcrumbs radius="none" className="mb-3">
@@ -25,8 +25,8 @@ const Hero: React.FC = ({}) => {
           </Breadcrumbs>
         )}
 
-        <h1 className="text-2xl text-grey mb-2">{categoriesData.title}</h1>
-        <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
+        <h1 className="section-title mb-2 md:mb-4">{categoriesData.title}</h1>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 xl:grid-cols-5 xl:gap-6">
           {categoriesData.list.map((category) => {
             return <CategoryCard category={category} key={category.id} />;
           })}
