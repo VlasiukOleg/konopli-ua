@@ -9,13 +9,15 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaPhoneVolume } from "react-icons/fa6";
 
-const About: React.FC = () => {
+const Contacts: React.FC = () => {
   return (
     <section className="section">
       <div className="container">
         <Breadcrumbs className="mb-4">
           <BreadcrumbItem href="/">Головна</BreadcrumbItem>
-          <BreadcrumbItem href={`${Pages.ABOUT}`}>Контакти</BreadcrumbItem>
+          <BreadcrumbItem href={`${Pages.DOSTAVKA_OPLATA}`}>
+            Контакти
+          </BreadcrumbItem>
         </Breadcrumbs>
         <h1 className="section-title mb-2">Контакти</h1>
         <Link
@@ -28,6 +30,8 @@ const About: React.FC = () => {
         <Link
           href="https://t.me/vl_oleg_frontend"
           className="flex items-center gap-2 text-sm md:text-sm xl:text-lg mb-2"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <FaTelegramPlane className="size-4  xl:size-5" />
           Telegram
@@ -35,6 +39,8 @@ const About: React.FC = () => {
         <Link
           href="https://www.instagram.com/konoplia_ua"
           className="flex items-center gap-2 text-sm md:text-sm xl:text-lg mb-4"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <RiInstagramFill className="size-4  xl:size-5" />
           Instagram
@@ -49,4 +55,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Contacts;

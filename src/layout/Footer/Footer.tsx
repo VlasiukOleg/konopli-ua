@@ -52,7 +52,14 @@ const Footer: React.FC = () => {
                   Контакти
                 </Link>
               </li>
-              <li>Доставка та оплата</li>
+              <li>
+                <Link
+                  href={`/${Pages.DOSTAVKA_OPLATA}`}
+                  className="text-xs md:text-sm"
+                >
+                  Доставка і оплата
+                </Link>
+              </li>
             </ul>
           </div>
           <div>

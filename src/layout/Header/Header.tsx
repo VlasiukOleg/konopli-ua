@@ -113,9 +113,39 @@ const Header: React.FC = () => {
                     Покупцям
                   </p>
                   <ul className="text-black text-xs font-semibold flex flex-col gap-2 md:text-sm">
-                    <li>Про нас</li>
-                    <li>Контакти</li>
-                    <li>Доставка та оплата</li>
+                    <li>
+                      <Link
+                        href={`/${Pages.ABOUT}`}
+                        className="text-xs md:text-sm"
+                        onNavigate={() => {
+                          onClose();
+                        }}
+                      >
+                        Про нас
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href={`/${Pages.CONTACTS}`}
+                        className="text-xs md:text-sm"
+                        onNavigate={() => {
+                          onClose();
+                        }}
+                      >
+                        Контакти
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href={`/${Pages.DOSTAVKA_OPLATA}`}
+                        className="text-xs md:text-sm"
+                        onNavigate={() => {
+                          onClose();
+                        }}
+                      >
+                        Доставка і оплата
+                      </Link>
+                    </li>
                   </ul>
                 </div>
                 <div>

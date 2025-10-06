@@ -12,6 +12,7 @@ export enum Pages {
   POLICY = "policy",
   ABOUT = "about",
   CONTACTS = "contacts",
+  DOSTAVKA_OPLATA = "dostavka-i-oplata",
 }
 
 export const BREADCRUMBS_LABEL = {
