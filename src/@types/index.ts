@@ -42,7 +42,7 @@ export interface IProductCard {
   images?: string[];
   description?: string[];
   advantages?: string[];
-  care?: string;
+  care?: string | { title: string; descriptionList: string[] }[];
   tags: string[];
   sizes: {
     key: string;

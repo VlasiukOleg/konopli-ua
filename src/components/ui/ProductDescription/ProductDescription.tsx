@@ -297,7 +297,22 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                 )
               }
             >
-              {product.care}
+              {Array.isArray(product.care)
+                ? product.care.map((careItem) => (
+                    <>
+                      <div key={careItem.title} className="mb-2">
+                        <p className="font-bold mb-2">{careItem.title}</p>
+                        <ul className="list-disc pl-5 space-y-1 marker:text-accent">
+                          {careItem.descriptionList.map(
+                            (descriptionItem: string, index: number) => (
+                              <li key={index}>{descriptionItem}</li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                    </>
+                  ))
+                : product.care}
             </AccordionItem>
           </Accordion>
         </div>

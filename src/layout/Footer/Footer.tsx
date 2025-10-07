@@ -77,8 +77,9 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="text-center text-black mb-4 text-xs md:text-sm">
-          Графік роботи інтернет магазину 10.00 до 19.00 Субота та неділя
-          вихідні дні.
+          Графік роботи інтернет магазину 10.00 до 19.00. Субота та неділя
+          вихідні дні (але Ви можете оформлювати замовлення онлайн у будь-який
+          час)
         </div>
         <div className="h-[1px] bg-black mb-4 md:h-[1px]"></div>
         <div className="flex items-center justify-center gap-2 mb-4">
