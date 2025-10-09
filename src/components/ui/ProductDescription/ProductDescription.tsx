@@ -50,7 +50,6 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
 
   const handleDecrease = () => {
     if (quantity > 1) {
-      // Не позволяем уходить ниже 1
       setQuantity(quantity - 1);
     }
   };
@@ -77,7 +76,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
 
   return (
     <>
-      <section className="py-5">
+      <section className="section">
         <div className="container">
           <Breadcrumbs
             radius="none"
@@ -99,222 +98,236 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
             </BreadcrumbItem>
             <BreadcrumbItem>{product.title}</BreadcrumbItem>
           </Breadcrumbs>
-          <Card className="border-none rounded-none  bg-background/60 dark:bg-default-100/50 max-w-[610px] p-0 mb-5">
-            <CardBody className="p-0">
-              <div className="p-2">
-                {product?.images && (
-                  <ImageGallery
-                    items={product.images.map((img) => ({
-                      original: img,
-                      thumbnail: img,
-                    }))}
-                    showPlayButton={false}
-                    showFullscreenButton={false}
-                  />
+          <div className="xl:flex xl:gap-10">
+            <Card className="border-none rounded-none  bg-background/60 dark:bg-default-100/50 p-0 mb-5 xl:w-[50%]">
+              <CardBody className="p-0">
+                <div className="p-2">
+                  {product?.images && (
+                    <ImageGallery
+                      items={product.images.map((img) => ({
+                        original: img,
+                        thumbnail: img,
+                      }))}
+                      showPlayButton={false}
+                      showFullscreenButton={false}
+                    />
+                  )}
+                </div>
+              </CardBody>
+            </Card>
+            <div className="xl:w-[50%]">
+              <p className="text-black font-semibold text-xl leading-7 mb-2 md:text-2xl">
+                {product.title}{" "}
+                {product.subTitle && <span> ({product.subTitle})</span>}
+              </p>
+              {product.cover && (
+                <p className="text-grey text-sm md:text-base">
+                  Чохол: <span className="text-black">{product.cover}</span>
+                </p>
+              )}
+              {product.filling && (
+                <p className="text-grey text-sm mb-4 md:text-base">
+                  Наповнювач:{" "}
+                  <span className="text-black">{product.filling}</span>
+                </p>
+              )}
+
+              <div className="flex mb-4">
+                {product.sizes.length > 0 && (
+                  <Select
+                    className="max-w-full"
+                    label="Виберіть розмір"
+                    placeholder="Виберіть розмір"
+                    size="md"
+                    defaultSelectedKeys={["1"]}
+                    variant="bordered"
+                    radius="none"
+                    labelPlacement="outside"
+                    selectedKeys={[selectedSize]}
+                    onSelectionChange={(keys) =>
+                      setSelectedSize(Array.from(keys)[0] as string)
+                    }
+                    listboxProps={{
+                      classNames: {
+                        base: styles.listbox,
+                      },
+                      itemClasses: {
+                        title: "whitespace-normal",
+                      },
+                    }}
+                  >
+                    {product.sizes.map((size) => (
+                      <SelectItem key={size.key}>{size.label}</SelectItem>
+                    ))}
+                  </Select>
                 )}
               </div>
-            </CardBody>
-          </Card>
-          <p className="text-black font-semibold text-xl leading-7 mb-2">
-            {product.title}{" "}
-            {product.subTitle && <span> ({product.subTitle})</span>}
-          </p>
-          {product.cover && (
-            <p className="text-grey text-sm">
-              Чохол: <span className="text-black">{product.cover}</span>
-            </p>
-          )}
-          {product.filling && (
-            <p className="text-grey text-sm mb-4">
-              Наповнювач: <span className="text-black">{product.filling}</span>
-            </p>
-          )}
-
-          <div className="flex mb-4">
-            {product.sizes.length > 0 && (
-              <Select
-                className="max-w-full"
-                label="Виберіть розмір"
-                placeholder="Виберіть розмір"
-                size="md"
-                defaultSelectedKeys={["1"]}
-                variant="bordered"
-                radius="none"
-                labelPlacement="outside"
-                selectedKeys={[selectedSize]}
-                onSelectionChange={(keys) =>
-                  setSelectedSize(Array.from(keys)[0] as string)
-                }
-                listboxProps={{
-                  classNames: {
-                    base: styles.listbox,
-                  },
-                  itemClasses: {
-                    title: "whitespace-normal",
-                  },
-                }}
-              >
-                {product.sizes.map((size) => (
-                  <SelectItem key={size.key}>{size.label}</SelectItem>
-                ))}
-              </Select>
-            )}
-          </div>
-          <div className="flex items-center gap-2 flex-wrap mb-4">
-            <p className=" text-black  font-semibold text-xl">
-              {currentSize?.price || product.price} грн.
-            </p>
-            {currentSize?.salePrice ||
-              (product.salePrice && (
-                <p className="text-lg  text-lightGrey line-through font-semibold">
-                  {currentSize?.salePrice || product.price} грн.
+              <div className="flex items-center gap-2 flex-wrap mb-4">
+                <p className=" text-black  font-semibold text-xl">
+                  {currentSize?.price || product.price} грн.
                 </p>
-              ))}
-          </div>
-          <div className="flex items-center gap-4 mb-4">
-            <div className="flex items-center">
-              <Button
-                isIconOnly
-                aria-label="Take a photo"
-                className=" border-accent"
-                radius="none"
-                variant="bordered"
-                size="md"
-                onPress={handleDecrease}
-              >
-                <FaMinus className=" text-accent" />
-              </Button>
-              <Input
-                name="quantity"
-                variant="bordered"
-                type="number"
-                radius="none"
-                size="md"
-                classNames={{
-                  inputWrapper: "group-data-[focus=true]:border-accent w-20",
-                  base: "w-20 mx-2",
-                  input: "text-center",
-                }}
-                value={quantity.toString()}
-                onValueChange={(value) => setQuantity(Number(value) || 1)}
-              />
-              <Button
-                isIconOnly
-                aria-label="Take a photo"
-                className=" border-accent"
-                radius="none"
-                variant="bordered"
-                size="md"
-                onPress={handleIncrease}
-              >
-                <FaPlus className=" text-accent" />
-              </Button>
+                {currentSize?.salePrice ||
+                  (product.salePrice && (
+                    <p className="text-lg  text-lightGrey line-through font-semibold">
+                      {currentSize?.salePrice || product.price} грн.
+                    </p>
+                  ))}
+              </div>
+              <div className="md:flex items-center justify-between">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center">
+                    <Button
+                      isIconOnly
+                      aria-label="Take a photo"
+                      className=" border-accent"
+                      radius="none"
+                      variant="bordered"
+                      size="md"
+                      onPress={handleDecrease}
+                    >
+                      <FaMinus className=" text-accent" />
+                    </Button>
+                    <Input
+                      name="quantity"
+                      variant="bordered"
+                      type="number"
+                      radius="none"
+                      size="md"
+                      classNames={{
+                        inputWrapper:
+                          "group-data-[focus=true]:border-accent w-20",
+                        base: "w-20 mx-2",
+                        input: "text-center",
+                      }}
+                      value={quantity.toString()}
+                      onValueChange={(value) => setQuantity(Number(value) || 1)}
+                    />
+                    <Button
+                      isIconOnly
+                      aria-label="Take a photo"
+                      className=" border-accent"
+                      radius="none"
+                      variant="bordered"
+                      size="md"
+                      onPress={handleIncrease}
+                    >
+                      <FaPlus className=" text-accent" />
+                    </Button>
+                  </div>
+                  <Button
+                    isIconOnly
+                    className="text-default-900/60 border-accent"
+                    radius="none"
+                    variant="bordered"
+                    onPress={() => setLiked((liked) => !liked)}
+                  >
+                    {liked ? (
+                      <FaHeart className="size-6 text-red-500" />
+                    ) : (
+                      <FaRegHeart className="size-6" />
+                    )}
+                  </Button>
+                </div>
+                <div>
+                  <Button
+                    size="md"
+                    radius="none"
+                    variant="solid"
+                    className="font-semibold w-full bg-accent text-white mb-4 md:w-[200px]"
+                    onPress={handleCartDrawerOpen}
+                  >
+                    <FiShoppingCart className="size-6" />
+                    Замовити
+                  </Button>
+                </div>
+              </div>
+
+              {currentSize?.package && (
+                <>
+                  <p className="text-sm font-semibold mb-2">Комплектація</p>
+                  <ul className="space-y-2 text-sm">
+                    {currentSize.package.map((packageItem, index) => (
+                      <li key={index}>{packageItem}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              <Accordion className="text-sm md:text-base">
+                <AccordionItem
+                  key="1"
+                  aria-label="Accordion 1"
+                  title="Опис"
+                  indicator={({ isOpen }) =>
+                    isOpen ? (
+                      <PiLineVerticalBold className="text-accent" />
+                    ) : (
+                      <FaPlus className="text-accent" />
+                    )
+                  }
+                  classNames={{ title: "md:text-lg" }}
+                >
+                  {product?.description && (
+                    <ul className="space-y-2">
+                      {product.description.map((advantage, index) => (
+                        <li key={index}>{advantage}</li>
+                      ))}
+                    </ul>
+                  )}
+                </AccordionItem>
+                <AccordionItem
+                  key="2"
+                  aria-label="Accordion 2"
+                  title="Переваги"
+                  indicator={({ isOpen }) =>
+                    isOpen ? (
+                      <PiLineVerticalBold className="text-accent" />
+                    ) : (
+                      <FaPlus className="text-accent" />
+                    )
+                  }
+                  classNames={{ title: "md:text-lg" }}
+                >
+                  {product?.advantages && (
+                    <ul className="list-disc pl-5 space-y-1 marker:text-accent">
+                      {product.advantages.map((advantage, index) => (
+                        <li key={index}>{advantage}</li>
+                      ))}
+                    </ul>
+                  )}
+                </AccordionItem>
+                <AccordionItem
+                  key="3"
+                  aria-label="Accordion 3"
+                  title="Догляд"
+                  indicator={({ isOpen }) =>
+                    isOpen ? (
+                      <PiLineVerticalBold className="text-accent" />
+                    ) : (
+                      <FaPlus className="text-accent" />
+                    )
+                  }
+                  classNames={{ title: "md:text-lg" }}
+                >
+                  {Array.isArray(product.care)
+                    ? product.care.map((careItem) => (
+                        <>
+                          <div key={careItem.title} className="mb-2">
+                            <p className="font-bold mb-2">{careItem.title}</p>
+                            <ul className="list-disc pl-5 space-y-1 marker:text-accent">
+                              {careItem.descriptionList.map(
+                                (descriptionItem: string, index: number) => (
+                                  <li key={index}>{descriptionItem}</li>
+                                )
+                              )}
+                            </ul>
+                          </div>
+                        </>
+                      ))
+                    : product.care}
+                </AccordionItem>
+              </Accordion>
             </div>
-            <Button
-              isIconOnly
-              className="text-default-900/60 border-accent"
-              radius="none"
-              variant="bordered"
-              onPress={() => setLiked((liked) => !liked)}
-            >
-              {liked ? (
-                <FaHeart className="size-6 text-red-500" />
-              ) : (
-                <FaRegHeart className="size-6" />
-              )}
-            </Button>
           </div>
-          <Button
-            size="md"
-            radius="none"
-            variant="bordered"
-            className="font-semibold w-full text-accent border-accent mb-4"
-            onPress={handleCartDrawerOpen}
-          >
-            <FiShoppingCart className="size-6" />
-            Замовити
-          </Button>
-          {currentSize?.package && (
-            <>
-              <p className="text-sm font-semibold mb-2">Комплектація</p>
-              <ul className="space-y-2 text-sm">
-                {currentSize.package.map((packageItem, index) => (
-                  <li key={index}>{packageItem}</li>
-                ))}
-              </ul>
-            </>
-          )}
-          <Accordion className="text-sm">
-            <AccordionItem
-              key="1"
-              aria-label="Accordion 1"
-              title="Опис"
-              indicator={({ isOpen }) =>
-                isOpen ? (
-                  <PiLineVerticalBold className="text-accent" />
-                ) : (
-                  <FaPlus className="text-accent" />
-                )
-              }
-            >
-              {product?.description && (
-                <ul className="space-y-2">
-                  {product.description.map((advantage, index) => (
-                    <li key={index}>{advantage}</li>
-                  ))}
-                </ul>
-              )}
-            </AccordionItem>
-            <AccordionItem
-              key="2"
-              aria-label="Accordion 2"
-              title="Переваги"
-              indicator={({ isOpen }) =>
-                isOpen ? (
-                  <PiLineVerticalBold className="text-accent" />
-                ) : (
-                  <FaPlus className="text-accent" />
-                )
-              }
-            >
-              {product?.advantages && (
-                <ul className="list-disc pl-5 space-y-1 marker:text-accent">
-                  {product.advantages.map((advantage, index) => (
-                    <li key={index}>{advantage}</li>
-                  ))}
-                </ul>
-              )}
-            </AccordionItem>
-            <AccordionItem
-              key="3"
-              aria-label="Accordion 3"
-              title="Догляд"
-              indicator={({ isOpen }) =>
-                isOpen ? (
-                  <PiLineVerticalBold className="text-accent" />
-                ) : (
-                  <FaPlus className="text-accent" />
-                )
-              }
-            >
-              {Array.isArray(product.care)
-                ? product.care.map((careItem) => (
-                    <>
-                      <div key={careItem.title} className="mb-2">
-                        <p className="font-bold mb-2">{careItem.title}</p>
-                        <ul className="list-disc pl-5 space-y-1 marker:text-accent">
-                          {careItem.descriptionList.map(
-                            (descriptionItem: string, index: number) => (
-                              <li key={index}>{descriptionItem}</li>
-                            )
-                          )}
-                        </ul>
-                      </div>
-                    </>
-                  ))
-                : product.care}
-            </AccordionItem>
-          </Accordion>
         </div>
         <CartDrawer isOpen={isOpen} onOpenChange={onOpenChange} />
       </section>
