@@ -8,7 +8,7 @@ import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
 
 import { IoHomeOutline } from "react-icons/io5";
 
-import { Pages, BREADCRUMBS_LABEL } from "@/@types/index";
+import { Pages, BREADCRUMBS_LABEL, SECTION_TITLE_TEXT_MAP } from "@/@types/index";
 
 interface IProductListProps {
   product: string;
@@ -32,7 +32,7 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
           </BreadcrumbItem>
         </Breadcrumbs>
         <h2 className="text-2xl text-grey mb-2">
-          {BREADCRUMBS_LABEL[product as keyof typeof BREADCRUMBS_LABEL]}
+          {SECTION_TITLE_TEXT_MAP[product as keyof typeof SECTION_TITLE_TEXT_MAP]}
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {filteredProductsByCategory.map((filteredProduct) => (

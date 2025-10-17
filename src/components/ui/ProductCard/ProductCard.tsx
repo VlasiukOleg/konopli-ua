@@ -15,10 +15,12 @@ import {
 } from "@heroui/react";
 
 import { useCart } from "@/store/cart";
+import { useFavorite } from "@/store/favorite";
 
 import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
+import { FaRegSnowflake } from "react-icons/fa";
 
 import { IProductCard } from "@/@types";
 
@@ -33,8 +35,10 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
 
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const { addItem } = useCart();
+  const { addFavorite, removeFavorite, favoriteIds } = useFavorite();
 
-  const [liked, setLiked] = useState(false);
+  const isProductAddToFavorite = favoriteIds.includes(product.id);
+
   const [selectedSize, setSelectedSize] = useState(product.defaultSize);
 
   const currentSize =
@@ -52,6 +56,15 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
       image: product.image,
       size: currentSize?.label || "",
     });
+  };
+
+  const handleProductAddToFavorite = () => {
+    if (!isProductAddToFavorite) {
+      addFavorite(product.id);
+      return;
+    }
+
+    removeFavorite(product.id);
   };
 
   return (
@@ -93,7 +106,7 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
             <div className="flex flex-col justify-between items-baseline mb-2">
               {product.sizes.length > 0 && (
                 <Select
-                  className="max-w-[200px] mb-2"
+                  className="max-w-full mb-2"
                   label="Виберіть розмір"
                   placeholder="Виберіть розмір"
                   size="sm"
@@ -138,40 +151,46 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
                   ))}
               </div>
             </div>
-
-            <Button
-              size="md"
-              radius="none"
-              variant="bordered"
-              className="font-semibold text-accent border-accent text-md"
-              onClick={(e: React.MouseEvent) => {
-                e.stopPropagation();
-              }}
-              onPress={handleOpen}
-            >
-              <FiShoppingCart className="size-5" />
-              Замовити
-            </Button>
+            <div className="flex gap-3 items-center justify-between">
+              <Button
+                size="md"
+                radius="none"
+                variant="solid"
+                className="font-semibold flex-1 text-white bg-accent text-md"
+                onClick={(e: React.MouseEvent) => {
+                  e.stopPropagation();
+                }}
+                onPress={handleOpen}
+              >
+                <FiShoppingCart className="size-5" />
+                Замовити
+              </Button>
+              <Button
+                isIconOnly
+                className="text-default-900/60 border-accent"
+                radius="none"
+                variant="bordered"
+                onClick={(e: React.MouseEvent) => {
+                  e.stopPropagation();
+                }}
+                onPress={handleProductAddToFavorite}
+              >
+                {isProductAddToFavorite ? (
+                  <FaHeart className="size-6 text-red-500" />
+                ) : (
+                  <FaRegHeart className="size-6" />
+                )}
+              </Button>
+            </div>
           </CardBody>
-          <Button
-            isIconOnly
-            className="text-default-900/60 data-[hover]:bg-foreground/10 -translate-y-2 translate-x-2 absolute top-3 right-3 z-10"
-            radius="none"
-            variant="light"
-            onClick={(e: React.MouseEvent) => {
-              e.stopPropagation();
-              setLiked((liked) => !liked);
-            }}
-          >
-            {liked ? (
-              <FaHeart className="size-6 text-red-500" />
-            ) : (
-              <FaRegHeart className="size-6" />
-            )}
-          </Button>
           {product.tags.includes("Хіт продаж") && (
             <div className="bg-accent p-2 inline-block absolute top-0 left-0 text-white text-xs z-10">
               Хіт продаж
+            </div>
+          )}
+          {product.tags.includes("Зимова") && (
+            <div className="bg-blue-800 rounded-full flex justify-center items-center p-1 absolute top-2 left-2 text-white z-10 size-7">
+              <FaRegSnowflake className="size-4" />
             </div>
           )}
         </Card>

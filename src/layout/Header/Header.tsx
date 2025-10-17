@@ -25,16 +25,20 @@ import { Pages } from "@/@types";
 import Logo from "@images/logo.png";
 
 import categoriesData from "@/data/categoryList.json";
+import { useFavorite } from "@/store/favorite";
 
 const Header: React.FC = () => {
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
   const { products } = useCart();
+  const { favoriteIds } = useFavorite();
 
   const {
     isOpen: isCartOpen,
     onOpen: onCartOpen,
     onOpenChange: onCartOpenChange,
   } = useDisclosure();
+
+  const totalFavoriteCount = favoriteIds.length;
 
   const handleOpen = () => {
     onOpen();
@@ -74,7 +78,11 @@ const Header: React.FC = () => {
             radius="none"
             className="size-10 md:size-12"
           >
-            <Badge className="bg-accent text-white" content="2">
+            <Badge
+              className="bg-accent text-white"
+              content={totalFavoriteCount}
+              isInvisible={favoriteIds.length === 0}
+            >
               <FaRegHeart className="size-6 text-grey md:size-8" />
             </Badge>
           </Button>

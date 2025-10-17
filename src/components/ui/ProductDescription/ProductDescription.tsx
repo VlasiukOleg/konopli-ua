@@ -166,10 +166,14 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                 <p className=" text-black  font-semibold text-xl">
                   {currentSize?.price || product.price} грн.
                 </p>
-                {currentSize?.salePrice ||
+                {(currentSize?.salePrice && (
+                  <p className="text-sm text-lightGrey line-through font-semibold">
+                    {currentSize.salePrice} грн.
+                  </p>
+                )) ||
                   (product.salePrice && (
-                    <p className="text-lg  text-lightGrey line-through font-semibold">
-                      {currentSize?.salePrice || product.price} грн.
+                    <p className="text-sm text-lightGrey line-through font-semibold">
+                      {product.salePrice} грн.
                     </p>
                   ))}
               </div>

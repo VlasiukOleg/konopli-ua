@@ -20,7 +20,21 @@ export const BREADCRUMBS_LABEL = {
   [Pages.PODUSHKI]: "Гіпоаллергенні подушки",
   [Pages.CHECKOUT]: "Кошик",
   [Pages.POSTIL]: "Постіль конопляна",
-  [Pages.KOVDRI]: "Ковдри та пледи",
+  [Pages.KOVDRI]: "Ковдри",
+  [Pages.SHKARPETKI]: "Шкарпетки та устілки",
+  [Pages.VANNA]: "Для ванної",
+  [Pages.KOSMETIKA]: "Доглядальна косметика",
+  [Pages.BILYZNA]: "Спідня білизна",
+  [Pages.POLICY]: "Політика конфіденційності",
+  [Pages.ABOUT]: "Про нас",
+};
+
+export const SECTION_TITLE_TEXT_MAP = {
+  [Pages.CATALOG]: "Каталог",
+  [Pages.PODUSHKI]: "Гіпоаллергенні подушки",
+  [Pages.CHECKOUT]: "Кошик",
+  [Pages.POSTIL]: "Постіль конопляна",
+  [Pages.KOVDRI]: "Гіпоалергенні ковдри з конопляним наповнювачем",
   [Pages.SHKARPETKI]: "Шкарпетки та устілки",
   [Pages.VANNA]: "Для ванної",
   [Pages.KOSMETIKA]: "Доглядальна косметика",
