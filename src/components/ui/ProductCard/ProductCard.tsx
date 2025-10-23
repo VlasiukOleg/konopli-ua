@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import NextImage from "next/image";
 import CartDrawer from "@/components/ui/CartDrawer";
 import {
@@ -32,8 +31,6 @@ interface IProductCardProps {
 }
 
 const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
-  const router = useRouter();
-
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const { addItem } = useCart();
   const { addFavorite, removeFavorite, favoriteIds } = useFavorite();
