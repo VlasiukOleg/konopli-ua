@@ -11,6 +11,7 @@ import {
 } from "@heroui/react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import CartDrawer from "@/components/ui/CartDrawer";
 
@@ -31,7 +32,7 @@ const Header: React.FC = () => {
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
   const { products } = useCart();
   const { favoriteIds } = useFavorite();
-
+  const router = useRouter();
   const {
     isOpen: isCartOpen,
     onOpen: onCartOpen,
@@ -77,6 +78,7 @@ const Header: React.FC = () => {
             variant="light"
             radius="none"
             className="size-10 md:size-12"
+            onPress={() => router.push(`/${Pages.FAVORITES}`)}
           >
             <Badge
               className="bg-accent text-white"

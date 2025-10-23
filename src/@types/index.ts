@@ -13,6 +13,7 @@ export enum Pages {
   ABOUT = "about",
   CONTACTS = "contacts",
   DOSTAVKA_OPLATA = "dostavka-i-oplata",
+  FAVORITES = "favorites",
 }
 
 export const BREADCRUMBS_LABEL = {
@@ -27,6 +28,7 @@ export const BREADCRUMBS_LABEL = {
   [Pages.BILYZNA]: "Спідня білизна",
   [Pages.POLICY]: "Політика конфіденційності",
   [Pages.ABOUT]: "Про нас",
+  [Pages.FAVORITES]: "Список бажань",
 };
 
 export const SECTION_TITLE_TEXT_MAP = {
