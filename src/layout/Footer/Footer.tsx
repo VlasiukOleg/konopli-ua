@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@heroui/react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -11,8 +10,6 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 import { Pages } from "@/@types";
 
-import Logo from "@images/logo.png";
-
 import categoriesData from "@/data/categoryList.json";
 
 const Footer: React.FC = () => {
@@ -21,20 +18,6 @@ const Footer: React.FC = () => {
   return (
     <footer className="pb-5 pt-9 bg-sectionBg border-accent border-t-1 xl:bg-bgWhite">
       <div className="container">
-        <Link
-          href={Pages.MAIN}
-          className="text-accent flex items-center justify-center gap-1 mb-4"
-        >
-          <div className="font-semibold font-montserrat text-lg flex md:text-2xl xl:text-3xl">
-            KONOPLI
-            <Image
-              src={Logo}
-              alt="logo"
-              className="size-6 md:size-7 xl:size-8"
-            />
-            UA
-          </div>
-        </Link>
         <div className="flex justify-between mb-4 md:mb-6 xl:justify-around">
           <div>
             <p className="text-accent font-bold mb-2 md:text-lg">Покупцям</p>

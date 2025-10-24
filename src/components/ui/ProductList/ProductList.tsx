@@ -1,14 +1,18 @@
 "use client";
 
-import ProductCard from "@/components/ui/ProductCard/ProductCard";
-
-import productList from "@/data/productList.json";
-
 import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
 
-import { IoHomeOutline } from "react-icons/io5";
+import ProductCard from "@/components/ui/ProductCard/ProductCard";
+import BlanketAlert from "@/components/common/BlanketAlert";
 
-import { Pages, BREADCRUMBS_LABEL, SECTION_TITLE_TEXT_MAP } from "@/@types/index";
+import { IoHomeOutline } from "react-icons/io5";
+import productList from "@/data/productList.json";
+
+import {
+  Pages,
+  BREADCRUMBS_LABEL,
+  SECTION_TITLE_TEXT_MAP,
+} from "@/@types/index";
 
 interface IProductListProps {
   product: string;
@@ -18,6 +22,8 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
   const filteredProductsByCategory = productList.filter((productItem) =>
     productItem.category.includes(product)
   );
+
+  const isAlertVisible = product === Pages.KOVDRI;
 
   return (
     <section className="py-5">
@@ -32,8 +38,14 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
           </BreadcrumbItem>
         </Breadcrumbs>
         <h2 className="text-2xl text-grey mb-2">
-          {SECTION_TITLE_TEXT_MAP[product as keyof typeof SECTION_TITLE_TEXT_MAP]}
+          {
+            SECTION_TITLE_TEXT_MAP[
+              product as keyof typeof SECTION_TITLE_TEXT_MAP
+            ]
+          }
         </h2>
+        {isAlertVisible && <BlanketAlert />}
+
         <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {filteredProductsByCategory.map((filteredProduct) => (
             <ProductCard key={filteredProduct.id} product={filteredProduct} />

@@ -90,14 +90,20 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
 
           <Link
             href={`/catalog/${product.category[0]}/${product.id}`}
-            className="mb-2"
+            className="mb-2 flex-col gap-2"
           >
-            <p className="text-black flex items-center justify-center text-center font-bold text-sm leading-4 min-h-[64px]">
-              {product.title}
-            </p>
-            {product.subTitle && (
-              <p className="text-black text-center font-bold text-xs leading-5 ">
-                ({product.subTitle})
+            {product.subTitle ? (
+              <>
+                <p className="text-black flex items-center justify-center text-center font-bold text-sm leading-4">
+                  {product.title}
+                </p>
+                <p className="text-grey text-center font-bold text-xs leading-5 ">
+                  ({product.subTitle})
+                </p>
+              </>
+            ) : (
+              <p className="text-black flex items-center justify-center text-center font-bold text-sm leading-4 min-h-[64px]">
+                {product.title}
               </p>
             )}
           </Link>
