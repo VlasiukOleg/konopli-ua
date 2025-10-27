@@ -27,31 +27,32 @@ const Favorites: React.FC = () => {
           </BreadcrumbItem>
         </Breadcrumbs>
         <h1 className="section-title mb-2">Список бажань</h1>
-
-        {filteredProductListByFavoriteIds.length > 0 ? (
-          filteredProductListByFavoriteIds.map((filteredProduct) => (
-            <div
-              key={filteredProduct.id}
-              className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4"
-            >
-              <ProductCard product={filteredProduct} />{" "}
+        <div>
+          {filteredProductListByFavoriteIds.length > 0 ? (
+            <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-2">
+              {filteredProductListByFavoriteIds.map((filteredProduct) => (
+                <ProductCard
+                  key={filteredProduct.id}
+                  product={filteredProduct}
+                />
+              ))}
             </div>
-          ))
-        ) : (
-          <div className="text-sm flex flex-col gap-4 justify-center items-center w-full min-h-[300px]">
-            Упс, Ви поки нічого не додали в список бажань.
-            <Button
-              as={Link}
-              size="md"
-              href={Pages.CATALOG}
-              radius="none"
-              className="bg-accent font-semibold text-white "
-            >
-              В КАТАЛОГ
-              <FaArrowRight />
-            </Button>
-          </div>
-        )}
+          ) : (
+            <div className="text-sm flex flex-col gap-4 justify-center items-center w-full min-h-[300px]">
+              Упс, Ви поки нічого не додали в список бажань.
+              <Button
+                as={Link}
+                size="md"
+                href={Pages.CATALOG}
+                radius="none"
+                className="bg-accent font-semibold text-white "
+              >
+                В КАТАЛОГ
+                <FaArrowRight />
+              </Button>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );
