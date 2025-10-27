@@ -21,6 +21,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaRegSnowflake } from "react-icons/fa";
+import { MdSunny } from "react-icons/md";
+import { LuCloudSunRain } from "react-icons/lu";
 
 import { IProductCard } from "@/@types";
 
@@ -84,6 +86,7 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
               className="text-center rounded-none"
               width={150}
               height={150}
+              priority
               src={product.image}
             />
           </Link>
@@ -97,7 +100,7 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
                 <p className="text-black flex items-center justify-center text-center font-bold text-sm leading-4">
                   {product.title}
                 </p>
-                <p className="text-grey text-center font-bold text-xs leading-5 ">
+                <p className="text-grey text-center font-bold text-xs leading-4 ">
                   ({product.subTitle})
                 </p>
               </>
@@ -187,9 +190,19 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
             Хіт продаж
           </div>
         )}
-        {product.tags.includes("Зимова") && (
-          <div className="bg-blue-800 rounded-full flex justify-center items-center p-1 absolute top-2 left-2 text-white z-10 size-7">
+        {product.tags.includes("Winter") && (
+          <div className="bg-blue-600 rounded-full flex justify-center items-center p-1 absolute top-2 left-2 text-white z-10 size-7">
             <FaRegSnowflake className="size-4" />
+          </div>
+        )}
+        {product.tags.includes("AllSeason") && (
+          <div className="bg-orange-600 rounded-full flex justify-center items-center p-1 absolute top-2 left-2 text-white z-10 size-7">
+            <LuCloudSunRain className="size-4" />
+          </div>
+        )}
+        {product.tags.includes("Summer") && (
+          <div className="bg-yellow-500 rounded-full flex justify-center items-center p-1 absolute top-2 left-2 text-white z-10 size-7">
+            <MdSunny className="size-4" />
           </div>
         )}
       </Card>

@@ -15,6 +15,8 @@ import categoriesData from "@/data/categoryList.json";
 const Footer: React.FC = () => {
   const pathName = usePathname();
 
+  const isPolicyPage = pathName === `/${Pages.POLICY}`;
+
   return (
     <footer className="pb-5 pt-9 bg-sectionBg border-accent border-t-1 xl:bg-bgWhite">
       <div className="container">
@@ -99,7 +101,7 @@ const Footer: React.FC = () => {
           © 2025 Konopli-Ua. Всі права захищено.
         </div>
         <div className="text-center">
-          {pathName === `/${Pages.POLICY}` ? (
+          {isPolicyPage ? (
             <Link
               href={`/${Pages.MAIN}`}
               className="text-accent cursor-pointer text-xs md:text-sm"

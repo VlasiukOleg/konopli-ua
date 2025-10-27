@@ -1036,220 +1036,10 @@
     "defaultSize": "1"
   },
   {
-    "id": "11",
-    "category": ["kovdri-i-pledi"],
-    "title": "Літня ковдра",
-    "subTitle": "покриття - бавовна, навовнювач - конопляне волокно",
-    "salePrice": "",
-    "price": "",
-    "cover": "Бавовна",
-    "filling": "Конопляне волокно",
-    "description": [
-      "Відкрийте для себе Літню Ковдру з Бавовни та Конопляним Наповнювачем! Літня спека не повинна бути перешкодою для вашого комфортного сну!",
-      "Ця ковдра створена для тих, хто цінує якість, натуральні матеріали та неперевершений комфорт під час спекотних літніх ночей."
-    ],
-    "image": "/images/kovdri/kovdra-litnya-bavovna-konoplya-1.webp",
-    "images": [
-      "/images/kovdri/kovdra-litnya-bavovna-konoplya.webp",
-      "/images/kovdri/kovdra-litnya-bavovna-konoplya-1.webp",
-      "/images/kovdri/kovdra-litnya-bavovna-konoplya-2.webp",
-      "/images/kovdri/kovdra-litnya-bavovna-konoplya-3.webp"
-    ],
-    "tags": ["Супер ціна"],
-    "advantages": [
-      "Дозволяє тілу 'дихати'",
-      "Антибактеріальна",
-      "Гіпоалергенна",
-      "Поглинає вологу та запобігає пітливості",
-      "Дуже міцна та довговічна",
-      "Захищає від пилових кліщів, бактерій та грибків",
-      "Підходить для людей з алергіями та астмою",
-      "Виготовлена з екологічно чистих натуральних матеріалів"
-    ],
-    "care": [
-      {
-        "title": "Прання",
-        "descriptionList": [
-          "Ручне або машинне у делікатному режимі. Температура 30–40°C.",
-          "Засоби: м’який пральний гель без відбілювачів та хлору.",
-          "Не замочувати надовго. Це може пошкодити наповнювач."
-        ]
-      },
-      {
-        "title": "Сушка",
-        "descriptionList": [
-          "Сушити горизонтально у розправленому вигляді ",
-          "Уникати прямих сонячних променів та високої температури.",
-          "Машинну сушарку краще не використовувати."
-        ]
-      }
-    ],
-    "sizes": [
-      {
-        "key": "1",
-        "label": "140x200 см",
-        "price": "1390",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "2",
-        "label": "150x210 см",
-        "price": "1550",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "3",
-        "label": "160x200 см",
-        "price": "1550",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "4",
-        "label": "180x200 см",
-        "price": "1690",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "5",
-        "label": "200x220 см",
-        "price": "1830",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "6",
-        "label": "220x240 см",
-        "price": "2100",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "7",
-        "label": "240x260 см",
-        "price": "2450",
-        "salePrice": "",
-        "package": null
-      }
-    ],
-    "defaultSize": "1"
-  },
-  {
-    "id": "12",
-    "category": ["kovdri-i-pledi"],
-    "title": "Літня сатинова ковдра з конопляним наповнювачем",
-    "subTitle": "",
-    "salePrice": "",
-    "price": "",
-    "cover": "Сатин",
-    "filling": "Конопляне волокно",
-    "description": [
-      "Відкрийте для себе Літню Сатинову Ковдру з Конопляним Наповнювачем! Літня спека не повинна бути перешкодою для вашого комфортного сну!",
-      "Ця ковдра створена для тих, хто цінує якість, натуральні матеріали та неперевершений комфорт під час спекотних літніх ночей."
-    ],
-    "image": "/images/kovdri/kovdra-litnya-satin-konoplya.webp",
-    "images": [
-      "/images/kovdri/kovdra-litnya-satin-konoplya.webp",
-      "/images/kovdri/kovdra-litnya-satin-konoplya-1.webp",
-      "/images/kovdri/kovdra-litnya-satin-konoplya-2.webp"
-    ],
-    "tags": ["Супер ціна"],
-    "advantages": [
-      "Дозволяє тілу 'дихати'",
-      "Антибактеріальна",
-      "Гіпоалергенна",
-      "Поглинає вологу та запобігає пітливості",
-      "Дуже міцна та довговічна",
-      "Захищає від пилових кліщів, бактерій та грибків",
-      "Підходить для людей з алергіями та астмою",
-      "Виготовлена з екологічно чистих натуральних матеріалів"
-    ],
-    "care": [
-      {
-        "title": "Прання",
-        "descriptionList": [
-          "Ручне або машинне у делікатному режимі. Температура 30–40°C.",
-          "Засоби: м’який пральний гель без відбілювачів та хлору.",
-          "Не замочувати надовго. Це може пошкодити наповнювач."
-        ]
-      },
-      {
-        "title": "Сушка",
-        "descriptionList": [
-          "Сушити горизонтально у розправленому вигляді ",
-          "Уникати прямих сонячних променів та високої температури.",
-          "Машинну сушарку краще не використовувати."
-        ]
-      }
-    ],
-    "sizes": [
-      {
-        "key": "1",
-        "label": "140x200 см",
-        "price": "1495",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "2",
-        "label": "150x210 см",
-        "price": "1630",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "3",
-        "label": "160x200 см",
-        "price": "1630",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "4",
-        "label": "172x205 см",
-        "price": "1790",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "5",
-        "label": "180x200 см",
-        "price": "1830",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "6",
-        "label": "200x220 см",
-        "price": "1900",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "7",
-        "label": "220x240 см",
-        "price": "2290",
-        "salePrice": "",
-        "package": null
-      },
-      {
-        "key": "8",
-        "label": "240x260 см",
-        "price": "2590",
-        "salePrice": "",
-        "package": null
-      }
-    ],
-    "defaultSize": "1"
-  },
-  {
     "id": "13",
     "category": ["kovdri-i-pledi"],
-    "title": "Демісезонна бавовняна ковдра з конопляним наповнювачем",
-    "subTitle": "",
+    "title": "Демісезонна ковдра",
+    "subTitle": "покриття - бавовна, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
     "cover": "Бавовна",
@@ -1267,7 +1057,7 @@
       "/images/kovdri/kovdra-demisezonna-bavovna-konoplya-3.webp",
       "/images/kovdri/kovdra-demisezonna-bavovna-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна"],
+    "tags": ["Супер ціна", "AllSeason"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1359,8 +1149,8 @@
   {
     "id": "14",
     "category": ["kovdri-i-pledi"],
-    "title": "Демісезонна сатинова ковдра з конопляним наповнювачем",
-    "subTitle": "",
+    "title": "Демісезонна ковдра",
+    "subTitle": "покриття - сатин, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
     "cover": "Сатин",
@@ -1378,7 +1168,7 @@
       "/images/kovdri/kovdra-demisezonna-satin-konoplya-3.webp",
       "/images/kovdri/kovdra-demisezonna-satin-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна"],
+    "tags": ["Супер ціна", "AllSeason"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1470,8 +1260,8 @@
   {
     "id": "15",
     "category": ["kovdri-i-pledi"],
-    "title": "Демісезонна конопляна ковдра з конопляним наповнювачем",
-    "subTitle": "",
+    "title": "Демісезонна ковдра",
+    "subTitle": "покриття - конопляна тканина, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
     "cover": "Конопляна тканина",
@@ -1490,7 +1280,7 @@
       "/images/kovdri/kovdra-demisezonna-konoplya-konoplya-4.webp",
       "/images/kovdri/kovdra-demisezonna-konoplya-konoplya-5.webp"
     ],
-    "tags": ["Супер ціна"],
+    "tags": ["Супер ціна", "AllSeason"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1582,8 +1372,8 @@
   {
     "id": "16",
     "category": ["kovdri-i-pledi"],
-    "title": "Зимова бавовняна ковдра з конопляним наповнювачем (700грм.м)",
-    "subTitle": "",
+    "title": "Зимова ковдра",
+    "subTitle": "покриття - бавовна, навовнювач (700 гр/м2) - конопляне волокно",
     "salePrice": "",
     "price": "",
     "cover": "Бавовна",
@@ -1600,7 +1390,7 @@
       "/images/kovdri/kovdra-demisezonna-bavovna-konoplya-3.webp",
       "/images/kovdri/kovdra-demisezonna-bavovna-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна", "Зимова"],
+    "tags": ["Супер ціна", "Winter"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1685,8 +1475,8 @@
   {
     "id": "17",
     "category": ["kovdri-i-pledi"],
-    "title": "Зимова сатинова ковдра з конопляним наповнювачем (700грм.м)",
-    "subTitle": "",
+    "title": "Зимова ковдра",
+    "subTitle": "покриття - сатин, навовнювач (700 гр/м2) - конопляне волокно",
     "salePrice": "",
     "price": "",
     "cover": "Сатин",
@@ -1701,7 +1491,7 @@
       "/images/kovdri/kovdra-litnya-satin-konoplya-1.webp",
       "/images/kovdri/kovdra-litnya-satin-konoplya-2.webp"
     ],
-    "tags": ["Супер ціна", "Зимова"],
+    "tags": ["Супер ціна", "Winter"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1793,8 +1583,8 @@
   {
     "id": "18",
     "category": ["kovdri-i-pledi"],
-    "title": "Демісезонна конопляна ковдра + Дві конопляні подушки (сатинове покриття)",
-    "subTitle": "",
+    "title": "Демісезонна ковдра + Дві подушки",
+    "subTitle": "покриття - сатин, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
     "cover": "Сатин",
@@ -1807,7 +1597,7 @@
     "images": [
       "/images/kovdri/kovdra-podushki-demisezonna-satin-konoplya.webp"
     ],
-    "tags": ["Супер ціна"],
+    "tags": ["Супер ціна", "AllSeason"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1982,8 +1772,8 @@
   {
     "id": "19",
     "category": ["kovdri-i-pledi"],
-    "title": "Демісезонна конопляна ковдра + Дві конопляні подушки (конопляне покриття)",
-    "subTitle": "",
+    "title": "Демісезонна ковдра + Дві подушки",
+    "subTitle": "покриття - конопляна тканина, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
     "cover": "Конопля",
@@ -1999,7 +1789,7 @@
       "/images/kovdri/kovdra-podushki-demisezonna-konoplya-konoplya-3.webp",
       "/images/kovdri/kovdra-podushki-demisezonna-konoplya-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна"],
+    "tags": ["Супер ціна", "AllSeason"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -2132,8 +1922,8 @@
   {
     "id": "20",
     "category": ["kovdri-i-pledi"],
-    "title": "Демісезонна бавовня ковдра + Дві бавовняні подушки (наповнювач коноплі)",
-    "subTitle": "",
+    "title": "Демісезонна ковдра + Дві подушки",
+    "subTitle": "покриття - бавовна, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
     "cover": "Бавовна",
@@ -2149,7 +1939,7 @@
       "/images/kovdri/kovdra-podushki-demisezonna-bavovna-konoplya-3.webp",
       "/images/kovdri/kovdra-podushki-demisezonna-bavovna-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна"],
+    "tags": ["Супер ціна", "AllSeason"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -2235,21 +2025,21 @@
         "package": null
       },
       {
-        "key": "4",
+        "key": "7",
         "label": "Ковдра: 160х200 см + Дві подушки: 40x40 cм",
         "price": "2520",
         "salePrice": "2690",
         "package": null
       },
       {
-        "key": "5",
+        "key": "8",
         "label": "Ковдра: 160х200 см + Дві подушки: 40x60 cм",
         "price": "2705",
         "salePrice": "2870",
         "package": null
       },
       {
-        "key": "6",
+        "key": "9",
         "label": "Ковдра: 160х200 см + Дві подушки: 50x70 cм",
         "price": "2935",
         "salePrice": "3100",
@@ -2277,21 +2067,21 @@
         "package": null
       },
       {
-        "key": "10",
+        "key": "13",
         "label": "Ковдра: 180x200 см + Дві подушки: 40x40 cм",
         "price": "2645",
         "salePrice": "2810",
         "package": null
       },
       {
-        "key": "11",
+        "key": "14",
         "label": "Ковдра: 180x200 см + Дві подушки: 40x60 cм",
         "price": "2825",
         "salePrice": "2990",
         "package": null
       },
       {
-        "key": "12",
+        "key": "15",
         "label": "Ковдра: 180x200 см + Дві подушки: 50x70 cм",
         "price": "3055",
         "salePrice": "3220",
@@ -2316,6 +2106,216 @@
         "label": "Ковдра: 200x220 см + Дві подушки: 50x70 cм",
         "price": "3305",
         "salePrice": "3470",
+        "package": null
+      }
+    ],
+    "defaultSize": "1"
+  },
+  {
+    "id": "11",
+    "category": ["kovdri-i-pledi"],
+    "title": "Літня ковдра",
+    "subTitle": "покриття - бавовна, навовнювач - конопляне волокно",
+    "salePrice": "",
+    "price": "",
+    "cover": "Бавовна",
+    "filling": "Конопляне волокно",
+    "description": [
+      "Відкрийте для себе Літню Ковдру з Бавовни та Конопляним Наповнювачем! Літня спека не повинна бути перешкодою для вашого комфортного сну!",
+      "Ця ковдра створена для тих, хто цінує якість, натуральні матеріали та неперевершений комфорт під час спекотних літніх ночей."
+    ],
+    "image": "/images/kovdri/kovdra-litnya-bavovna-konoplya-1.webp",
+    "images": [
+      "/images/kovdri/kovdra-litnya-bavovna-konoplya.webp",
+      "/images/kovdri/kovdra-litnya-bavovna-konoplya-1.webp",
+      "/images/kovdri/kovdra-litnya-bavovna-konoplya-2.webp",
+      "/images/kovdri/kovdra-litnya-bavovna-konoplya-3.webp"
+    ],
+    "tags": ["Супер ціна", "Summer"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": [
+      {
+        "title": "Прання",
+        "descriptionList": [
+          "Ручне або машинне у делікатному режимі. Температура 30–40°C.",
+          "Засоби: м’який пральний гель без відбілювачів та хлору.",
+          "Не замочувати надовго. Це може пошкодити наповнювач."
+        ]
+      },
+      {
+        "title": "Сушка",
+        "descriptionList": [
+          "Сушити горизонтально у розправленому вигляді ",
+          "Уникати прямих сонячних променів та високої температури.",
+          "Машинну сушарку краще не використовувати."
+        ]
+      }
+    ],
+    "sizes": [
+      {
+        "key": "1",
+        "label": "140x200 см",
+        "price": "1390",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "2",
+        "label": "150x210 см",
+        "price": "1550",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "3",
+        "label": "160x200 см",
+        "price": "1550",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "4",
+        "label": "180x200 см",
+        "price": "1690",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "5",
+        "label": "200x220 см",
+        "price": "1830",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "6",
+        "label": "220x240 см",
+        "price": "2100",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "7",
+        "label": "240x260 см",
+        "price": "2450",
+        "salePrice": "",
+        "package": null
+      }
+    ],
+    "defaultSize": "1"
+  },
+  {
+    "id": "12",
+    "category": ["kovdri-i-pledi"],
+    "title": "Літня ковдра",
+    "subTitle": "покриття - сатин, навовнювач - конопляне волокно",
+    "salePrice": "",
+    "price": "",
+    "cover": "Сатин",
+    "filling": "Конопляне волокно",
+    "description": [
+      "Відкрийте для себе Літню Сатинову Ковдру з Конопляним Наповнювачем! Літня спека не повинна бути перешкодою для вашого комфортного сну!",
+      "Ця ковдра створена для тих, хто цінує якість, натуральні матеріали та неперевершений комфорт під час спекотних літніх ночей."
+    ],
+    "image": "/images/kovdri/kovdra-litnya-satin-konoplya.webp",
+    "images": [
+      "/images/kovdri/kovdra-litnya-satin-konoplya.webp",
+      "/images/kovdri/kovdra-litnya-satin-konoplya-1.webp",
+      "/images/kovdri/kovdra-litnya-satin-konoplya-2.webp"
+    ],
+    "tags": ["Супер ціна", "Summer"],
+    "advantages": [
+      "Дозволяє тілу 'дихати'",
+      "Антибактеріальна",
+      "Гіпоалергенна",
+      "Поглинає вологу та запобігає пітливості",
+      "Дуже міцна та довговічна",
+      "Захищає від пилових кліщів, бактерій та грибків",
+      "Підходить для людей з алергіями та астмою",
+      "Виготовлена з екологічно чистих натуральних матеріалів"
+    ],
+    "care": [
+      {
+        "title": "Прання",
+        "descriptionList": [
+          "Ручне або машинне у делікатному режимі. Температура 30–40°C.",
+          "Засоби: м’який пральний гель без відбілювачів та хлору.",
+          "Не замочувати надовго. Це може пошкодити наповнювач."
+        ]
+      },
+      {
+        "title": "Сушка",
+        "descriptionList": [
+          "Сушити горизонтально у розправленому вигляді ",
+          "Уникати прямих сонячних променів та високої температури.",
+          "Машинну сушарку краще не використовувати."
+        ]
+      }
+    ],
+    "sizes": [
+      {
+        "key": "1",
+        "label": "140x200 см",
+        "price": "1495",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "2",
+        "label": "150x210 см",
+        "price": "1630",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "3",
+        "label": "160x200 см",
+        "price": "1630",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "4",
+        "label": "172x205 см",
+        "price": "1790",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "5",
+        "label": "180x200 см",
+        "price": "1830",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "6",
+        "label": "200x220 см",
+        "price": "1900",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "7",
+        "label": "220x240 см",
+        "price": "2290",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "8",
+        "label": "240x260 см",
+        "price": "2590",
+        "salePrice": "",
         "package": null
       }
     ],
