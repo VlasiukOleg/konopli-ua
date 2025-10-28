@@ -79,7 +79,7 @@ export async function POST(request: Request) {
 
     const mailOptionsToClient = {
       from: configuration.apiMailFrom,
-      to: email,
+      to: email || `${configuration.apiMailTo}`,
       subject: "Підтвердження замовлення з сайту KonopliUa",
       html: `
         <p>Дякуємо за Ваше замовлення, ${firstName}!</p>

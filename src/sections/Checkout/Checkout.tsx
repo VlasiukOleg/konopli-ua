@@ -44,6 +44,7 @@ const Checkout: React.FC = ({}) => {
   const inputRef = useMask({
     mask: "+38 (___) ___-__-__",
     replacement: { _: /\d/ },
+    showMask: true,
   });
 
   const router = useRouter();
@@ -58,6 +59,7 @@ const Checkout: React.FC = ({}) => {
   const [warehouses, setWarehouses] = useState<Warehouse[]>([]);
   const [isLoadingWarehouses, setIsLoadingWarehouses] = useState(false);
   const [selectedCity, setSelectedCity] = useState("");
+  const [selectedWarehouseLabel, setSelectedWarehouseLabel] = useState("");
 
   const [selectedDeliveryRadio, setSelectedDeliveryRadio] =
     React.useState("novaposhta");
@@ -89,7 +91,6 @@ const Checkout: React.FC = ({}) => {
     register,
     handleSubmit,
     control,
-    setValue,
     reset,
     formState: { errors },
   } = useForm({
@@ -158,6 +159,14 @@ const Checkout: React.FC = ({}) => {
   const handleCitySelect = (cityRef: string) => {
     setSelectedCity(cityRef);
     fetchWarehouses(cityRef);
+  };
+
+  const handleWarehouseSelect = (warehouseKey: string) => {
+    const warehouse = warehouses.find(
+      (warehouse) => warehouse.value === warehouseKey
+    );
+
+    setSelectedWarehouseLabel(warehouse?.label || "");
   };
 
   const onSubmit = async (data: IFormState) => {
@@ -241,27 +250,43 @@ const Checkout: React.FC = ({}) => {
               </p>
             </div>
             <div className="relative">
-              <Input
-                {...register("phone")}
-                ref={inputRef}
-                radius="none"
-                onChange={(e) => {
-                  setValue("phone", e.target.value, { shouldValidate: true });
+              <Controller
+                name="phone"
+                control={control}
+                rules={{
+                  required: "Це поле є обов'язковим до заповнення",
+                  pattern: {
+                    value: /^\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}$/,
+                    message: "Формат +38 (XXX) XXX-XX-XX",
+                  },
                 }}
-                isClearable
-                label="Телефон"
-                placeholder="Введіть телефон"
-                size="md"
-                labelPlacement="outside"
-                variant="bordered"
-                classNames={{
-                  label: "text-xs font-semibold md:text-sm !text-grey",
-                  inputWrapper: "group-data-[focus=true]:border-accent",
-                }}
+                render={({ field, fieldState }) => (
+                  <div className="relative">
+                    <Input
+                      {...field}
+                      ref={inputRef}
+                      label="Телефон"
+                      placeholder="Введіть телефон"
+                      size="md"
+                      radius="none"
+                      labelPlacement="outside"
+                      variant="bordered"
+                      classNames={{
+                        label: "text-xs font-semibold md:text-sm !text-grey",
+                        inputWrapper: "group-data-[focus=true]:border-accent",
+                      }}
+                      onChange={(e) => {
+                        field.onChange(e);
+                      }}
+                    />
+                    {fieldState.error && (
+                      <p className="absolute left-0 bottom-[-20px] text-[10px]/6 text-red-600">
+                        {fieldState.error.message}
+                      </p>
+                    )}
+                  </div>
+                )}
               />
-              <p className="absolute left-0 bottom-[-20px] text-[10px]/6 text-red-600">
-                {errors.phone?.message}
-              </p>
             </div>
             <Controller
               name="city"
@@ -274,7 +299,7 @@ const Checkout: React.FC = ({}) => {
                         Місто
                       </span>
                     }
-                    placeholder="Пошук міста"
+                    placeholder="Введіть Ваше місто"
                     radius="none"
                     isLoading={isLoadingCities}
                     onInputChange={onCityInputChange}
@@ -339,14 +364,17 @@ const Checkout: React.FC = ({}) => {
                                 }
                                 placeholder={
                                   selectedCity
-                                    ? "Оберіть відділення"
+                                    ? "Введіть номер відділення"
                                     : "Спочатку оберіть місто"
                                 }
                                 defaultItems={warehouses}
                                 radius="none"
                                 variant="bordered"
                                 isLoading={isLoadingWarehouses}
-                                onSelectionChange={field.onChange}
+                                onSelectionChange={(key) => {
+                                  handleWarehouseSelect(key as string);
+                                  field.onChange(key);
+                                }}
                                 labelPlacement="outside"
                               >
                                 {(item) => (
@@ -355,6 +383,11 @@ const Checkout: React.FC = ({}) => {
                                   </AutocompleteItem>
                                 )}
                               </Autocomplete>
+                              {selectedWarehouseLabel && (
+                                <p className="mt-2 text-xs text-green-700">
+                                  Обрано: {selectedWarehouseLabel}
+                                </p>
+                              )}
                               {fieldState.error && (
                                 <p className="absolute left-0 bottom-[-20px] text-[10px]/6 text-red-600">
                                   {fieldState.error.message}
