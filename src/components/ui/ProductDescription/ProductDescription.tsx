@@ -10,6 +10,7 @@ import {
   Button,
   Input,
   useDisclosure,
+  addToast,
 } from "@heroui/react";
 import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
 import { Accordion, AccordionItem } from "@heroui/accordion";
@@ -18,6 +19,7 @@ import ImageGallery from "react-image-gallery";
 import CartDrawer from "@/components/ui/CartDrawer";
 
 import { useCart } from "@/store/cart";
+import { useFavorite } from "@/store/favorite";
 
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
@@ -37,13 +39,16 @@ interface ProductDescriptionProps {
 const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const { addItem, updateQuantity } = useCart();
+  const { addFavorite, removeFavorite, favoriteIds } = useFavorite();
+
   const pathName = usePathname();
 
   const partsPathName = pathName.split("/");
 
-  const [liked, setLiked] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState(product.defaultSize);
+
+  const isProductAddToFavorite = favoriteIds.includes(product.id);
 
   const currentSize =
     product.sizes.find((size) => size.key === selectedSize) || product.sizes[0];
@@ -72,6 +77,31 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
     });
 
     updateQuantity(product.id, currentSize.label, quantity);
+  };
+
+  const handleProductAddToFavorite = () => {
+    if (!isProductAddToFavorite) {
+      addFavorite(product.id);
+      addToast({
+        title: "Додано до списку бажань",
+        description: `${product.title} (${product.subTitle})`,
+        timeout: 3000,
+        color: "success",
+        shouldShowTimeoutProgress: true,
+        variant: "bordered",
+      });
+      return;
+    }
+
+    removeFavorite(product.id);
+    addToast({
+      title: "Видаленно зі списку бажань",
+      description: `${product.title} (${product.subTitle})`,
+      timeout: 3000,
+      color: "danger",
+      shouldShowTimeoutProgress: true,
+      variant: "bordered",
+    });
   };
 
   return (
@@ -223,9 +253,9 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                     className="text-default-900/60 border-accent"
                     radius="none"
                     variant="bordered"
-                    onPress={() => setLiked((liked) => !liked)}
+                    onPress={handleProductAddToFavorite}
                   >
-                    {liked ? (
+                    {isProductAddToFavorite ? (
                       <FaHeart className="size-6 text-red-500" />
                     ) : (
                       <FaRegHeart className="size-6" />

@@ -12,6 +12,7 @@ import {
   Select,
   SelectItem,
   Link,
+  addToast,
 } from "@heroui/react";
 
 import { useCart } from "@/store/cart";
@@ -61,10 +62,26 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
   const handleProductAddToFavorite = () => {
     if (!isProductAddToFavorite) {
       addFavorite(product.id);
+      addToast({
+        title: "Додано до списку бажань",
+        description: `${product.title} (${product.subTitle})`,
+        timeout: 3000,
+        color: "success",
+        shouldShowTimeoutProgress: true,
+        variant: "bordered",
+      });
       return;
     }
 
     removeFavorite(product.id);
+    addToast({
+      title: "Видаленно зі списку бажань",
+      description: `${product.title} (${product.subTitle})`,
+      timeout: 3000,
+      color: "danger",
+      shouldShowTimeoutProgress: true,
+      variant: "bordered",
+    });
   };
 
   return (
