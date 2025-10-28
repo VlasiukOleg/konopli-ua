@@ -1,7 +1,6 @@
 "use client";
 
-import { Button } from "@heroui/react";
-import Link from "next/link";
+import { Button, Link } from "@heroui/react";
 import { usePathname } from "next/navigation";
 
 import { FaTelegramPlane } from "react-icons/fa";
@@ -23,16 +22,19 @@ const Footer: React.FC = () => {
         <div className="flex justify-between mb-4 md:mb-6 xl:justify-around">
           <div>
             <p className="text-accent font-bold mb-2 md:text-lg">Покупцям</p>
-            <ul className="text-black text-xs font-semibold flex flex-col gap-2 md:text-sm">
+            <ul className="font-semibold flex flex-col gap-1">
               <li>
-                <Link href={`/${Pages.ABOUT}`} className="text-xs md:text-sm">
+                <Link
+                  href={`/${Pages.ABOUT}`}
+                  className="text-black text-xs md:text-sm"
+                >
                   Про нас
                 </Link>
               </li>
               <li>
                 <Link
                   href={`/${Pages.CONTACTS}`}
-                  className="text-xs md:text-sm"
+                  className="text-black text-xs md:text-sm"
                 >
                   Контакти
                 </Link>
@@ -40,7 +42,7 @@ const Footer: React.FC = () => {
               <li>
                 <Link
                   href={`/${Pages.DOSTAVKA_OPLATA}`}
-                  className="text-xs md:text-sm"
+                  className="text-black text-xs md:text-sm"
                 >
                   Доставка і оплата
                 </Link>
@@ -49,11 +51,12 @@ const Footer: React.FC = () => {
           </div>
           <div>
             <p className="text-accent font-bold mb-2 md:text-lg">Каталог</p>
-            <ul className="text-black font-semibold text-xs flex flex-col gap-2 md:text-sm md:grid md:grid-cols-2">
+            <ul className="font-semibold flex flex-col gap-2 md:grid md:grid-cols-2">
               {categoriesData.list.map((category) => (
                 <Link
                   href={`/${Pages.CATALOG}/${category.href}`}
                   key={category.id}
+                  className="text-black text-xs md:text-sm"
                 >
                   {category.title}
                 </Link>
@@ -69,6 +72,8 @@ const Footer: React.FC = () => {
         <div className="h-[1px] bg-black mb-4 md:h-[1px]"></div>
         <div className="flex items-center justify-center gap-2 mb-4">
           <Button
+            as={Link}
+            href="https://t.me/vl_oleg_frontend"
             isIconOnly
             aria-label="Like"
             variant="solid"
@@ -80,6 +85,8 @@ const Footer: React.FC = () => {
 
           <Button
             isIconOnly
+            as={Link}
+            href="https://www.instagram.com/konoplia_ua"
             aria-label="Like"
             variant="solid"
             radius="full"
@@ -88,6 +95,8 @@ const Footer: React.FC = () => {
             <RiInstagramFill className="size-4 text-white md:size-6" />
           </Button>
           <Button
+            as={Link}
+            href="tel:+380632790437"
             isIconOnly
             aria-label="Like"
             variant="solid"
