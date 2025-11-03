@@ -178,19 +178,19 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
                   <span>Вартість товарів:</span>
                   <span>{total} грн.</span>
                 </div>
-                <div className="flex justify-between mb-2 text-sm">
+                {/* <div className="flex justify-between mb-2 text-sm">
                   <span>Знижка:</span>
                   <span>5%</span>
-                </div>
+                </div> */}
                 <div className="flex justify-between font-bold text-lg mb-4">
                   <span>До сплати:</span>
-                  <span>{(total / 1.05).toFixed(0)} грн.</span>
+                  <span>{(total).toFixed(2)} грн.</span>
                 </div>
                 <Button
                   size="md"
                   radius="none"
-                  variant="bordered"
-                  className="font-semibold text-accent border-accent w-full"
+                  
+                  className="font-semibold text-white bg-accent   w-full"
                   onPress={() => {
                     onOpenChange(false);
                     router.push(`/${Pages.CHECKOUT}`);
@@ -204,7 +204,8 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
             <Button
               size="md"
               radius="none"
-              className="bg-accent font-semibold text-white text-center"
+              variant="bordered"
+              className="text-accent font-semibold  text-center border-accent"
               onPress={() => onOpenChange(false)}
             >
               ПРОДОВЖИТИ ПОКУПКИ

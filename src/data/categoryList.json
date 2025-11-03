@@ -3,15 +3,15 @@
   "popularTitle": "Популярні категорії",
   "button": "Перейти",
   "list": [
-    {
+      {
       "id": 1,
-      "title": "Постіль конопляна",
+      "title": "Гіпоаллергенні ковдри",
       "width": 180,
       "height": 180,
-      "src": "/images/categories/konoplyana-postil.png",
-      "alt": "Фото конопляної постілі на ліжку",
-      "bgColor": "blue",
-      "href": "postil-konoplyana"
+      "src": "/images/categories/kovdra.jpeg",
+      "alt": "Фото ковдри на природі",
+      "bgColor": "red",
+      "href": "kovdri-i-pledi"
     },
     {
       "id": 2,
@@ -23,15 +23,15 @@
       "bgColor": "red",
       "href": "gipoallergenni-podushki"
     },
-    {
+     {
       "id": 3,
-      "title": "Ковдри та пледи",
+      "title": "Постіль конопляна",
       "width": 180,
       "height": 180,
-      "src": "/images/categories/kovdra.jpeg",
-      "alt": "Фото ковдри на природі",
-      "bgColor": "red",
-      "href": "kovdri-i-pledi"
+      "src": "/images/categories/konoplyana-postil.png",
+      "alt": "Фото конопляної постілі на ліжку",
+      "bgColor": "blue",
+      "href": "postil-konoplyana"
     },
     {
       "id": 4,
