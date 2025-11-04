@@ -21,14 +21,14 @@ const Contacts: React.FC = () => {
         </Breadcrumbs>
         <h1 className="section-title mb-2">Контакти</h1>
         <Link
-          href="tel:+380632790437"
+          href="tel:+380931265157"
           className="flex items-center gap-2 text-sm md:text-sm xl:text-lg mb-2"
         >
           <FaPhoneVolume className="size-4  xl:size-5" />
-          +38 (096) 93 444 30
+          +38 (093) 126 51 57
         </Link>
         <Link
-          href="https://t.me/vl_oleg_frontend"
+          href="https://t.me/konopliua"
           className="flex items-center gap-2 text-sm md:text-sm xl:text-lg mb-2"
           target="_blank"
           rel="noopener noreferrer"

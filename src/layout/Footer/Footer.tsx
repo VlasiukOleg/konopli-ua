@@ -73,7 +73,8 @@ const Footer: React.FC = () => {
         <div className="flex items-center justify-center gap-2 mb-4">
           <Button
             as={Link}
-            href="https://t.me/vl_oleg_frontend"
+            href="https://t.me/konopliua"
+            target="_blank"
             isIconOnly
             aria-label="Like"
             variant="solid"
@@ -96,7 +97,7 @@ const Footer: React.FC = () => {
           </Button>
           <Button
             as={Link}
-            href="tel:+380632790437"
+            href="tel:+380931265157"
             isIconOnly
             aria-label="Like"
             variant="solid"
