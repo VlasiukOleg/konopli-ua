@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
           <Button
             isIconOnly
             as={Link}
-            href="https://www.instagram.com/konoplia_ua"
+            href="https://www.instagram.com/konopli_ua/"
             aria-label="Like"
             variant="solid"
             radius="full"

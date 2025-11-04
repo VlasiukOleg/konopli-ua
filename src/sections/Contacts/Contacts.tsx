@@ -37,7 +37,7 @@ const Contacts: React.FC = () => {
           Telegram
         </Link>
         <Link
-          href="https://www.instagram.com/konoplia_ua"
+          href="https://www.instagram.com/konopli_ua"
           className="flex items-center gap-2 text-sm md:text-sm xl:text-lg mb-4"
           target="_blank"
           rel="noopener noreferrer"
