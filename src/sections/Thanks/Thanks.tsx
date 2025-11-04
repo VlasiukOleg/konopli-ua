@@ -8,9 +8,9 @@ import {
   Button,
   useDisclosure,
 } from "@heroui/react";
-
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import { sendGTMEvent } from '@next/third-parties/google'
 
 const Thanks: React.FC = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -19,6 +19,10 @@ const Thanks: React.FC = () => {
 
   useEffect(() => {
     onOpen();
+
+    sendGTMEvent({
+    event: 'thanks',
+  });
   }, [onOpen]);
 
   return (
