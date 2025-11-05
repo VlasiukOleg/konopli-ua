@@ -303,7 +303,14 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                   {product?.description && (
                     <ul className="space-y-2">
                       {product.description.map((advantage, index) => (
-                        <li key={index}>{advantage}</li>
+                        <li key={index}>
+                          {product?.descriptionTitle && (
+                            <div className="font-semibold">
+                              {product.descriptionTitle[index]}
+                            </div>
+                          )}
+                          {advantage}
+                        </li>
                       ))}
                     </ul>
                   )}
