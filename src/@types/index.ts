@@ -58,6 +58,7 @@ export interface IProductCard {
   images?: string[];
   description?: string[];
   descriptionTitle?: string[];
+  descriptionList?: string[];
   advantages?: string[];
   care?: string | { title: string; descriptionList: string[] }[];
   tags: string[];

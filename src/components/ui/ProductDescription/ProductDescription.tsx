@@ -139,7 +139,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                         thumbnail: img,
                       }))}
                       showPlayButton={false}
-                      showFullscreenButton={false}
+                      showFullscreenButton={true}
                     />
                   )}
                 </div>
@@ -305,9 +305,18 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                       {product.description.map((advantage, index) => (
                         <li key={index}>
                           {product?.descriptionTitle && (
-                            <div className="font-semibold">
+                            <div className="font-semibold mb-2">
                               {product.descriptionTitle[index]}
                             </div>
+                          )}
+                          {product?.descriptionList && (
+                            <ul className="list-disc pl-5 space-y-1 marker:text-accent">
+                              {product.descriptionList[index]
+                                ?.split("/")
+                                .map((descriptionItem, index) => (
+                                  <li key={index}>{descriptionItem}</li>
+                                ))}
+                            </ul>
                           )}
                           {advantage}
                         </li>
