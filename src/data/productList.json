@@ -1557,56 +1557,56 @@
       {
         "key": "1",
         "label": "140x200 см",
-        "price": "1495",
+        "price": "3290",
         "salePrice": "",
         "package": null
       },
       {
         "key": "2",
         "label": "150x210 см",
-        "price": "1630",
+        "price": "3590",
         "salePrice": "",
         "package": null
       },
       {
         "key": "3",
         "label": "160x200 см",
-        "price": "1630",
+        "price": "3590",
         "salePrice": "",
         "package": null
       },
       {
         "key": "4",
         "label": "172x205 см",
-        "price": "1790",
+        "price": "3890",
         "salePrice": "",
         "package": null
       },
       {
         "key": "5",
         "label": "180x200 см",
-        "price": "1830",
+        "price": "4050",
         "salePrice": "",
         "package": null
       },
       {
         "key": "6",
         "label": "200x220 см",
-        "price": "1900",
+        "price": "4350",
         "salePrice": "",
         "package": null
       },
       {
         "key": "7",
         "label": "220x240 см",
-        "price": "2290",
+        "price": "4790",
         "salePrice": "",
         "package": null
       },
       {
         "key": "8",
         "label": "240x260 см",
-        "price": "2590",
+        "price": "5350",
         "salePrice": "",
         "package": null
       }

@@ -109,13 +109,15 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
                             className=" border-accent h-6 w-6 min-w-6"
                             radius="none"
                             variant="bordered"
-                            onPress={() =>
-                              updateQuantity(
-                                product.id,
-                                product.size,
-                                product.quantity - 1
-                              )
-                            }
+                            onPress={() => {
+                              if (product.quantity > 1) {
+                                updateQuantity(
+                                  product.id,
+                                  product.size,
+                                  product.quantity - 1
+                                );
+                              }
+                            }}
                           >
                             <FaMinus className=" text-accent" />
                           </Button>
@@ -184,12 +186,11 @@ const CartDrawer: React.FC<ICartDrawer> = ({ isOpen, onOpenChange }) => {
                 </div> */}
                 <div className="flex justify-between font-bold text-lg mb-4">
                   <span>До сплати:</span>
-                  <span>{(total).toFixed(2)} грн.</span>
+                  <span>{total.toFixed(2)} грн.</span>
                 </div>
                 <Button
                   size="md"
                   radius="none"
-                  
                   className="font-semibold text-white bg-accent   w-full"
                   onPress={() => {
                     onOpenChange(false);
