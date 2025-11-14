@@ -5,6 +5,8 @@ import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
 import ProductCard from "@/components/ui/ProductCard/ProductCard";
 import BlanketAlert from "@/components/common/BlanketAlert";
 
+import { useAlert } from "@/store/alert";
+
 import { IoHomeOutline } from "react-icons/io5";
 import productList from "@/data/productList.json";
 
@@ -19,11 +21,13 @@ interface IProductListProps {
 }
 
 const ProductList: React.FC<IProductListProps> = ({ product }) => {
+  const isAlertShow = useAlert((state) => state.isAlertShow);
+
   const filteredProductsByCategory = productList.filter((productItem) =>
     productItem.category.includes(product)
   );
 
-  const isAlertVisible = product === Pages.KOVDRI;
+  const isAlertVisible = product === Pages.KOVDRI && isAlertShow;
 
   return (
     <section className="py-5">

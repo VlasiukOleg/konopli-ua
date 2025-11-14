@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 import {
   Alert,
   Button,
@@ -11,23 +10,41 @@ import {
   useDisclosure,
 } from "@heroui/react";
 
+import { useAlert } from "@/store/alert";
+
 const title = "Цікаво знати";
 const description =
   "Всі наші ковдри ручної роботи та всередині мають конопляне волокно яке має багато корисних властивостей";
 
 export const BlanketAlert: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(true);
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const [isMounted, setIsMounted] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const { isAlertShow, removeAlert } = useAlert();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  const handleClose = () => {
+    setIsVisible(false);
+  };
+
+  const handleAlertClose = () => {
+    removeAlert();
+  };
+
+  if (!isMounted || !isAlertShow || !isVisible) return null;
 
   return (
     <>
       <Alert
         description={description}
-        isVisible={isVisible}
+        isVisible={true}
         title={title}
         variant="bordered"
         hideIcon
-        onClose={() => setIsVisible(false)}
+        onClose={handleClose}
         classNames={{
           title: "mb-1",
           description: "text-xs",
@@ -50,9 +67,9 @@ export const BlanketAlert: React.FC = () => {
             size="sm"
             variant="bordered"
             className="mt-2"
-            onPress={() => setIsVisible(false)}
+            onPress={handleAlertClose}
           >
-            Закрити
+            Більше не показувати
           </Button>
         </div>
       </Alert>
