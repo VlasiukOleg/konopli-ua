@@ -144,6 +144,11 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                   )}
                 </div>
               </CardBody>
+              {product.tags.includes("discount35") && (
+                <div className="bg-red-600 px-2 py-1 inline-block absolute top-2 left-2 text-white text-xs z-10">
+                  -35%
+                </div>
+              )}
             </Card>
             <div className="xl:w-[50%]">
               <p className="text-black font-semibold text-xl leading-7 mb-2 md:text-2xl">

@@ -207,6 +207,11 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
             Хіт продаж
           </div>
         )}
+        {product.tags.includes("discount35") && (
+          <div className="bg-red-600 px-2 py-1 inline-block absolute top-[125px] left-2 text-white text-xs z-10">
+            -35%
+          </div>
+        )}
         {product.tags.includes("Winter") && (
           <div className="bg-blue-600 rounded-full flex justify-center items-center p-1 absolute top-2 left-2 text-white z-10 size-7">
             <FaRegSnowflake className="size-4" />

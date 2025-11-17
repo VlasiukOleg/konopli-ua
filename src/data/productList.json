@@ -1073,7 +1073,7 @@
       "/images/kovdri/kovdra-demisezonna-bavovna-konoplya-3.webp",
       "/images/kovdri/kovdra-demisezonna-bavovna-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна", "AllSeason"],
+    "tags": ["Супер ціна", "AllSeason", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1107,56 +1107,56 @@
         "key": "1",
         "label": "140x200 см",
         "price": "1550",
-        "salePrice": "",
+        "salePrice": "2090",
         "package": null
       },
       {
         "key": "2",
         "label": "150x210 см",
         "price": "1640",
-        "salePrice": "",
+        "salePrice": "2215",
         "package": null
       },
       {
         "key": "3",
         "label": "160x200 см",
         "price": "1640",
-        "salePrice": "",
+        "salePrice": "2215",
         "package": null
       },
       {
         "key": "4",
         "label": "172x205 см",
         "price": "1710",
-        "salePrice": "",
+        "salePrice": "2310",
         "package": null
       },
       {
         "key": "5",
         "label": "180x200 см",
         "price": "1760",
-        "salePrice": "",
+        "salePrice": "2375",
         "package": null
       },
       {
         "key": "6",
         "label": "200x220 см",
         "price": "2010",
-        "salePrice": "",
+        "salePrice": "2715",
         "package": null
       },
       {
         "key": "7",
         "label": "220x240 см",
         "price": "2240",
-        "salePrice": "",
+        "salePrice": "3025",
         "package": null
       },
       {
         "key": "8",
         "label": "240x260 см",
         "price": "2640",
-        "salePrice": "",
+        "salePrice": "3565",
         "package": null
       }
     ],
@@ -1200,7 +1200,7 @@
       "/images/kovdri/kovdra-demisezonna-satin-konoplya-3.webp",
       "/images/kovdri/kovdra-demisezonna-satin-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна", "AllSeason"],
+    "tags": ["Супер ціна", "AllSeason", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1234,56 +1234,56 @@
         "key": "1",
         "label": "140x200 см",
         "price": "1650",
-        "salePrice": "",
+        "salePrice": "2225",
         "package": null
       },
       {
         "key": "2",
         "label": "150x210 см",
         "price": "1760",
-        "salePrice": "",
+        "salePrice": "2375",
         "package": null
       },
       {
         "key": "3",
         "label": "160x200 см",
         "price": "1760",
-        "salePrice": "",
+        "salePrice": "2375",
         "package": null
       },
       {
         "key": "4",
         "label": "172x205 см",
         "price": "1900",
-        "salePrice": "",
+        "salePrice": "2565",
         "package": null
       },
       {
         "key": "5",
         "label": "180x200 см",
         "price": "1945",
-        "salePrice": "",
+        "salePrice": "2625",
         "package": null
       },
       {
         "key": "6",
         "label": "200x220 см",
         "price": "2100",
-        "salePrice": "",
+        "salePrice": "2835",
         "package": null
       },
       {
         "key": "7",
         "label": "220x240 см",
         "price": "2350",
-        "salePrice": "",
+        "salePrice": "3170",
         "package": null
       },
       {
         "key": "8",
         "label": "240x260 см",
         "price": "2900",
-        "salePrice": "",
+        "salePrice": "3915",
         "package": null
       }
     ],
@@ -1312,7 +1312,7 @@
       "/images/kovdri/kovdra-demisezonna-konoplya-konoplya-4.webp",
       "/images/kovdri/kovdra-demisezonna-konoplya-konoplya-5.webp"
     ],
-    "tags": ["Супер ціна", "AllSeason"],
+    "tags": ["Супер ціна", "AllSeason", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1346,56 +1346,56 @@
         "key": "1",
         "label": "140x200 см",
         "price": "3600",
-        "salePrice": "",
+        "salePrice": "4860",
         "package": null
       },
       {
         "key": "2",
         "label": "150x210 см",
         "price": "3800",
-        "salePrice": "",
+        "salePrice": "5130",
         "package": null
       },
       {
         "key": "3",
         "label": "160x200 см",
         "price": "3800",
-        "salePrice": "",
+        "salePrice": "5130",
         "package": null
       },
       {
         "key": "4",
         "label": "172x205 см",
         "price": "4400",
-        "salePrice": "",
+        "salePrice": "5940",
         "package": null
       },
       {
         "key": "5",
         "label": "180x200 см",
         "price": "4580",
-        "salePrice": "",
+        "salePrice": "6185",
         "package": null
       },
       {
         "key": "6",
         "label": "200x220 см",
         "price": "5000",
-        "salePrice": "",
+        "salePrice": "6750",
         "package": null
       },
       {
         "key": "7",
         "label": "220x240 см",
         "price": "5740",
-        "salePrice": "",
+        "salePrice": "7750",
         "package": null
       },
       {
         "key": "8",
         "label": "240x260 см",
         "price": "6740",
-        "salePrice": "",
+        "salePrice": "9100",
         "package": null
       }
     ],
@@ -1439,7 +1439,7 @@
       "/images/kovdri/kovdra-demisezonna-bavovna-konoplya-3.webp",
       "/images/kovdri/kovdra-demisezonna-bavovna-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна", "Winter"],
+    "tags": ["Супер ціна", "Winter", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1473,49 +1473,49 @@
         "key": "1",
         "label": "140x200 см",
         "price": "2700",
-        "salePrice": "",
+        "salePrice": "3645",
         "package": null
       },
       {
         "key": "2",
         "label": "150x210 см",
         "price": "2700",
-        "salePrice": "",
+        "salePrice": "3645",
         "package": null
       },
       {
         "key": "3",
         "label": "160x200 см",
         "price": "2950",
-        "salePrice": "",
+        "salePrice": "3985",
         "package": null
       },
       {
         "key": "4",
         "label": "172x205 см",
         "price": "3050",
-        "salePrice": "",
+        "salePrice": "4120",
         "package": null
       },
       {
         "key": "5",
         "label": "180x200 см",
         "price": "3350",
-        "salePrice": "",
+        "salePrice": "4525",
         "package": null
       },
       {
         "key": "6",
         "label": "200x220 см",
         "price": "3800",
-        "salePrice": "",
+        "salePrice": "5130",
         "package": null
       },
       {
         "key": "7",
         "label": "220x240 см",
         "price": "4100",
-        "salePrice": "",
+        "salePrice": "5535",
         "package": null
       }
     ],
@@ -1557,7 +1557,7 @@
       "/images/kovdri/kovdra-litnya-satin-konoplya-1.webp",
       "/images/kovdri/kovdra-litnya-satin-konoplya-2.webp"
     ],
-    "tags": ["Супер ціна", "Winter"],
+    "tags": ["Супер ціна", "Winter", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1591,56 +1591,56 @@
         "key": "1",
         "label": "140x200 см",
         "price": "3290",
-        "salePrice": "",
+        "salePrice": "4440",
         "package": null
       },
       {
         "key": "2",
         "label": "150x210 см",
         "price": "3590",
-        "salePrice": "",
+        "salePrice": "4845",
         "package": null
       },
       {
         "key": "3",
         "label": "160x200 см",
         "price": "3590",
-        "salePrice": "",
+        "salePrice": "4845",
         "package": null
       },
       {
         "key": "4",
         "label": "172x205 см",
         "price": "3890",
-        "salePrice": "",
+        "salePrice": "5250",
         "package": null
       },
       {
         "key": "5",
         "label": "180x200 см",
         "price": "4050",
-        "salePrice": "",
+        "salePrice": "5470",
         "package": null
       },
       {
         "key": "6",
         "label": "200x220 см",
         "price": "4350",
-        "salePrice": "",
+        "salePrice": "5875",
         "package": null
       },
       {
         "key": "7",
         "label": "220x240 см",
         "price": "4790",
-        "salePrice": "",
+        "salePrice": "6465",
         "package": null
       },
       {
         "key": "8",
         "label": "240x260 см",
         "price": "5350",
-        "salePrice": "",
+        "salePrice": "7225",
         "package": null
       }
     ],
@@ -1679,7 +1679,7 @@
     "images": [
       "/images/kovdri/kovdra-podushki-demisezonna-satin-konoplya.webp"
     ],
-    "tags": ["Супер ціна", "AllSeason"],
+    "tags": ["Супер ціна", "AllSeason", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1726,126 +1726,126 @@
         "key": "1",
         "label": "Ковдра: 140x200 см + Дві подушки: 40x40 cм",
         "price": "2550",
-        "salePrice": "2750",
+        "salePrice": "3445",
         "package": null
       },
       {
         "key": "2",
         "label": "Ковдра: 140x200 см + Дві подушки: 40x60 cм",
         "price": "2750",
-        "salePrice": "2930",
+        "salePrice": "3715",
         "package": null
       },
       {
         "key": "3",
         "label": "Ковдра: 140x200 см + Дві подушки: 50x70 cм",
         "price": "2990",
-        "salePrice": "3150",
+        "salePrice": "4035",
         "package": null
       },
       {
         "key": "4",
         "label": "Ковдра: 150x210 см + Дві подушки: 40x40 cм",
         "price": "2690",
-        "salePrice": "2850",
+        "salePrice": "3630",
         "package": null
       },
       {
         "key": "5",
         "label": "Ковдра: 150x210 см + Дві подушки: 40x60 cм",
         "price": "2870",
-        "salePrice": "3040",
+        "salePrice": "3875",
         "package": null
       },
       {
         "key": "6",
         "label": "Ковдра: 150x210 см + Дві подушки: 50x70 cм",
         "price": "3080",
-        "salePrice": "3260",
+        "salePrice": "4160",
         "package": null
       },
       {
         "key": "7",
         "label": "Ковдра: 160x200 см + Дві подушки: 40x40 cм",
         "price": "2660",
-        "salePrice": "2850",
+        "salePrice": "3590",
         "package": null
       },
       {
         "key": "8",
         "label": "Ковдра: 160x200 см + Дві подушки: 40x60 cм",
         "price": "2820",
-        "salePrice": "3050",
+        "salePrice": "3810",
         "package": null
       },
       {
         "key": "9",
         "label": "Ковдра: 160x200 см + Дві подушки: 50x70 cм",
         "price": "3100",
-        "salePrice": "3260",
+        "salePrice": "4185",
         "package": null
       },
       {
         "key": "10",
         "label": "Ковдра: 172x200 см + Дві подушки: 40x40 cм",
         "price": "2810",
-        "salePrice": "2990",
+        "salePrice": "3795",
         "package": null
       },
       {
         "key": "11",
         "label": "Ковдра: 172x200 см + Дві подушки: 40x60 cм",
         "price": "3020",
-        "salePrice": "3180",
+        "salePrice": "4075",
         "package": null
       },
       {
         "key": "12",
         "label": "Ковдра: 172x200 см + Дві подушки: 50x70 cм",
         "price": "3230",
-        "salePrice": "3400",
+        "salePrice": "4360",
         "package": null
       },
       {
         "key": "13",
         "label": "Ковдра: 180x200 см + Дві подушки: 40x40 cм",
         "price": "2885",
-        "salePrice": "3035",
+        "salePrice": "3895",
         "package": null
       },
       {
         "key": "14",
         "label": "Ковдра: 180x200 см + Дві подушки: 40x60 cм",
         "price": "3035",
-        "salePrice": "3225",
+        "salePrice": "4095",
         "package": null
       },
       {
         "key": "15",
         "label": "Ковдра: 180x200 см + Дві подушки: 50x70 cм",
         "price": "3290",
-        "salePrice": "3445",
+        "salePrice": "4445",
         "package": null
       },
       {
         "key": "16",
         "label": "Ковдра: 200x220 см + Дві подушки: 40x40 cм",
         "price": "3000",
-        "salePrice": "3190",
+        "salePrice": "4050",
         "package": null
       },
       {
         "key": "17",
         "label": "Ковдра: 200x220 см + Дві подушки: 40x60 cм",
         "price": "3180",
-        "salePrice": "3380",
+        "salePrice": "4295",
         "package": null
       },
       {
         "key": "18",
         "label": "Ковдра: 200x220 см + Дві подушки: 50x70 cм",
         "price": "3400",
-        "salePrice": "3600",
+        "salePrice": "4590",
         "package": null
       }
     ],
@@ -1871,7 +1871,7 @@
       "/images/kovdri/kovdra-podushki-demisezonna-konoplya-konoplya-3.webp",
       "/images/kovdri/kovdra-podushki-demisezonna-konoplya-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна", "AllSeason"],
+    "tags": ["Супер ціна", "AllSeason", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -1918,84 +1918,84 @@
         "key": "1",
         "label": "Ковдра: 140x200 см + Дві подушки: 40x40 cм",
         "price": "4330",
-        "salePrice": "",
+        "salePrice": "5845",
         "package": null
       },
       {
         "key": "2",
         "label": "Ковдра: 140x200 см + Дві подушки: 40x60 cм",
         "price": "4560",
-        "salePrice": "",
+        "salePrice": "6155",
         "package": null
       },
       {
         "key": "3",
         "label": "Ковдра: 140x200 см + Дві подушки: 50x70 cм",
         "price": "4820",
-        "salePrice": "",
+        "salePrice": "6505",
         "package": null
       },
       {
         "key": "4",
         "label": "Ковдра: 150x210 см + Дві подушки: 40x40 cм",
         "price": "4520",
-        "salePrice": "",
+        "salePrice": "6100",
         "package": null
       },
       {
         "key": "5",
         "label": "Ковдра: 150x210 см + Дві подушки: 40x60 cм",
         "price": "4760",
-        "salePrice": "",
+        "salePrice": "6425",
         "package": null
       },
       {
         "key": "6",
         "label": "Ковдра: 150x210 см + Дві подушки: 50x70 cм",
         "price": "5010",
-        "salePrice": "",
+        "salePrice": "6765",
         "package": null
       },
       {
         "key": "10",
         "label": "Ковдра: 172x200 см + Дві подушки: 40x40 cм",
         "price": "4760",
-        "salePrice": "",
+        "salePrice": "6425",
         "package": null
       },
       {
         "key": "11",
         "label": "Ковдра: 172x200 см + Дві подушки: 40x60 cм",
         "price": "4990",
-        "salePrice": "",
+        "salePrice": "6735",
         "package": null
       },
       {
         "key": "12",
         "label": "Ковдра: 172x200 см + Дві подушки: 50x70 cм",
         "price": "5250",
-        "salePrice": "",
+        "salePrice": "7085",
         "package": null
       },
       {
         "key": "16",
         "label": "Ковдра: 200x220 см + Дві подушки: 40x40 cм",
         "price": "5270",
-        "salePrice": "",
+        "salePrice": "7115",
         "package": null
       },
       {
         "key": "17",
         "label": "Ковдра: 200x220 см + Дві подушки: 40x60 cм",
         "price": "5500",
-        "salePrice": "",
+        "salePrice": "7425",
         "package": null
       },
       {
         "key": "18",
         "label": "Ковдра: 200x220 см + Дві подушки: 50x70 cм",
         "price": "5770",
-        "salePrice": "",
+        "salePrice": "7790",
         "package": null
       }
     ],
@@ -2038,7 +2038,7 @@
       "/images/kovdri/kovdra-podushki-demisezonna-bavovna-konoplya-3.webp",
       "/images/kovdri/kovdra-podushki-demisezonna-bavovna-konoplya-4.webp"
     ],
-    "tags": ["Супер ціна", "AllSeason"],
+    "tags": ["Супер ціна", "AllSeason", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -2085,126 +2085,126 @@
         "key": "1",
         "label": "Ковдра: 140x200 см + Дві подушки: 40x40 cм",
         "price": "2435",
-        "salePrice": "2600",
+        "salePrice": "3285",
         "package": null
       },
       {
         "key": "2",
         "label": "Ковдра: 140x200 см + Дві подушки: 40x60 cм",
         "price": "2615",
-        "salePrice": "2780",
+        "salePrice": "3530",
         "package": null
       },
       {
         "key": "3",
         "label": "Ковдра: 140x200 см + Дві подушки: 50x70 cм",
         "price": "2845",
-        "salePrice": "3010",
+        "salePrice": "3840",
         "package": null
       },
       {
         "key": "4",
         "label": "Ковдра: 150x210 см + Дві подушки: 40x40 cм",
         "price": "2525",
-        "salePrice": "2690",
+        "salePrice": "3410",
         "package": null
       },
       {
         "key": "5",
         "label": "Ковдра: 150x210 см + Дві подушки: 40x60 cм",
         "price": "2705",
-        "salePrice": "2870",
+        "salePrice": "3650",
         "package": null
       },
       {
         "key": "6",
         "label": "Ковдра: 150x210 см + Дві подушки: 50x70 cм",
         "price": "2935",
-        "salePrice": "3100",
+        "salePrice": "3960",
         "package": null
       },
       {
         "key": "7",
         "label": "Ковдра: 160х200 см + Дві подушки: 40x40 cм",
         "price": "2520",
-        "salePrice": "2690",
+        "salePrice": "3400",
         "package": null
       },
       {
         "key": "8",
         "label": "Ковдра: 160х200 см + Дві подушки: 40x60 cм",
         "price": "2705",
-        "salePrice": "2870",
+        "salePrice": "3650",
         "package": null
       },
       {
         "key": "9",
         "label": "Ковдра: 160х200 см + Дві подушки: 50x70 cм",
         "price": "2935",
-        "salePrice": "3100",
+        "salePrice": "3960",
         "package": null
       },
       {
         "key": "10",
         "label": "Ковдра: 172x200 см + Дві подушки: 40x40 cм",
         "price": "2595",
-        "salePrice": "2760",
+        "salePrice": "3505",
         "package": null
       },
       {
         "key": "11",
         "label": "Ковдра: 172x200 см + Дві подушки: 40x60 cм",
         "price": "2745",
-        "salePrice": "2910",
+        "salePrice": "3705",
         "package": null
       },
       {
         "key": "12",
         "label": "Ковдра: 172x200 см + Дві подушки: 50x70 cм",
         "price": "3005",
-        "salePrice": "3170",
+        "salePrice": "4055",
         "package": null
       },
       {
         "key": "13",
         "label": "Ковдра: 180x200 см + Дві подушки: 40x40 cм",
         "price": "2645",
-        "salePrice": "2810",
+        "salePrice": "3570",
         "package": null
       },
       {
         "key": "14",
         "label": "Ковдра: 180x200 см + Дві подушки: 40x60 cм",
         "price": "2825",
-        "salePrice": "2990",
+        "salePrice": "3815",
         "package": null
       },
       {
         "key": "15",
         "label": "Ковдра: 180x200 см + Дві подушки: 50x70 cм",
         "price": "3055",
-        "salePrice": "3220",
+        "salePrice": "4125",
         "package": null
       },
       {
         "key": "16",
         "label": "Ковдра: 200x220 см + Дві подушки: 40x40 cм",
         "price": "2895",
-        "salePrice": "3060",
+        "salePrice": "3910",
         "package": null
       },
       {
         "key": "17",
         "label": "Ковдра: 200x220 см + Дві подушки: 40x60 cм",
         "price": "3075",
-        "salePrice": "3240",
+        "salePrice": "4150",
         "package": null
       },
       {
         "key": "18",
         "label": "Ковдра: 200x220 см + Дві подушки: 50x70 cм",
         "price": "3305",
-        "salePrice": "3470",
+        "salePrice": "4460",
         "package": null
       }
     ],
@@ -2247,7 +2247,7 @@
       "/images/kovdri/kovdra-litnya-bavovna-konoplya-2.webp",
       "/images/kovdri/kovdra-litnya-bavovna-konoplya-3.webp"
     ],
-    "tags": ["Супер ціна", "Summer"],
+    "tags": ["Супер ціна", "Summer", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -2281,49 +2281,49 @@
         "key": "1",
         "label": "140x200 см",
         "price": "1390",
-        "salePrice": "",
+        "salePrice": "1875",
         "package": null
       },
       {
         "key": "2",
         "label": "150x210 см",
         "price": "1550",
-        "salePrice": "",
+        "salePrice": "2095",
         "package": null
       },
       {
         "key": "3",
         "label": "160x200 см",
         "price": "1550",
-        "salePrice": "",
+        "salePrice": "2095",
         "package": null
       },
       {
         "key": "4",
         "label": "180x200 см",
         "price": "1690",
-        "salePrice": "",
+        "salePrice": "2280",
         "package": null
       },
       {
         "key": "5",
         "label": "200x220 см",
         "price": "1830",
-        "salePrice": "",
+        "salePrice": "2470",
         "package": null
       },
       {
         "key": "6",
         "label": "220x240 см",
         "price": "2100",
-        "salePrice": "",
+        "salePrice": "2835",
         "package": null
       },
       {
         "key": "7",
         "label": "240x260 см",
         "price": "2450",
-        "salePrice": "",
+        "salePrice": "3305",
         "package": null
       }
     ],
@@ -2365,7 +2365,7 @@
       "/images/kovdri/kovdra-litnya-satin-konoplya-1.webp",
       "/images/kovdri/kovdra-litnya-satin-konoplya-2.webp"
     ],
-    "tags": ["Супер ціна", "Summer"],
+    "tags": ["Супер ціна", "Summer", "discount35"],
     "advantages": [
       "Дозволяє тілу 'дихати'",
       "Антибактеріальна",
@@ -2399,56 +2399,56 @@
         "key": "1",
         "label": "140x200 см",
         "price": "1495",
-        "salePrice": "",
+        "salePrice": "2015",
         "package": null
       },
       {
         "key": "2",
         "label": "150x210 см",
         "price": "1630",
-        "salePrice": "",
+        "salePrice": "2200",
         "package": null
       },
       {
         "key": "3",
         "label": "160x200 см",
         "price": "1630",
-        "salePrice": "",
+        "salePrice": "2200",
         "package": null
       },
       {
         "key": "4",
         "label": "172x205 см",
         "price": "1790",
-        "salePrice": "",
+        "salePrice": "2415",
         "package": null
       },
       {
         "key": "5",
         "label": "180x200 см",
         "price": "1830",
-        "salePrice": "",
+        "salePrice": "2470",
         "package": null
       },
       {
         "key": "6",
         "label": "200x220 см",
         "price": "1900",
-        "salePrice": "",
+        "salePrice": "2565",
         "package": null
       },
       {
         "key": "7",
         "label": "220x240 см",
         "price": "2290",
-        "salePrice": "",
+        "salePrice": "3090",
         "package": null
       },
       {
         "key": "8",
         "label": "240x260 см",
         "price": "2590",
-        "salePrice": "",
+        "salePrice": "3495",
         "package": null
       }
     ],
