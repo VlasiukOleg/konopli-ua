@@ -3,7 +3,7 @@
   "popularTitle": "Популярні категорії",
   "button": "Перейти",
   "list": [
-      {
+    {
       "id": 1,
       "title": "Гіпоаллергенні ковдри",
       "width": 180,
@@ -23,7 +23,7 @@
       "bgColor": "red",
       "href": "gipoallergenni-podushki"
     },
-     {
+    {
       "id": 3,
       "title": "Постіль конопляна",
       "width": 180,
@@ -35,6 +35,16 @@
     },
     {
       "id": 4,
+      "title": "Дитяча Постіль",
+      "width": 180,
+      "height": 180,
+      "src": "/images/categories/dityacha-postil.webp",
+      "alt": "Фото конопляної постілі на ліжку",
+      "bgColor": "blue",
+      "href": "dityacha-postil"
+    },
+    {
+      "id": 5,
       "title": "Шкарпетки та устілки",
       "width": 180,
       "height": 180,
@@ -44,7 +54,7 @@
       "href": "shkarpetki-i-ustilki"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Для ванної",
       "width": 180,
       "height": 180,
@@ -54,7 +64,7 @@
       "href": "dlya-vannoi"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Доглядальна косметика",
       "width": 180,
       "height": 180,
@@ -64,7 +74,7 @@
       "href": "kosmetika"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Спідня білизна",
       "width": 180,
       "height": 180,
