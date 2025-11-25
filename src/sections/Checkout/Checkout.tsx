@@ -266,6 +266,7 @@ const Checkout: React.FC = ({}) => {
                       {...field}
                       ref={inputRef}
                       label="Телефон"
+                      autoComplete="off"
                       placeholder="Введіть телефон"
                       size="md"
                       radius="none"
