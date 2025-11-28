@@ -54,6 +54,7 @@ export interface IProductCard {
   title: string;
   subTitle: string;
   price: string;
+  availability: string,
   salePrice: string;
   cover: string;
   filling: string;

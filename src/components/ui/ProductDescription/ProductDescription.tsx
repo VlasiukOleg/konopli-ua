@@ -26,6 +26,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 import { IoHomeOutline } from "react-icons/io5";
 import { PiLineVerticalBold } from "react-icons/pi";
+import { IoIosCheckmarkCircle } from "react-icons/io";
 
 import { IProductCard, Pages, BREADCRUMBS_LABEL } from "@/@types";
 
@@ -197,7 +198,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                   </Select>
                 )}
               </div>
-              <div className="flex items-center gap-2 flex-wrap mb-4">
+              <div className="flex items-center gap-2 flex-wrap mb-1">
                 <p className=" text-black  font-semibold text-xl">
                   {currentSize?.price || product.price} грн.
                 </p>
@@ -212,6 +213,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                     </p>
                   ))}
               </div>
+              <div className="text-green-600 text-sm flex items-center gap-1 mb-4 md:text-base"><IoIosCheckmarkCircle className="size-4 md:size-5" />{product.availability === 'inStock' ? 'В наявності' : 'Очікується'}</div>
               <div className="md:flex items-center justify-between">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="flex items-center">
