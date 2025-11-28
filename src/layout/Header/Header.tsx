@@ -156,6 +156,17 @@ const Header: React.FC = () => {
                         Доставка і оплата
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href={`/${Pages.RETURNS}`}
+                        className="text-xs md:text-sm"
+                        onNavigate={() => {
+                          onClose();
+                        }}
+                      >
+                        Обмін та повернення
+                      </Link>
+                    </li>
                   </ul>
                 </div>
                 <div>

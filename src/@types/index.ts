@@ -15,6 +15,7 @@ export enum Pages {
   CONTACTS = "contacts",
   DOSTAVKA_OPLATA = "dostavka-i-oplata",
   FAVORITES = "favorites",
+  RETURNS = "returns",
 }
 
 export const BREADCRUMBS_LABEL = {

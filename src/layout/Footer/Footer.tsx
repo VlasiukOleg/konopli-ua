@@ -47,6 +47,14 @@ const Footer: React.FC = () => {
                   Доставка і оплата
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={`/${Pages.RETURNS}`}
+                  className="text-black text-xs md:text-sm"
+                >
+                  Обмін та повернення
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
