@@ -6,7 +6,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "description": [
@@ -102,7 +102,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Конопля",
     "filling": "Конопляне волокно",
     "description": [
@@ -192,7 +192,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "description": [
@@ -290,7 +290,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Конопля",
     "filling": "Гречане лушпиння",
     "description": [
@@ -387,7 +387,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Конопля",
     "filling": "Ромашка, М'ята, Меліса, Гречане лушпиння",
     "description": [
@@ -485,7 +485,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -592,7 +592,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -710,7 +710,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -806,7 +806,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -922,7 +922,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -1052,7 +1052,7 @@
     "subTitle": "покриття - бавовна, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -1180,7 +1180,7 @@
     "subTitle": "покриття - сатин, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -1308,7 +1308,7 @@
     "subTitle": "покриття - конопляна тканина, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Конопляна тканина",
     "filling": "Конопляне волокно",
     "description": [
@@ -1421,7 +1421,7 @@
     "subTitle": "покриття - бавовна, навовнювач (700 гр/м2) - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -1542,7 +1542,7 @@
     "subTitle": "покриття - сатин, навовнювач (700 гр/м2) - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -1668,7 +1668,7 @@
     "subTitle": "покриття - сатин, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -1874,7 +1874,7 @@
     "subTitle": "покриття - конопляна тканина, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Конопля",
     "filling": "Конопляне волокно",
     "description": [
@@ -2025,7 +2025,7 @@
     "subTitle": "покриття - бавовна, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -2235,7 +2235,7 @@
     "subTitle": "покриття - бавовна, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -2355,7 +2355,7 @@
     "subTitle": "покриття - сатин, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -2481,7 +2481,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2524,7 +2524,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2585,7 +2585,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2643,7 +2643,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2696,7 +2696,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2817,7 +2817,7 @@
     "subTitle": "",
     "salePrice": "195",
     "price": "165",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2852,7 +2852,7 @@
     "subTitle": "",
     "salePrice": "235",
     "price": "200",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2887,7 +2887,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "75",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2923,7 +2923,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "75",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2957,7 +2957,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "75",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -2990,7 +2990,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "155",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3022,7 +3022,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "195",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3054,7 +3054,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "195",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3086,7 +3086,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "155",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3119,7 +3119,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "125",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3151,7 +3151,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "315",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3185,7 +3185,7 @@
     "subTitle": "",
     "salePrice": "165",
     "price": "200",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3217,7 +3217,7 @@
     "subTitle": "",
     "salePrice": "210",
     "price": "230",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3249,7 +3249,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "310",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3281,7 +3281,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "310",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3313,7 +3313,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "295",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3345,7 +3345,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "310",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3377,7 +3377,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "205",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3411,7 +3411,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "195",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3443,7 +3443,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "195",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3477,7 +3477,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "199",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3507,7 +3507,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "195",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3539,7 +3539,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3619,7 +3619,7 @@
     "subTitle": "",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "",
     "filling": "",
     "description": [
@@ -3702,7 +3702,7 @@
     "subTitle": "покриття - бавовна, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -3827,7 +3827,7 @@
     "subTitle": "покриття - сатин, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -3960,7 +3960,7 @@
     "subTitle": "покриття - конопляна тканина, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Конопляна тканина",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -4099,7 +4099,7 @@
     "subTitle": "покриття - бавовна, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -4198,7 +4198,7 @@
     "subTitle": "покриття - сатин, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -4297,7 +4297,7 @@
     "subTitle": "покриття - конопляна тканина, навовнювач - конопляне волокно",
     "salePrice": "",
     "price": "",
-    "availability": "inStock",
+    "availability": "in_stock",
     "cover": "Конопляна тканина",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
