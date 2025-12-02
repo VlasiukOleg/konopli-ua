@@ -1,28 +1,34 @@
 import { NextResponse } from "next/server";
 import products from "@/data/productList.json";
+
 const siteUrl = "https://www.konopli-ua.com";
 
 export async function GET() {
   const itemsXml = products
     .map((product) => {
+      // ID товару
       const pid = product.id || "";
-      const title = `${product.title} ${product.subTitle} || ""`;
-      const descArr = product.description || [];
-      let desc = "";
-      for (const d of descArr) {
-        if (d && d.trim()) {
-          desc = d.trim();
-          break;
-        }
-      }
-      if (!desc) desc = (descArr.join(" ") || "").substring(0, 1000);
 
+      // Заголовок
+      const title = product.subTitle
+        ? `${product.title} ${product.subTitle}`
+        : product.title || "";
+
+      // Опис
+      const descArr = product.description || [];
+      let desc =
+        descArr.find((d) => d && d.trim())?.trim() ||
+        descArr.join(" ").substring(0, 1000) ||
+        "";
+
+      // Категорія та посилання
       const cat0 =
         product.category && product.category.length
           ? product.category[0]
           : "catalog";
       const link = `${siteUrl}/catalog/${cat0}/${pid}`;
 
+      // Зображення
       const images =
         product.images && product.images.length
           ? product.images
@@ -32,16 +38,19 @@ export async function GET() {
       const image = images[0] || "";
       const image_link = image.startsWith("/") ? `${siteUrl}${image}` : image;
 
-      const availability = product.availability;
+      // Наявність
+      const availability = product.availability || "in_stock";
 
+      // Ціна
       let price = "";
-      const defaultKey = product.defaultSize;
       if (product.sizes && product.sizes.length) {
+        const defaultKey = product.defaultSize;
         const sz =
           product.sizes.find((s) => s.key === defaultKey) || product.sizes[0];
-        price = sz && sz.price ? `${sz.price} UAH` : "";
+        if (sz?.price) price = `${sz.price} UAH`;
       }
 
+      // Категорія Google
       let gcat = "Home & Garden > Linens & Bedding";
       const t = title.toLowerCase();
       if (t.includes("подуш") || t.includes("подушка"))
@@ -51,18 +60,18 @@ export async function GET() {
           "Home & Garden > Linens & Bedding > Bedding > Comforters & Duvets";
 
       return `
-      <item>
-        <g:id>${pid}</g:id>
-        <g:title><![CDATA[${title}]]></g:title>
-        <g:description><![CDATA[${desc}]]></g:description>
-        <g:link>${link}</g:link>
-        <g:image_link>${image_link}</g:image_link>
-        <g:availability>${availability}</g:availability>
-        <g:price>${price}</g:price>
-        <g:condition>new</g:condition>
-        <g:google_product_category><![CDATA[${gcat}]]></g:google_product_category>
-      </item>
-    `;
+        <item>
+          <g:id>${pid}</g:id>
+          <g:title><![CDATA[${title}]]></g:title>
+          <g:description><![CDATA[${desc}]]></g:description>
+          <g:link>${link}</g:link>
+          <g:image_link>${image_link}</g:image_link>
+          <g:availability>${availability}</g:availability>
+          <g:price>${price}</g:price>
+          <g:condition>new</g:condition>
+          <g:google_product_category><![CDATA[${gcat}]]></g:google_product_category>
+        </item>
+      `;
     })
     .join("");
 
