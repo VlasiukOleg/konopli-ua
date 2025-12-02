@@ -213,7 +213,12 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
                     </p>
                   ))}
               </div>
-              <div className="text-green-600 text-sm flex items-center gap-1 mb-4 md:text-base"><IoIosCheckmarkCircle className="size-4 md:size-5" />{product.availability === 'inStock' ? 'В наявності' : 'Очікується'}</div>
+              <div className="text-green-600 text-sm flex items-center gap-1 mb-4 md:text-base">
+                <IoIosCheckmarkCircle className="size-4 md:size-5" />
+                {product.availability === "in_stock"
+                  ? "В наявності"
+                  : "Очікується"}
+              </div>
               <div className="md:flex items-center justify-between">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="flex items-center">
