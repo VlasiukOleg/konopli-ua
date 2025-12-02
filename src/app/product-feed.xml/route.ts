@@ -16,7 +16,7 @@ export async function GET() {
 
       // Опис
       const descArr = product.description || [];
-      let desc =
+      const desc =
         descArr.find((d) => d && d.trim())?.trim() ||
         descArr.join(" ").substring(0, 1000) ||
         "";
@@ -49,6 +49,8 @@ export async function GET() {
           product.sizes.find((s) => s.key === defaultKey) || product.sizes[0];
         if (sz?.price) price = `${sz.price} UAH`;
       }
+
+      if (!price && product.price) price = `${product.price} UAH`;
 
       // Категорія Google
       let gcat = "Home & Garden > Linens & Bedding";
