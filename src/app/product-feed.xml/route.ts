@@ -3,6 +3,17 @@ import products from "@/data/productList.json";
 
 const siteUrl = "https://www.konopli-ua.com";
 
+const googleCategories: Record<string, number> = {
+  "gipoallergenni-podushki": 2700,
+  "postil-konoplyana": 4171,
+  "dityacha-postil": 1985,
+  "kovdri-i-pledi": 1985,
+  "shkarpetki-i-ustilki": 213,
+  "dlya-vannoi": 574,
+  "kosmetika": 473,
+  "spidnya-bilyzna": 2562,
+};
+
 export async function GET() {
   const itemsXml = products
     .map((product) => {
@@ -53,13 +64,8 @@ export async function GET() {
       if (!price && product.price) price = `${product.price} UAH`;
 
       // Категорія Google
-      let gcat = "Home & Garden > Linens & Bedding";
-      const t = title.toLowerCase();
-      if (t.includes("подуш") || t.includes("подушка"))
-        gcat = "Home & Garden > Linens & Bedding > Bedding > Bed Pillows";
-      if (t.includes("ковдр") || t.includes("ковд") || t.includes("плед"))
-        gcat =
-          "Home & Garden > Linens & Bedding > Bedding > Comforters & Duvets";
+      const gcat = googleCategories[cat0];
+
 
       return `
         <item>
