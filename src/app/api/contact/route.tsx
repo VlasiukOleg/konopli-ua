@@ -14,6 +14,8 @@ export async function POST(request: Request) {
       city,
       warehouse,
       products,
+      typeOfPayment,
+      contactVariant,
     } = await request.json();
 
     const transporter = nodemailer.createTransport({
@@ -72,6 +74,8 @@ export async function POST(request: Request) {
         <p>Email: ${email}</p>
         <p>Місто: ${city}</p>
         <p>Відділення: ${warehouse ? warehouse : address}</p>
+        <p>Тип оплати: ${typeOfPayment}</p>
+        <p>Варіант зв'язку: ${contactVariant}</p>
         <p>Коментар: ${message}</p>
         ${materialsTable}
       `,

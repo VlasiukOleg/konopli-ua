@@ -6,7 +6,7 @@ import { Button } from "@heroui/react";
 import { useRouter } from "next/navigation";
 import { useMask } from "@react-input/mask";
 import * as yup from "yup";
-import { Input, Textarea, Checkbox, RadioGroup } from "@heroui/react";
+import { Input, Textarea, Checkbox, RadioGroup, Radio } from "@heroui/react";
 import { Autocomplete, AutocompleteItem } from "@heroui/autocomplete";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -60,7 +60,10 @@ const Checkout: React.FC = ({}) => {
   const [isLoadingWarehouses, setIsLoadingWarehouses] = useState(false);
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedWarehouseLabel, setSelectedWarehouseLabel] = useState("");
-
+  const [selectedTypeOfPayment, setSelectedTypeOfPayment] =
+    useState("post_payment");
+  const [selectedContactVariant, setSelectedContactVariant] =
+    useState("telegram");
   const [selectedDeliveryRadio, setSelectedDeliveryRadio] =
     React.useState("novaposhta");
 
@@ -186,6 +189,8 @@ const Checkout: React.FC = ({}) => {
       message: data.message?.trim() || "",
       city: selectedCityData?.label || "",
       warehouse: selectedWarehouseData?.label || "",
+      typeOfPayment: selectedTypeOfPayment,
+      contactVariant: selectedContactVariant,
       products,
     };
 
@@ -216,8 +221,8 @@ const Checkout: React.FC = ({}) => {
                 {...register("firstName")}
                 isClearable
                 radius="none"
-                label="Ваше ім'я"
-                placeholder="Введіть ім'я"
+                label="Ваше ім'я та прізвище"
+                placeholder="Введіть ім'я та прізвище"
                 size="md"
                 labelPlacement="outside"
                 variant="bordered"
@@ -434,6 +439,76 @@ const Checkout: React.FC = ({}) => {
                 </RadioGroup>
               </div>
             )}
+            <RadioGroup
+              label="Виберіть спосіб оплати"
+              orientation="horizontal"
+              classNames={{
+                label: "text-xs font-semibold md:text-sm !text-grey",
+              }}
+              value={selectedTypeOfPayment}
+              onValueChange={setSelectedTypeOfPayment}
+            >
+              <Radio
+                value="post_payment"
+                classNames={{
+                  label: "text-sm md:text-base",
+                  wrapper: "size-4 md:size-5",
+                  control: "size-2",
+                }}
+              >
+                при отриманні
+              </Radio>
+              <Radio
+                value="fop_card"
+                classNames={{
+                  label: "text-sm md:text-base",
+                  wrapper: "size-4 md:size-5",
+                  control: "size-2",
+                }}
+              >
+                на картку ФОП
+              </Radio>
+            </RadioGroup>
+            <RadioGroup
+              label="Виберіть зручний варіант зв'язку з Вами для підтвердження замовлення"
+              orientation="horizontal"
+              classNames={{
+                label: "text-xs font-semibold md:text-sm !text-grey",
+              }}
+              value={selectedContactVariant}
+              onValueChange={setSelectedContactVariant}
+            >
+              <Radio
+                value="phone_call"
+                classNames={{
+                  label: "text-sm md:text-base",
+                  wrapper: "size-4 md:size-5",
+                  control: "size-2",
+                }}
+              >
+                Телефон
+              </Radio>
+              <Radio
+                value="telegram"
+                classNames={{
+                  label: "text-sm md:text-base",
+                  wrapper: "size-4 md:size-5",
+                  control: "size-2",
+                }}
+              >
+                Telegram
+              </Radio>
+              <Radio
+                value="viber"
+                classNames={{
+                  label: "text-sm md:text-base",
+                  wrapper: "size-4 md:size-5",
+                  control: "size-2",
+                }}
+              >
+                Viber
+              </Radio>
+            </RadioGroup>
 
             <Textarea
               {...register("message")}
