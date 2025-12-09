@@ -6,6 +6,7 @@
     "secondary2": "Згорнути"
   },
   "email": "alisagrushkovska@gmail.com",
+  "form": "Форма",
   "ariaLabel": {
     "burgerClose": "Закрити модальне меню",
     "burgerOpen": "Відкрити модальне меню"
