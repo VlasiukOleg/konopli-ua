@@ -75,7 +75,7 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
 
   const isShowAllFiltersButtonVisible =
     coverValue !== "all" ||
-    (seasonValue !== "all" && filteredProductsByCategory.length !== 0);
+    (seasonValue !== "all" && filteredProductsByCategory.length > 0);
 
   console.log(filteredProductsByCategory.length);
   console.log(isShowAllFiltersButtonVisible);
@@ -143,14 +143,6 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
         {filteredProductsByCategory.length === 0 && (
           <div className="text-sm flex flex-col gap-4 justify-center items-center w-full min-h-[300px]">
             Упс, по цьому фільтру нічого не знайдено.
-            <Button
-              size="md"
-              radius="none"
-              className="bg-accent font-semibold text-white "
-              onPress={handleFiltersDefaultSet}
-            >
-              ПОКАЗАТИ ВСІ КОВДРИ
-            </Button>
           </div>
         )}
         {isShowAllFiltersButtonVisible && (
