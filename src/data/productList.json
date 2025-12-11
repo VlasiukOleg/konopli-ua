@@ -1053,6 +1053,7 @@
     "salePrice": "",
     "price": "",
     "availability": "in_stock",
+    "asonse": "demi",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -1182,6 +1183,7 @@
     "price": "",
     "availability": "in_stock",
     "cover": "Сатин",
+    "season": "demi",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
       "",
@@ -1310,6 +1312,7 @@
     "price": "",
     "availability": "in_stock",
     "cover": "Конопляна тканина",
+    "season": "demi",
     "filling": "Конопляне волокно",
     "description": [
       "Купувати ковдру з конопляної тканини - це не лише вибір в користь екологічної стійкості, але й забезпечення високої якості, комфорту та довговічності.",
@@ -1422,6 +1425,7 @@
     "salePrice": "",
     "price": "",
     "availability": "in_stock",
+    "season": "winter",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -1543,6 +1547,7 @@
     "salePrice": "",
     "price": "",
     "availability": "in_stock",
+    "season": "winter",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -1669,6 +1674,7 @@
     "salePrice": "",
     "price": "",
     "availability": "in_stock",
+    "season": "demi",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -1875,7 +1881,8 @@
     "salePrice": "",
     "price": "",
     "availability": "in_stock",
-    "cover": "Конопля",
+    "season": "demi",
+    "cover": "Конопляна тканина",
     "filling": "Конопляне волокно",
     "description": [
       "Відчуйте справжній комфорт та природну розкіш з нашим ексклюзивним комплектом, що включає ковдру та подушки, виготовлені з високоякісних матеріалів. Цей комплект створений для тих, хто цінує екологічність, здоров'я та неперевершену зручність.",
@@ -2026,6 +2033,7 @@
     "salePrice": "",
     "price": "",
     "availability": "in_stock",
+    "season": "demi",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -2236,6 +2244,7 @@
     "salePrice": "",
     "price": "",
     "availability": "in_stock",
+    "season": "summer",
     "cover": "Бавовна",
     "filling": "Конопляне волокно",
     "descriptionTitle": [
@@ -2356,6 +2365,7 @@
     "salePrice": "",
     "price": "",
     "availability": "in_stock",
+    "season": "summer",
     "cover": "Сатин",
     "filling": "Конопляне волокно",
     "descriptionTitle": [

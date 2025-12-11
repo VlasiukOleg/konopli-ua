@@ -39,7 +39,8 @@ export const SECTION_TITLE_TEXT_MAP = {
   [Pages.PODUSHKI]: "Гіпоаллергенні подушки",
   [Pages.CHECKOUT]: "Кошик",
   [Pages.POSTIL]: "Постіль конопляна",
-  [Pages.DITYACHA_POSTIL]: "Натуральні гіпоалергенні дитячі ковдри та подушки з конопляним наповнювачем",
+  [Pages.DITYACHA_POSTIL]:
+    "Натуральні гіпоалергенні дитячі ковдри та подушки з конопляним наповнювачем",
   [Pages.KOVDRI]: "Гіпоалергенні ковдри з конопляним наповнювачем",
   [Pages.SHKARPETKI]: "Шкарпетки та устілки",
   [Pages.VANNA]: "Для ванної",
@@ -55,9 +56,10 @@ export interface IProductCard {
   title: string;
   subTitle: string;
   price: string;
-  availability: string,
+  availability: string;
   salePrice: string;
   cover: string;
+  season?: string;
   filling: string;
   image: string;
   images?: string[];
