@@ -14,7 +14,8 @@ export const covers = [
   { key: "Конопляна тканина", label: "Конопляна тканина" },
 ];
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
 import { Button, Select, SelectItem } from "@heroui/react";
 
@@ -39,8 +40,13 @@ interface IProductListProps {
 const ProductList: React.FC<IProductListProps> = ({ product }) => {
   const isAlertShow = useAlert((state) => state.isAlertShow);
 
-  const [coverValue, setCoverValue] = useState("all");
-  const [seasonValue, setSeasonValue] = useState("all");
+  const searchParams = useSearchParams();
+
+  const seasonSearchParams = searchParams.get("season");
+  const coverSearchParams = searchParams.get("cover");
+
+  const [coverValue, setCoverValue] = useState(coverSearchParams || "all");
+  const [seasonValue, setSeasonValue] = useState(seasonSearchParams || "all");
 
   let filteredProductsByCategory = productList.filter((productItem) =>
     productItem.category.includes(product)
@@ -77,8 +83,15 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
     coverValue !== "all" ||
     (seasonValue !== "all" && filteredProductsByCategory.length > 0);
 
-  console.log(filteredProductsByCategory.length);
-  console.log(isShowAllFiltersButtonVisible);
+  useEffect(() => {
+    if (seasonSearchParams) {
+      setSeasonValue(seasonSearchParams);
+    }
+
+    if (coverSearchParams) {
+      setCoverValue(coverSearchParams);
+    }
+  }, [coverSearchParams, searchParams, seasonSearchParams]);
 
   return (
     <section className="py-5">
@@ -102,7 +115,7 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
         {product === Pages.KOVDRI && (
           <>
             <Select
-              className="mb-2 md:max-w-sm"
+              className="mb-2 md:max-w-sm xl:mr-4"
               label="Сезонність"
               placeholder="Виберіть сезонність використання"
               selectedKeys={[seasonValue]}
