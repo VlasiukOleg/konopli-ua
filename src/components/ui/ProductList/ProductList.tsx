@@ -3,7 +3,7 @@
 export const seasons = [
   { key: "all", label: "Всі" },
   { key: "summer", label: "Літні ковдри" },
-  { key: "demi", label: "Демісезонні ковдри" },
+  { key: "allSeason", label: "Вcезонні ковдри (4 сезони)" },
   { key: "winter", label: "Зимові ковдри" },
 ];
 
