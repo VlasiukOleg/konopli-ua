@@ -234,7 +234,7 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
                 <ProductCard
                   key={filteredProduct.id}
                   product={filteredProduct}
-                  sizeValue={sizeValue}
+                  sizeValue="1"
                 />
               ))}
             </div>
