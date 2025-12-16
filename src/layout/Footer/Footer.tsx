@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
           </div>
           <div>
             <p className="text-accent font-bold mb-2 md:text-lg">Каталог</p>
-            <ul className="font-semibold flex flex-col gap-2 md:grid md:grid-cols-2">
+            <ul className="font-semibold flex flex-col gap-2 gap-x-4 md:grid md:grid-cols-2">
               {categoriesData.list.map((category) => (
                 <Link
                   href={`/${Pages.CATALOG}/${category.href}`}

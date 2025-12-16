@@ -1,31 +1,21 @@
 "use client";
-
-export const seasons = [
-  { key: "all", label: "Всі" },
-  { key: "summer", label: "Літні ковдри" },
-  { key: "allSeason", label: "Вcезонні ковдри (4 сезони)" },
-  { key: "winter", label: "Зимові ковдри" },
-];
-
-export const covers = [
-  { key: "all", label: "Всі" },
-  { key: "Сатин", label: "Сатин" },
-  { key: "Бавовна", label: "Бавовна" },
-  { key: "Конопляна тканина", label: "Конопляна тканина" },
-];
-
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { Breadcrumbs, BreadcrumbItem } from "@heroui/breadcrumbs";
 import { Button, Select, SelectItem } from "@heroui/react";
 
 import ProductCard from "@/components/ui/ProductCard/ProductCard";
 import BlanketAlert from "@/components/common/BlanketAlert";
 
+import { generateProductTitle } from "@/utils/generateProductTitle";
+
 import { useAlert } from "@/store/alert";
 
 import { IoHomeOutline } from "react-icons/io5";
 import productList from "@/data/productList.json";
+import styles from "@/components/ui/ProductDescription/productDescription.module.css";
+
+import { sizes, seasons, covers } from "@/constants/filters";
 
 import {
   Pages,
@@ -41,15 +31,39 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
   const isAlertShow = useAlert((state) => state.isAlertShow);
 
   const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
 
   const seasonSearchParams = searchParams.get("season");
   const coverSearchParams = searchParams.get("cover");
+  const sizeSearchParams = searchParams.get("size");
 
   const [coverValue, setCoverValue] = useState(coverSearchParams || "all");
   const [seasonValue, setSeasonValue] = useState(seasonSearchParams || "all");
+  const [sizeValue, setSizeValue] = useState(sizeSearchParams || "1");
+
+  const baseTitle =
+    SECTION_TITLE_TEXT_MAP[product as keyof typeof SECTION_TITLE_TEXT_MAP];
+
+  const dynamicTitle =
+    product === Pages.KOVDRI
+      ? generateProductTitle(
+          baseTitle,
+          seasonValue,
+          coverValue,
+          sizeValue,
+          seasons,
+          covers,
+          sizes
+        )
+      : baseTitle;
 
   let filteredProductsByCategory = productList.filter((productItem) =>
     productItem.category.includes(product)
+  );
+
+  const filteredProductsByKomplektCategory = productList.filter((productItem) =>
+    productItem.category.includes("komplekt-kovdra-podushka")
   );
 
   const isAlertVisible = product === Pages.KOVDRI && isAlertShow;
@@ -60,6 +74,10 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
 
   const handleSeasonsChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSeasonValue(e.target.value);
+  };
+
+  const handleSizesChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSizeValue(e.target.value);
   };
 
   const handleFiltersDefaultSet = () => {
@@ -84,14 +102,28 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
     (seasonValue !== "all" && filteredProductsByCategory.length > 0);
 
   useEffect(() => {
-    if (seasonSearchParams) {
-      setSeasonValue(seasonSearchParams);
+    const params = new URLSearchParams(window.location.search);
+
+    if (seasonValue && seasonValue !== "all") {
+      params.set("season", seasonValue);
+    } else {
+      params.delete("season");
     }
 
-    if (coverSearchParams) {
-      setCoverValue(coverSearchParams);
+    if (coverValue && coverValue !== "all") {
+      params.set("cover", coverValue);
+    } else {
+      params.delete("cover");
     }
-  }, [coverSearchParams, searchParams, seasonSearchParams]);
+
+    params.set("size", sizeValue);
+
+    const newUrl = params.toString()
+      ? `${pathname}?${params.toString()}`
+      : pathname;
+
+    router.push(newUrl, { scroll: false });
+  }, [seasonValue, coverValue, sizeValue, pathname, router]);
 
   return (
     <section className="py-5">
@@ -105,13 +137,7 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
             {BREADCRUMBS_LABEL[product as keyof typeof BREADCRUMBS_LABEL]}
           </BreadcrumbItem>
         </Breadcrumbs>
-        <h2 className="text-2xl text-grey mb-2">
-          {
-            SECTION_TITLE_TEXT_MAP[
-              product as keyof typeof SECTION_TITLE_TEXT_MAP
-            ]
-          }
-        </h2>
+        <h1 className="text-xl md:text-2xl text-grey mb-2">{dynamicTitle}</h1>
         {product === Pages.KOVDRI && (
           <>
             <Select
@@ -144,13 +170,40 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
                 <SelectItem key={cover.key}>{cover.label}</SelectItem>
               ))}
             </Select>
+            <Select
+              className="mb-4 md:max-w-sm"
+              label="Розмір ковдри"
+              labelPlacement="outside-left"
+              placeholder="Виберіть розмір"
+              selectedKeys={[sizeValue]}
+              variant="bordered"
+              radius="none"
+              size="sm"
+              onChange={handleSizesChange}
+              listboxProps={{
+                classNames: {
+                  base: styles.listbox,
+                },
+                itemClasses: {
+                  title: "whitespace-normal text-xs",
+                },
+              }}
+            >
+              {sizes.map((size) => (
+                <SelectItem key={size.key}>{size.label}</SelectItem>
+              ))}
+            </Select>
           </>
         )}
         {isAlertVisible && <BlanketAlert />}
 
         <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
           {filteredProductsByCategory.map((filteredProduct) => (
-            <ProductCard key={filteredProduct.id} product={filteredProduct} />
+            <ProductCard
+              key={filteredProduct.id}
+              product={filteredProduct}
+              sizeValue={sizeValue}
+            />
           ))}
         </div>
         {filteredProductsByCategory.length === 0 && (
@@ -170,6 +223,22 @@ const ProductList: React.FC<IProductListProps> = ({ product }) => {
               ПОКАЗАТИ ВСІ КОВДРИ
             </Button>
           </div>
+        )}
+        {product === Pages.KOVDRI && (
+          <>
+            <h2 className="md:text-xl my-4 font-bold">
+              Також Вас може зацікавити
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-4">
+              {filteredProductsByKomplektCategory.map((filteredProduct) => (
+                <ProductCard
+                  key={filteredProduct.id}
+                  product={filteredProduct}
+                  sizeValue={sizeValue}
+                />
+              ))}
+            </div>
+          </>
         )}
       </div>
     </section>

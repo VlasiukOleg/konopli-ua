@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NextImage from "next/image";
 import CartDrawer from "@/components/ui/CartDrawer";
 import {
@@ -31,16 +31,17 @@ import styles from "@/components/ui/ProductDescription/productDescription.module
 
 interface IProductCardProps {
   product: IProductCard;
+  sizeValue: string;
 }
 
-const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
+const ProductCard: React.FC<IProductCardProps> = ({ product, sizeValue }) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const { addItem } = useCart();
   const { addFavorite, removeFavorite, favoriteIds } = useFavorite();
 
   const isProductAddToFavorite = favoriteIds.includes(product.id);
 
-  const [selectedSize, setSelectedSize] = useState(product.defaultSize);
+  const [selectedSize, setSelectedSize] = useState(sizeValue);
 
   const currentSize =
     product.sizes.find((size) => size.key === selectedSize) || product.sizes[0];
@@ -83,6 +84,10 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
       variant: "bordered",
     });
   };
+
+  useEffect(() => {
+    setSelectedSize(sizeValue);
+  }, [sizeValue]);
 
   return (
     <>

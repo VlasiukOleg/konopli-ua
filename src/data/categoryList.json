@@ -24,7 +24,17 @@
       "href": "gipoallergenni-podushki"
     },
     {
-      "id": 3,
+      "id": 4,
+      "title": "Комплект: Ковдра + 2 подушки",
+      "width": 180,
+      "height": 180,
+      "src": "/images/kovdri/kovdra-podushki-demisezonna-konoplya-konoplya-1.webp",
+      "alt": "Фото подушки на природі",
+      "bgColor": "red",
+      "href": "komplekt-kovdra-podushka"
+    },
+    {
+      "id": 5,
       "title": "Постіль конопляна",
       "width": 180,
       "height": 180,
@@ -34,7 +44,7 @@
       "href": "postil-konoplyana"
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Дитяча Постіль",
       "width": 180,
       "height": 180,
@@ -44,7 +54,7 @@
       "href": "dityacha-postil"
     },
     {
-      "id": 5,
+      "id": 7,
       "title": "Шкарпетки та устілки",
       "width": 180,
       "height": 180,
@@ -54,7 +64,7 @@
       "href": "shkarpetki-i-ustilki"
     },
     {
-      "id": 6,
+      "id": 8,
       "title": "Для ванної",
       "width": 180,
       "height": 180,
@@ -64,7 +74,7 @@
       "href": "dlya-vannoi"
     },
     {
-      "id": 7,
+      "id": 9,
       "title": "Доглядальна косметика",
       "width": 180,
       "height": 180,
@@ -74,7 +84,7 @@
       "href": "kosmetika"
     },
     {
-      "id": 8,
+      "id": 10,
       "title": "Спідня білизна",
       "width": 180,
       "height": 180,

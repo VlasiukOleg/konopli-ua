@@ -5,6 +5,7 @@ export enum Pages {
   POSTIL = "postil-konoplyana",
   DITYACHA_POSTIL = "dityacha-postil",
   KOVDRI = "kovdri-i-pledi",
+  KOVDRA_PODUSHKA = "komplekt-kovdra-podushka",
   SHKARPETKI = "shkarpetki-i-ustilki",
   VANNA = "dlya-vannoi",
   KOSMETIKA = "kosmetika",
@@ -32,6 +33,7 @@ export const BREADCRUMBS_LABEL = {
   [Pages.POLICY]: "Політика конфіденційності",
   [Pages.ABOUT]: "Про нас",
   [Pages.FAVORITES]: "Список бажань",
+  [Pages.KOVDRA_PODUSHKA]: "Ковдра + 2 подушки",
 };
 
 export const SECTION_TITLE_TEXT_MAP = {
@@ -42,6 +44,8 @@ export const SECTION_TITLE_TEXT_MAP = {
   [Pages.DITYACHA_POSTIL]:
     "Натуральні гіпоалергенні дитячі ковдри та подушки з конопляним наповнювачем",
   [Pages.KOVDRI]: "Гіпоалергенні ковдри з конопляним наповнювачем",
+  [Pages.KOVDRA_PODUSHKA]:
+    "Комплект: Гіпоалергенна ковдра + 2 подушки з конопляним наповнювачем",
   [Pages.SHKARPETKI]: "Шкарпетки та устілки",
   [Pages.VANNA]: "Для ванної",
   [Pages.KOSMETIKA]: "Доглядальна косметика",
@@ -78,3 +82,8 @@ export interface IProductCard {
   }[];
   defaultSize: string;
 }
+
+export type FilterOption = {
+  key: string;
+  label: string;
+};
