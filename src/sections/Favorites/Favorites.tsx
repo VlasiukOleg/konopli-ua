@@ -30,7 +30,11 @@ const Favorites: React.FC = () => {
         {filteredProductListByFavoriteIds.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-4 gap-2">
             {filteredProductListByFavoriteIds.map((filteredProduct) => (
-              <ProductCard key={filteredProduct.id} product={filteredProduct} />
+              <ProductCard
+                key={filteredProduct.id}
+                product={filteredProduct}
+                sizeValue="1"
+              />
             ))}
           </div>
         ) : (
