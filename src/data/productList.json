@@ -2534,7 +2534,7 @@
       {
         "key": "1",
         "label": "44-46р",
-        "price": "85",
+        "price": "90",
         "salePrice": "",
         "package": null
       }
@@ -2581,21 +2581,21 @@
       {
         "key": "1",
         "label": "25р(39,40,41)",
-        "price": "85",
+        "price": "90",
         "salePrice": "",
         "package": null
       },
       {
         "key": "2",
         "label": "27р(41,42,43)",
-        "price": "85",
+        "price": "90",
         "salePrice": "",
         "package": null
       },
       {
         "key": "3",
         "label": "29р(44,45,46)",
-        "price": "85",
+        "price": "90",
         "salePrice": "",
         "package": null
       }
@@ -2639,21 +2639,21 @@
       {
         "key": "1",
         "label": "25р(39,40,41)",
-        "price": "85",
+        "price": "90",
         "salePrice": "",
         "package": null
       },
       {
         "key": "2",
         "label": "27р(41,42,43)",
-        "price": "85",
+        "price": "90",
         "salePrice": "",
         "package": null
       },
       {
         "key": "3",
         "label": "29р(44,45,46)",
-        "price": "85",
+        "price": "90",
         "salePrice": "",
         "package": null
       }
@@ -2699,14 +2699,14 @@
       {
         "key": "1",
         "label": "23р(36,37,38)",
-        "price": "85",
+        "price": "90",
         "salePrice": "",
         "package": null
       },
       {
         "key": "2",
         "label": "25р(39,40,41)",
-        "price": "85",
+        "price": "90",
         "salePrice": "",
         "package": null
       }
@@ -2745,7 +2745,7 @@
       "Підходить для людей з алергіями та астмою",
       "Виготовлена з екологічно чистих натуральних матеріалів"
     ],
-    "care": "Шкарпетки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші шкарпетки будуть радувати вас довгі роки.",
+    "care": "Устілки з коноплі легко прати та доглядати за ними. Вони швидко сохнуть і не вимагають спеціального догляду. Просто дотримуйтесь рекомендацій на етикетці, і ваші устілки будуть радувати вас довгі роки.",
     "sizes": [
       {
         "key": "1",
@@ -3587,50 +3587,50 @@
       {
         "key": "1",
         "label": "XXS(42)",
-        "price": "350",
-        "salePrice": "385",
+        "price": "450",
+        "salePrice": "495",
         "package": null
       },
       {
         "key": "2",
         "label": "XS(44)",
-        "price": "350",
-        "salePrice": "385",
+        "price": "450",
+        "salePrice": "495",
         "package": null
       },
       {
         "key": "3",
         "label": "S(46)",
-        "price": "350",
-        "salePrice": "385",
+        "price": "450",
+        "salePrice": "495",
         "package": null
       },
       {
         "key": "4",
         "label": "M(48)",
-        "price": "350",
-        "salePrice": "385",
+        "price": "450",
+        "salePrice": "495",
         "package": null
       },
       {
         "key": "5",
         "label": "L(50)",
-        "price": "350",
-        "salePrice": "385",
+        "price": "450",
+        "salePrice": "495",
         "package": null
       },
       {
         "key": "6",
         "label": "XL(52)",
-        "price": "350",
-        "salePrice": "385",
+        "price": "450",
+        "salePrice": "495",
         "package": null
       },
       {
         "key": "7",
         "label": "XXL(54)",
-        "price": "350",
-        "salePrice": "385",
+        "price": "450",
+        "salePrice": "495",
         "package": null
       }
     ],
@@ -3670,50 +3670,50 @@
       {
         "key": "1",
         "label": "XXS(42)",
-        "price": "650",
-        "salePrice": "770",
+        "price": "850",
+        "salePrice": "990",
         "package": null
       },
       {
         "key": "2",
         "label": "XS(44)",
-        "price": "650",
-        "salePrice": "770",
+        "price": "850",
+        "salePrice": "990",
         "package": null
       },
       {
         "key": "3",
         "label": "S(46)",
-        "price": "650",
-        "salePrice": "770",
+        "price": "850",
+        "salePrice": "990",
         "package": null
       },
       {
         "key": "4",
         "label": "M(48)",
-        "price": "650",
-        "salePrice": "770",
+        "price": "850",
+        "salePrice": "990",
         "package": null
       },
       {
         "key": "5",
         "label": "L(50)",
         "price": "650",
-        "salePrice": "770",
+        "salePrice": "990",
         "package": null
       },
       {
         "key": "6",
         "label": "XL(52)",
         "price": "650",
-        "salePrice": "770",
+        "salePrice": "990",
         "package": null
       },
       {
         "key": "7",
         "label": "XXL(54)",
         "price": "650",
-        "salePrice": "770",
+        "salePrice": "990",
         "package": null
       }
     ],
