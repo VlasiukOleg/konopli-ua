@@ -3705,21 +3705,21 @@
       {
         "key": "5",
         "label": "L(50)",
-        "price": "650",
+        "price": "850",
         "salePrice": "990",
         "package": null
       },
       {
         "key": "6",
         "label": "XL(52)",
-        "price": "650",
+        "price": "850",
         "salePrice": "990",
         "package": null
       },
       {
         "key": "7",
         "label": "XXL(54)",
-        "price": "650",
+        "price": "850",
         "salePrice": "990",
         "package": null
       }
