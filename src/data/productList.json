@@ -60,28 +60,28 @@
       {
         "key": "1",
         "label": "40x40",
-        "price": "595",
+        "price": "650",
         "salePrice": "",
         "package": null
       },
       {
         "key": "2",
         "label": "40x60",
-        "price": "690",
+        "price": "750",
         "salePrice": "",
         "package": null
       },
       {
         "key": "3",
         "label": "50x50",
-        "price": "690",
+        "price": "750",
         "salePrice": "",
         "package": null
       },
       {
         "key": "4",
         "label": "50x70",
-        "price": "800",
+        "price": "850",
         "salePrice": "",
         "package": null
       },
@@ -157,28 +157,35 @@
       {
         "key": "1",
         "label": "40x40",
-        "price": "680",
+        "price": "800",
         "salePrice": "",
         "package": null
       },
       {
         "key": "2",
         "label": "40x60",
-        "price": "800",
+        "price": "910",
         "salePrice": "",
         "package": null
       },
       {
         "key": "3",
         "label": "50x50",
-        "price": "800",
+        "price": "910",
         "salePrice": "",
         "package": null
       },
       {
         "key": "4",
         "label": "50x70",
-        "price": "940",
+        "price": "1050",
+        "salePrice": "",
+        "package": null
+      },
+      {
+        "key": "5",
+        "label": "70x70",
+        "price": "1300",
         "salePrice": "",
         "package": null
       }
@@ -248,35 +255,35 @@
       {
         "key": "1",
         "label": "40x40",
-        "price": "525",
+        "price": "640",
         "salePrice": "",
         "package": null
       },
       {
         "key": "2",
         "label": "40x60",
-        "price": "615",
+        "price": "740",
         "salePrice": "",
         "package": null
       },
       {
         "key": "3",
         "label": "50x50",
-        "price": "615",
+        "price": "740",
         "salePrice": "",
         "package": null
       },
       {
         "key": "4",
         "label": "50x70",
-        "price": "730",
+        "price": "840",
         "salePrice": "",
         "package": null
       },
       {
         "key": "5",
         "label": "70x70",
-        "price": "940",
+        "price": "1000",
         "salePrice": "",
         "package": null
       }
