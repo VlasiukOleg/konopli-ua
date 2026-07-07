@@ -11,6 +11,22 @@ export default function ViewItemTracker({
 }) {
   useEffect(() => {
     if (typeof window !== "undefined" && window.dataLayer) {
+      // Ищем данные размера, который выбран по умолчанию
+      const defaultSizeData = product.sizes.find(
+        (size) => size.key === product.defaultSize,
+      );
+
+      // Определяем финальную цену: берем salePrice, если нет - берем price.
+      // Если по какой-то причине размера нет, ставим 0.
+      let finalPrice = 0;
+      if (defaultSizeData) {
+        const activePrice = defaultSizeData.salePrice
+          ? defaultSizeData.salePrice
+          : defaultSizeData.price;
+
+        finalPrice = Number(activePrice) || 0; // Переводим строку ("800") в число (800)
+      }
+
       // Очищаем предыдущую дату
       window.dataLayer.push({ ecommerce: null });
 
@@ -19,12 +35,12 @@ export default function ViewItemTracker({
         event: "view_item",
         ecommerce: {
           currency: "UAH",
-          value: product.price, // Убедись, что в product.json цена называется так
+          value: finalPrice, // Теперь тут будет актуальная цена
           items: [
             {
               item_id: product.id,
-              item_name: product.title, // Убедись, что поле называется name (или title)
-              price: product.price,
+              item_name: product.title,
+              price: finalPrice, // И тут тоже
               quantity: 1,
             },
           ],
