@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import ProductDescription from "@/components/ui/ProductDescription";
+import ViewItemTracker from "@/components/ui/ViewItemTracker";
 import productList from "@/data/productList.json";
 import { Pages } from "@/@types";
 
@@ -17,7 +18,7 @@ export async function generateStaticParams() {
     item.category.map((cat) => ({
       product: cat,
       productId: item.id,
-    }))
+    })),
   );
 }
 
@@ -25,12 +26,17 @@ const ProductPage: React.FC<PageProps> = async ({ params }) => {
   const { product, productId } = await params;
 
   const item = productList.find(
-    (p) => p.id === productId && p.category.includes(product)
+    (p) => p.id === productId && p.category.includes(product),
   );
 
   if (!item) return notFound();
 
-  return <ProductDescription product={item} />;
+  return (
+    <>
+      <ProductDescription product={item} />
+      <ViewItemTracker product={item} />
+    </>
+  );
 };
 
 export default ProductPage;
