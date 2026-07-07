@@ -48,7 +48,7 @@ const Checkout: React.FC = ({}) => {
   });
 
   const router = useRouter();
-  const { products, clearCart } = useCart();
+  const { products } = useCart();
 
   const [query, setQuery] = useState("");
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -166,7 +166,7 @@ const Checkout: React.FC = ({}) => {
 
   const handleWarehouseSelect = (warehouseKey: string) => {
     const warehouse = warehouses.find(
-      (warehouse) => warehouse.value === warehouseKey
+      (warehouse) => warehouse.value === warehouseKey,
     );
 
     setSelectedWarehouseLabel(warehouse?.label || "");
@@ -177,7 +177,7 @@ const Checkout: React.FC = ({}) => {
 
     const selectedCityData = cities.find((city) => city.value === data.city);
     const selectedWarehouseData = warehouses.find(
-      (warehouse) => warehouse.value === data.warehouse
+      (warehouse) => warehouse.value === data.warehouse,
     );
 
     const sanitizedData = {
@@ -199,7 +199,7 @@ const Checkout: React.FC = ({}) => {
       await sendingEmail(sanitizedData);
       router.push("/thanks");
       reset();
-      clearCart();
+      // clearCart();
     } catch (error) {
       console.error(error);
       setSendError(true);
@@ -536,7 +536,7 @@ const Checkout: React.FC = ({}) => {
                   classNames={{
                     label: clsx(
                       "text-xs md:text-sm",
-                      errors.policy?.message && "text-red-500"
+                      errors.policy?.message && "text-red-500",
                     ),
                     wrapper: errors.policy?.message && "before:!border-red-500",
                   }}
