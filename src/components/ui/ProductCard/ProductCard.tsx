@@ -14,6 +14,7 @@ import {
   Link,
   addToast,
 } from "@heroui/react";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 import { useCart } from "@/store/cart";
 import { useFavorite } from "@/store/favorite";
@@ -46,6 +47,20 @@ const ProductCard: React.FC<IProductCardProps> = ({ product, sizeValue }) => {
   const currentSize =
     product.sizes.find((size) => size.key === selectedSize) || product.sizes[0];
 
+  // const handleOpen = () => {
+  //   onOpen();
+
+  //   addItem({
+  //     id: product.id,
+  //     title: product.title,
+  //     subTitle: product.subTitle,
+  //     price: Number(currentSize?.price) || Number(product.price),
+  //     salePrice: Number(currentSize?.salePrice) || Number(product.salePrice),
+  //     image: product.image,
+  //     size: currentSize?.label || "",
+  //   });
+  // };
+
   const handleOpen = () => {
     onOpen();
 
@@ -57,6 +72,35 @@ const ProductCard: React.FC<IProductCardProps> = ({ product, sizeValue }) => {
       salePrice: Number(currentSize?.salePrice) || Number(product.salePrice),
       image: product.image,
       size: currentSize?.label || "",
+    });
+
+    // Визначаємо ціну
+    const activePrice =
+      currentSize?.salePrice ||
+      currentSize?.price ||
+      product.salePrice ||
+      product.price;
+    const finalPrice = Number(activePrice) || 0;
+
+    // 1. Очищаємо попередні дані ecommerce (стандарт для GA4/TikTok)
+    sendGTMEvent({ ecommerce: null });
+
+    // 2. Відправляємо подію додавання в кошик
+    sendGTMEvent({
+      event: "add_to_cart",
+      ecommerce: {
+        currency: "UAH",
+        value: finalPrice,
+        items: [
+          {
+            item_id: product.id,
+            item_name: product.title,
+            price: finalPrice,
+            quantity: 1,
+            item_variant: currentSize?.label || "",
+          },
+        ],
+      },
     });
   };
 
